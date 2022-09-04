@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page  isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,6 +22,17 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="text-center p-2">Registration Page</h4>
+                            
+                             <c:if test= "${not empty success}">
+                                <p class="text-center text-success">${success}</p> 
+                                <c:remove var="success" scope="session" />
+                            </c:if>
+                                
+                            <c:if test= "${not empty failed}">
+                                <p class="text-center text-danger">${failed}</p> 
+                                <c:remove var="failed" scope="session" />
+                            </c:if>
+                                
                             <form action="register" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Full Name</label>

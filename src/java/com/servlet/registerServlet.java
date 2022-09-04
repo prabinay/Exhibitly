@@ -15,6 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import com.model.User;
 import com.dao.UserDaoImpl;
 import com.DB.DBconnect;
+import jakarta.servlet.http.HttpSession;
 
 /**
  *
@@ -40,19 +41,24 @@ public class registerServlet extends HttpServlet {
             us.setPhone_no(phone);
             us.setPwd(pwd);
 
-            
-            
+            HttpSession session = request.getSession();
             if (check != null) {
 
                 UserDaoImpl dao = new UserDaoImpl(DBconnect.getConn());
                 boolean f = dao.userRegister(us);
                 if (f) {
 //                    System.out.println("User Registered Successfully");
+                    session.setAttribute("success", "Registered Successfully..");
+                    response.sendRedirect("register.jsp");
                 } else {
 //                    System.out.println("Something wrong!");
+                    session.setAttribute("failed", "Something wrong on Server..");
+                    response.sendRedirect("register.jsp");
                 }
-            }else{
+            } else {
 //                System.out.println("Please accept terms & Conditions");
+                session.setAttribute("failed", "Please Accept Terms & Conditions..");
+                response.sendRedirect("register.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();
