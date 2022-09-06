@@ -4,9 +4,17 @@
         <servlet-name>registerServlet</servlet-name>
         <servlet-class>com.servlet.registerServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddArtServlet</servlet-name>
+        <servlet-class>com.admin.servlet.AddArtServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddArtServlet</servlet-name>
+        <url-pattern>/AddArtServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -67,8 +67,8 @@
             </tbody>
         </table>
         
-        <div style="margin-top:130px;">
-            <%@include file="foooter.jsp"%>
+        <div style="margin-top:285px;">
+            <%@include file="footer.jsp"%>
         </div>
         
     </body>

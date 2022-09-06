@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page  isELIgnored="false"%>
 
 <!DOCTYPE html>
@@ -32,7 +33,7 @@
                 <div class="col-md-3">
                     <a href="addArts.jsp" >
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <i class="fas fa-plus-square fa-3x text-primary"></i><br>
                                 <h4>Add an Art</h4>
                                 
@@ -46,9 +47,9 @@
                 <div class="col-md-3">
                     <a href="allArts.jsp" >
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <i class="fas fa-book-open fa-3x text-danger"></i><br>
-                                <h4>All Books</h4>
+                                <h4>All Arts</h4>
                             </div>
 
                         </div>
@@ -58,9 +59,9 @@
                 <div class="col-md-3">
                     <a href="orders.jsp" >
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <i class="fas fa-box-open fa-3x text-warning"></i><br>
-                                <h4>Order</h4>
+                                <h4>Orders</h4>
                             </div>
 
                         </div>
@@ -69,7 +70,7 @@
 
                 <div class="col-md-3">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <i class="fas fa-sign-out-alt fa-3x text-primary"></i><br>
                             <h4>Logout</h4>
                         </div>
@@ -77,6 +78,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div style="margin-top:275px;">
+            <%@include file="footer.jsp"%>
         </div>
     </body>
 </html>

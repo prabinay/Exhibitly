@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page  isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
@@ -58,9 +59,7 @@
                                     <label class="form-check-label" for="exampleCheck1">Agree Terms & Conditions</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
-                            </form> <form>
-
-                            </form>
+                            </form> 
 
                         </div>
 

@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page  isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +23,17 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="text-center">Add an Art</h4>
-                            <form action="../addArtServlet" method="post">
+                            
+                            <c:if test= "${not empty success}">
+                                <p class="text-center text-success">${success}</p> 
+                                <c:remove var="success" scope="session" />
+                            </c:if>
+                                
+                            <c:if test= "${not empty failed}">
+                                <p class="text-center text-danger">${failed}</p> 
+                                <c:remove var="failed" scope="session" />
+                            </c:if>
+                            <form action="../add_arts" method="post" enctype="multipart/form-data">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Art Name*</label>
                                     <input type="text" class="form-control"  required="required" name="art_name">
@@ -42,7 +54,7 @@
 
                                 <div class="mb-3">
                                     <label for="inputState" >Art Categories</label>
-                                    <select id="inputState" name="art_types" class="form-control"    >
+                                    <select id="inputState" name="categories" class="form-control"    >
                                         <option selected>--select--</option>
                                         <option></option>
                                         <option value="Landscape">Landscape</option>
@@ -54,7 +66,7 @@
 
                                 <div class="mb-3">
                                     <label for="inputState" >Art Status</label>
-                                    <select id="inputState" name="art_status"   class="form-control"  >
+                                    <select id="inputState" name="status"   class="form-control"  >
                                         <option selected>--select--</option>
                                         <option></option>
                                         <option value="Active">Active</option>
@@ -77,5 +89,7 @@
 
                 </div>
             </div>
+            
+            
     </body>
 </html>
