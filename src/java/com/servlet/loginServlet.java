@@ -12,6 +12,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import com.dao.UserDaoImpl;
+import com.DB.DBconnect;
+import com.model.User;
+import jakarta.servlet.http.HttpSession;
+
 /**
  *
  * @author Prab1n
@@ -22,19 +27,33 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            try{
-                String email = request.getParameter("email");
-                String pwd = request.getParameter("password");
-                
-                if("admin@gmail.com".equals(email) && "admin".equals(pwd)){
-                    response.sendRedirect("admin/home.jsp");
-                } else{
+        try {
+
+            UserDaoImpl dao = new UserDaoImpl(DBconnect.getConn());
+            HttpSession session = request.getSession();
+
+            String email = request.getParameter("email");
+            String pwd = request.getParameter("password");
+
+            if ("admin@gmail.com".equals(email) && "admin".equals(pwd)) {
+                User us=new User();
+                session.setAttribute("userobj", us);
+                response.sendRedirect("admin/home.jsp");
+            } else {
+                User us =dao.login(email, pwd);
+                if(us!=null){
+                    session.setAttribute("userobj", us);
                     response.sendRedirect("home.jsp");
+                }else{
+                    session.setAttribute("failed", "Email & Password Invalid");
+                    response.sendRedirect("login.jsp");
                 }
-            }catch(Exception e){
-                e.printStackTrace();
+                
+                response.sendRedirect("home.jsp");
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    
 }
