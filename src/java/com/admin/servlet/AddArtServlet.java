@@ -18,6 +18,7 @@ import com.dao.ArtDaoImpl;
 import com.DB.DBconnect;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.http.HttpSession;
+import java.io.File;
 
 @WebServlet("/add_arts")
 @MultipartConfig
@@ -34,26 +35,23 @@ public class AddArtServlet extends HttpServlet {
             String status = request.getParameter("status");
             Part part = request.getPart("art_image");
             String fileName = part.getSubmittedFileName();
-            
-            
-            ArtDetails ad=new ArtDetails(artName, artistName, price, categories, status, fileName, "admin");
-//                ArtDetails ad = new ArtDetails();
-//                ad.setArtName(artName);
-//                ad.setArtistName(artistName);
-//                ad.setPrice(price);
-//                ad.setBookCategory(categories);
-//                ad.setStatus(status);
-//                ad.setPhotoName(fileName);
-            
+
+            ArtDetails ad = new ArtDetails(artName, artistName, price, categories, status, fileName, "admin");
+
             ArtDaoImpl dao = new ArtDaoImpl(DBconnect.getConn());
-            
-            boolean f=dao.addArts(ad);
+
+            boolean f = dao.addArts(ad);
             HttpSession session = request.getSession();
-            
-            if(f){
+
+            if (f) {
+                String path = getServletContext().getRealPath("" )+ "img";
+
+                File file = new File(path);
+                part.write(path + File.separator + fileName);
+ 
                 session.setAttribute("success", "Art is added successfully");
                 response.sendRedirect("admin/addArts.jsp");
-            } else{
+            } else {
                 session.setAttribute("failed", "Something wrong on Server");
                 response.sendRedirect("admin/addArts.jsp");
             }
