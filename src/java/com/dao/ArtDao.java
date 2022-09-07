@@ -8,12 +8,17 @@ package com.dao;
  *
  * @author Prab1n
  */
-
 import com.model.ArtDetails;
 import java.util.List;
 
 public interface ArtDao {
+
     public boolean addArts(ArtDetails ad);
-    
+
     public List<ArtDetails> getAllArts();
+    
+ 
+
 }
+
+

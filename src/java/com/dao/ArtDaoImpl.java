@@ -54,7 +54,7 @@ public class ArtDaoImpl implements ArtDao{
     @Override
     public List<ArtDetails> getAllArts() {
        List<ArtDetails> list = new ArrayList<ArtDetails>();
-       ArtDetails ad=null;
+       ArtDetails ad= null;
         try{
             String sql="select * from  art_details";
             PreparedStatement ps = conn.prepareStatement(sql);

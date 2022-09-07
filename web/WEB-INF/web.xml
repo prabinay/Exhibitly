@@ -8,6 +8,18 @@
         <servlet-name>AddArtServlet</servlet-name>
         <servlet-class>com.admin.servlet.AddArtServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AllArtsServlet</servlet-name>
+        <servlet-class>com.admin.servlet.AllArtsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArtCRUDServlet</servlet-name>
+        <servlet-class>com.admin.servlet.ArtCRUDServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.servlet.logoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>AddArtServlet</servlet-name>
         <url-pattern>/AddArtServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AllArtsServlet</servlet-name>
+        <url-pattern>/admin/AllArtsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArtCRUDServlet</servlet-name>
+        <url-pattern>/ArtCRUDServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

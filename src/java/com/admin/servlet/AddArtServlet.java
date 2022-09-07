@@ -38,6 +38,7 @@ public class AddArtServlet extends HttpServlet {
 
             ArtDetails ad = new ArtDetails(artName, artistName, price, categories, status, fileName, "admin");
 
+            
             ArtDaoImpl dao = new ArtDaoImpl(DBconnect.getConn());
 
             boolean f = dao.addArts(ad);

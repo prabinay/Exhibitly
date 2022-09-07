@@ -7,11 +7,14 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/footer.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/registerServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/addArts.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/AllArtsDao.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AllArtsServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/register.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allCss.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
@@ -24,6 +27,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDaoImpl.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/ArtCRUDServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/conf/MANIFEST.MF</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/ArtDetails.java</file>
