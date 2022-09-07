@@ -14,7 +14,7 @@ public class ArtDetails {
     private String artName;
     private String artistName;
     private String price;
-    private String bookCategory;
+    private String artCategory;
     private String status;
     private String photoName;
     private String email;
@@ -23,23 +23,23 @@ public class ArtDetails {
         super();
     }
 
-    public ArtDetails(int artID, String artName, String artistName, String price, String bookCategory, String status, String photoName, String email) {
+    public ArtDetails(int artID, String artName, String artistName, String price, String artCategory, String status, String photoName, String email) {
         this.artID = artID;
         this.artName = artName;
         this.artistName = artistName;
         this.price = price;
-        this.bookCategory = bookCategory;
+        this.artCategory = artCategory;
         this.status = status;
         this.photoName = photoName;
         this.email = email;
     }
 
-    public ArtDetails(String artName, String artistName, String price, String bookCategory, String status, String photoName, String email) {
+    public ArtDetails(String artName, String artistName, String price, String artCategory, String status, String photoName, String email) {
    
         this.artName = artName;
         this.artistName = artistName;
         this.price = price;
-        this.bookCategory = bookCategory;
+        this.artCategory = artCategory;
         this.status = status;
         this.photoName = photoName;
         this.email = email;
@@ -66,8 +66,8 @@ public class ArtDetails {
         this.price = price;
     }
 
-    public void setBookCategory(String bookCategory) {
-        this.bookCategory = bookCategory;
+    public void setArtCategory(String artCategory) {
+        this.artCategory = artCategory;
     }
 
     public void setStatus(String status) {
@@ -94,8 +94,8 @@ public class ArtDetails {
         return price;
     }
 
-    public String getBookCategory() {
-        return bookCategory;
+    public String getArtCategory() {
+        return artCategory;
     }
 
     public String getStatus() {

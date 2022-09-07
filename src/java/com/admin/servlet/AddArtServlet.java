@@ -44,10 +44,11 @@ public class AddArtServlet extends HttpServlet {
             HttpSession session = request.getSession();
 
             if (f) {
-                String path = getServletContext().getRealPath("" )+ "img";
-
-                File file = new File(path);
-                part.write(path + File.separator + fileName);
+//                add image to folder 
+//                String path = getServletContext().getRealPath("" )+ "img";
+//
+//                File file = new File(path);
+//                part.write(path + File.separator + fileName);
  
                 session.setAttribute("success", "Art is added successfully");
                 response.sendRedirect("admin/addArts.jsp");

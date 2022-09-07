@@ -48,7 +48,7 @@
                     <a href="allArts.jsp" >
                         <div class="card">
                             <div class="card-body text-center">
-                                <i class="fas fa-book-open fa-3x text-danger"></i><br>
+                                <i class="fa-solid fa-palette fa-3x text-danger"></i><br>
                                 <h4>All Arts</h4>
                             </div>
 
