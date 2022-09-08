@@ -53,8 +53,8 @@
                         <td>${art.status} </td>
 
                         <td>
-                            <a href="" class="btn btn-sm btn-primary"><i class=" fas fa-edit"></i> Edit </a>
-                            <a href="" class="btn btn-sm btn-danger"><i class=" fas fa-trash-alt"></i> Delete </a>
+                            <a href="edit?id=<c:out value='${art.artID}' />"  class="btn btn-sm btn-primary"><i class=" fas fa-edit"></i> Edit </a>
+                            <a href="delete?id=<c:out value='${art.artID}' />"  class="btn btn-sm btn-danger"><i class=" fas fa-trash-alt"></i> Delete </a>
                         </td>
                     </tr>
                 </c:forEach>

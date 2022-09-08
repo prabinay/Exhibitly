@@ -35,7 +35,7 @@ public class ArtDetails {
     }
 
     public ArtDetails(String artName, String artistName, String price, String artCategory, String status, String photoName, String email) {
-   
+
         this.artName = artName;
         this.artistName = artistName;
         this.price = price;
@@ -44,7 +44,17 @@ public class ArtDetails {
         this.photoName = photoName;
         this.email = email;
     }
-    
+
+    public ArtDetails(int id, String artName, String artistName, String price, String categories, String status, String photo) {
+        this.artID = id;
+        this.artName = artName;
+        this.artistName = artistName;
+        this.price = price;
+        this.artCategory = categories;
+        this.status = status;
+        this.photoName = photo;
+
+    }
 
     public int getArtID() {
         return artID;

@@ -35,6 +35,8 @@
     <servlet-mapping>
         <servlet-name>ArtCRUDServlet</servlet-name>
         <url-pattern>/ArtCRUDServlet</url-pattern>
+                <url-pattern>/admin/edit</url-pattern>
+                 <url-pattern>/admin/delete</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>
