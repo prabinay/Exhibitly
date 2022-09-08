@@ -14,14 +14,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home: User</title>
+        <%@include file="admin/allCss.jsp"%>
     </head>
     <body>
-        <h1>Hello User!</h1>
+      <%@include file="admin/navbar.jsp"%>      
     <c:if test="${not empty userobj}">
         <h1>name:${userobj.name}</h1>
         <h1>Email:${userobj.email}</h1>
   
     </c:if>
     
+    
+    
+        
+        
+         <%@include file="admin/footer.jsp"%> 
 </body>
 </html>
