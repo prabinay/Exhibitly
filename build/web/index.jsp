@@ -80,6 +80,7 @@
                 </div>
                 
             </div>
+            </div>
             
             <div class="container" >
             <h3 class="text-center">Abstract</h3>

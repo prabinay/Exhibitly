@@ -20,6 +20,10 @@
         <servlet-name>logoutServlet</servlet-name>
         <servlet-class>com.servlet.logoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>userHomeServlet</servlet-name>
+        <servlet-class>com.user.servlet.userHomeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -35,12 +39,16 @@
     <servlet-mapping>
         <servlet-name>ArtCRUDServlet</servlet-name>
         <url-pattern>/ArtCRUDServlet</url-pattern>
-                <url-pattern>/admin/edit</url-pattern>
-                 <url-pattern>/admin/delete</url-pattern>
+        <url-pattern>/admin/edit</url-pattern>
+        <url-pattern>/admin/delete</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>
         <url-pattern>/logoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userHomeServlet</servlet-name>
+        <url-pattern>/userHomeServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -48,7 +48,7 @@
                         <td><img src="../img/arts/${art.photoName}"  style=" width:70px; height:70px;"></td>
                         <td>${art.artName} </td>
                         <td>${art.artistName} </td>
-                        <td>${art.price} </td>
+                        <td>$${art.price} </td>
                         <td>${art.artCategory} </td>
                         <td>${art.status} </td>
 
