@@ -67,6 +67,10 @@
             </tbody>
         </table>
         
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
+        </div>
+        
         <div style="margin-top:285px;">
             <%@include file="footer.jsp"%>
         </div>

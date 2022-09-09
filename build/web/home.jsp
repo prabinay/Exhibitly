@@ -22,6 +22,23 @@
             <h1>name:${userobj.name}</h1>
             <h1>Email:${userobj.email}</h1>-->
     
+    <!--showing products from DB-->
+    <div class="row">
+        <!--show categories-->
+        <div class="col-md-2">
+            
+        </div>
+        <!--show all products-->
+        <div class="col-md-8">
+            
+        </div>
+    </div>
+    <%
+        
+        %>
+    
+    
+    
     
             <div class="container" >
                 <h3 class="text-center">Landscapes</h3>

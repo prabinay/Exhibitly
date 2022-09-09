@@ -22,7 +22,7 @@
         <c:if test="${empty userobj}">
             <c:redirect url="../login.jsp" />
         </c:if>
-        
+
         <h3 class="text-center">Hello Admin</h3>
 
         <table class="table ">
@@ -38,8 +38,8 @@
                     <th scope="col">Action</th>
                 </tr>
             </thead>
-            
-            
+
+
             <tbody>
 
                 <c:forEach var="art" items="${artlist}">
@@ -61,6 +61,9 @@
 
             </tbody>
         </table>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
+        </div>
 
         <div style="margin-top:220px;">
             <%@include file="footer.jsp"%>

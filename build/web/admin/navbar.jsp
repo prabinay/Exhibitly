@@ -13,7 +13,7 @@
 <div class="container-fluid p-3">
     <div class="row">
         <div class="col-md-3 text-success">
-            <h3> Exhibitly</h3>      
+            <h3><i class="fa-brands fa-artstation"></i> Exhibitly</h3>      
         </div>
         <div class="col-md-6">
             <form class="d-flex" role="search">
@@ -40,8 +40,8 @@
         </div>
 
     </div>
-</div>
 
+</div>
 
 
 <!-- Button trigger modal -->
