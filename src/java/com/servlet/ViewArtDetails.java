@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-package com.user.servlet;
+package com.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -18,9 +18,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import com.dao.HomeArtdao;
 import com.model.ArtDetails;
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.annotation.WebServlet;
 import java.util.List;
-public class userHomeServlet extends HttpServlet {
- 
+
+
+
+public class ViewArtDetails extends HttpServlet {
+
     private HomeArtdao homearts;
 
     @Override
@@ -31,12 +35,17 @@ public class userHomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        List<ArtDetails> artlist = homearts.selectArts();
+        List<ArtDetails> artlist = homearts.viewArtDetails();
         System.out.println("artlist is" + artlist);
-        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("viewDetails.jsp");
         request.setAttribute("artlist", artlist);
         rd.forward(request, response);
     }
 
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+    }
 
 }

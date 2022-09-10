@@ -20,37 +20,40 @@
 
         <div class="container">
             <div class="row p-5">
-                <div class="col-md-6 text-center p-5 border bg-white">
-                    <img src="img/arts/starrynight.jpg" style="height:300px; width:300px;"><br>
-                    <h4>Art Name</h4>
-                    <h4>ArtistName</h4>
-                    <h4>Catgory: </h4>
-                </div>
 
-                <div class="col-md-6 text-center p-5 border bg-white">
-                    <h2>Starry Night</h2>
-                    <div class="row">
-                        <div class="col-md-4 text-danger text-center p-2">
-                            <i class="fas fa-money-bill-wave fa-2x"></i>
-                            <p>Cash on Delivery</p>
-                        </div>
-                        <div class="col-md-4 text-danger text-center p-2">
-                            <i class="fas fa-undo-alt fa-2x"></i>
-                            <p>Return Available</p>
-                        </div>
-                        <div class="col-md-4 text-danger text-center p-2">
-                            <i class="fas fa-truck-moving fa-2x"></i>s
-                            <p> Free Shipping</p>
-                        </div>
+                <c:forEach var="art" items="${artlist}">
+
+                    <div class="col-md-6 text-center p-5 border bg-white">
+                        <img src="img/arts/${art.photoName}" style="height:300px; width:300px;"><br>
+                        <h4>Art Name : ${art.artName}</h4>
+                        <h4>Artist Name : ${art.artistName}</h4>
+                        <h4>Category : ${art.artCategory}</h4>
                     </div>
-                    <div class ="col">
 
-                        <a href=""class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
-                        <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>100</a>
-                    </div> 
+                    <div class="col-md-6 text-center p-5 border bg-white">
+                        <h2>${art.artName}</h2>
+                        <div class="row">
+                            <div class="col-md-4 text-danger text-center p-2">
+                                <i class="fas fa-money-bill-wave fa-2x"></i>
+                                <p>Cash on Delivery</p>
+                            </div>
+                            <div class="col-md-4 text-danger text-center p-2">
+                                <i class="fas fa-undo-alt fa-2x"></i>
+                                <p>Return Available</p>
+                            </div>
+                            <div class="col-md-4 text-danger text-center p-2">
+                                <i class="fas fa-truck-moving fa-2x"></i>s
+                                <p> Free Shipping</p>
+                            </div>
+                        </div>
+                        <div class ="col">
+
+                            <a href=""class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
+                            <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${art.price}</a>
+                        </div> 
+                    </div>
                 </div>
-            </div>
-
+            </c:forEach>   
 
         </div>
     </body>

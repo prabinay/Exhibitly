@@ -40,78 +40,36 @@
 
         <!<!-- Landscapes section starts -->
         <div class="container" >
-            <h3 class="text-center">Landscapes</h3>
+            <h3 class="text-center">Available Arts</h3><br>
             <div class="row">
-                <div class="col-md-3">
+                <c:forEach var="art" items="${artlist}">
+                    <div class="col-md-3 p-1">
 
-                    <c:forEach var="art" items="${artlist}">
+
                         <div class="card">
                             <div class="card-body text-center">
-                                <img alt="" src="img/arts/${art.photoName}" style="
+                                <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" style="
                                      width:180px; height:150px" class="img-thumblin">
-                                <p> <c:out value="${art.artName}"/></p>
-                                <p>${art.artistName} fdhfg</p>
-                                <p>${art.artCategory}</p>
+                                <p>${art.artName}<br>
+                                    ${art.artistName} <br>
+                                    ${art.artCategory}</p>
                                 <div class="col">
-                                    <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
-                                    <a href="viewDetails.jsp" class="btn btn-success btn-sm ml-1"> View Details</a>
-                                    <a href="" class="btn btn-danger btn-sm ml-1"> ${art.price}</a>
+                                    <a href="" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i></a>
+                                    <a href="ViewArtDetails" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                    <a  class="btn btn-danger btn-sm ml-1"> <i class="fas fa-dollar-sign"></i>${art.price}</a>
                                 </div>
                             </div>
                         </div>
 
-                    </c:forEach>
-                </div>
 
-            </div>
-        </div>
-
-        <div class="container" >
-            <h3 class="text-center">Portrait</h3>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img alt="" src="img/arts/starrynight.jpg" style="
-                                 width:180px; height:150px" class="img-thumblin">
-                            <p> Starry Nights</p>
-                            <p>Vincent Van gogh </p>
-                            <p>Categories: Landscape</p>
-                            <div class="col">
-                                <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
-                                <a href="viewDetails.jsp" class="btn btn-success btn-sm ml-1"> View Details</a>
-                                <a href="" class="btn btn-danger btn-sm ml-1"> $599</a>
-                            </div>
-                        </div>
                     </div>
-
-                </div>
-
+                </c:forEach>
             </div>
         </div>
 
-        <div class="container" >
-            <h3 class="text-center">Abstract</h3>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img alt="" src="img/arts/starrynight.jpg" style="
-                                 width:180px; height:150px" class="img-thumblin">
-                            <p> Starry Nights</p>
-                            <p>Vincent Van gogh </p>
-                            <p>Categories: Landscape</p>
-                            <div class="col">
-                                <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
-                                <a href="" class="btn btn-success btn-sm ml-1"> View Details</a>
-                                <a href="" class="btn btn-danger btn-sm ml-1"> $599</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
+
+
 
         <%@include file="all_components/footer.jsp"%>  
     </body>

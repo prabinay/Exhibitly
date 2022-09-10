@@ -50,8 +50,8 @@ public class loginServlet extends HttpServlet {
                     session.setAttribute("failed", "Email & Password Invalid");
                     response.sendRedirect("login.jsp");
                 }
-
-                response.sendRedirect("home.jsp");
+           
+//                response.sendRedirect("home.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

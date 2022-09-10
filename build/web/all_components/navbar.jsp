@@ -18,8 +18,22 @@
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-
+        
         <div class="col-md-3">
+        <c:if test="${not empty userobj}" >
+<!--                <a href="login.jsp" class="btn btn-success"> 
+                    <i class="fas fa-user"></i>${userobj.name} </a> 
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="../logout" class="btn btn-primary text-white">
+                    <i class="fas fa-sign-in-alt"></i>Logout</a>
+                </c:if>
+
+            <c:if test="${empty userobj}" >
+                <a href="../login.jsp" class="btn btn-success"> 
+                    <i class="fas fa-sign-in-alt"></i>Login </a> 
+                <a href="../register.jsp" class="btn btn-primary text-white">
+                    <i class="fas fa-user-plus"></i>Register</a>
+                </c:if>-->
+        
             <a href="login.jsp" class="btn btn-success"> Login </a> 
             <a href="register.jsp" class="btn btn-primary text-white"> Register</a>
         </div>
@@ -36,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Landscape</a>

@@ -28,6 +28,10 @@
         <servlet-name>IndexServlet</servlet-name>
         <servlet-class>com.servlet.IndexServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewArtDetails</servlet-name>
+        <servlet-class>com.servlet.ViewArtDetails</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -56,7 +60,12 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>IndexServlet</servlet-name>
-        <url-pattern>/IndexServlet</url-pattern>
+        <url-pattern/>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewArtDetails</servlet-name>
+        <url-pattern>/ViewArtDetails</url-pattern>
+        
     </servlet-mapping>
     <session-config>
         <session-timeout>
