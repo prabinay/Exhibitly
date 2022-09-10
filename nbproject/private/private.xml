@@ -10,6 +10,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/AllArtsDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AllArtsServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/ViewArtDetails.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/register.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
@@ -17,6 +18,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
@@ -30,6 +32,10 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDaoImpl.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/user/servlet/userHomeServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/portrait.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/abstract.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/ArtCRUDServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/conf/MANIFEST.MF</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
@@ -37,6 +43,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/orders.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AddArtServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/css/style.css</file>

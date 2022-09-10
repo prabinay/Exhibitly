@@ -59,14 +59,14 @@
                     <a class="nav-link active" aria-current="page" href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Landscape</a>
+                    <a class="nav-link active" href="landscape.jsp">Landscape</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Portrait</a>
+                    <a class="nav-link active" href="portrait.jsp">Portrait</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active ">Abstract</a>
+                    <a class="nav-link active " href="abstract.jsp">Abstract</a>
                 </li>
             </ul>
             <!--            <form class="d-flex" role="search">
