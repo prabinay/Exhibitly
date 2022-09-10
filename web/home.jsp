@@ -14,10 +14,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home: User</title>
-        <%@include file="admin/allCss.jsp"%>
+        <%@include file="all_components/allCss.jsp"%>
     </head>
     <body>
-        <%@include file="admin/navbar.jsp"%>      
+        <%@include file="all_components/navbar.jsp"%>      
 <!--        <c:if test="${not empty userobj}">
             <h1>name:${userobj.name}</h1>
             <h1>Email:${userobj.email}</h1>-->
@@ -41,7 +41,7 @@
     
     
             <div class="container" >
-                <h3 class="text-center">Landscapes</h3>
+                <h3 class="text-center">Buy an Art</h3>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
@@ -92,6 +92,6 @@
 
 
 
-        <%@include file="admin/footer.jsp"%> 
+        <%@include file="all_components/footer.jsp"%> 
     </body>
 </html>

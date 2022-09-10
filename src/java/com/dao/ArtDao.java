@@ -17,7 +17,7 @@ public interface ArtDao {
 
     public List<ArtDetails> getAllArts();
     
-    
+    public List<ArtDetails> getNewArt();
     
  
 

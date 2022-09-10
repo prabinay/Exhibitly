@@ -10,7 +10,7 @@
 <div class="container-fluid p-3">
     <div class="row">
         <div class="col-md-3 text-success">
-            <h3> Exhibitly</h3>      
+            <h3> <i class="fa-brands fa-artstation"></i> Exhibitly</h3>      
         </div>
         <div class="col-md-6">
             <form class="d-flex" role="search">
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Landscape</a>
@@ -49,10 +49,10 @@
                     <a class="nav-link active ">Abstract</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
+<!--            <form class="d-flex" role="search">
                 <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-cog"></i>Setting</button>
                 <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit"><i class="fas fa-phone-square-alt"></i>Contact Us</button>
-            </form>
+            </form>-->
         </div>
     </div>
 </nav>

@@ -79,6 +79,41 @@ public class ArtDaoImpl implements ArtDao{
         }
         return list;
     }
+
+    @Override
+    public List<ArtDetails> getNewArt() {
+       List<ArtDetails> list = new ArrayList<ArtDetails>();
+       ArtDetails ad= null;
+        try{
+            String sql="select * from  art_details where bookCategory =? and status =?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ps.setString(1,"Landscape");
+            ps.setString(2, "Active");
+            
+            ResultSet rs = ps.executeQuery();
+            int i=1;
+            
+            while(rs.next() && 1<=4){
+                ad = new ArtDetails();
+                ad.setArtID(rs.getInt(1));
+                ad.setArtName(rs.getString(2));
+                ad.setArtistName(rs.getString(3));
+                ad.setPrice(rs.getString(4));
+                ad.setArtCategory(rs.getString(5));
+                ad.setStatus(rs.getString(6));
+                ad.setPhotoName(rs.getString(7));
+                ad.setEmail(rs.getString(8));
+                list.add(ad);
+                i++;
+            }
+            
+            
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return list;
+    }
     
     
 }

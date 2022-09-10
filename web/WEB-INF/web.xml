@@ -24,6 +24,10 @@
         <servlet-name>userHomeServlet</servlet-name>
         <servlet-class>com.user.servlet.userHomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.servlet.IndexServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -49,6 +53,10 @@
     <servlet-mapping>
         <servlet-name>userHomeServlet</servlet-name>
         <url-pattern>/userHomeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/IndexServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

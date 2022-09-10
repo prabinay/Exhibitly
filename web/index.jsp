@@ -29,37 +29,44 @@
     </head>
     <body style="background-color: #f7f7f7;">
         <%@include file="all_components/navbar.jsp"%>
-        
-        <div class="container-fluid back-img">
-            <h2 class="text-center text-danger">Online Art gallery</h2>
+
+        <div class="container-fluid back-img p-5" style=" ">
+            <h1 class="text-left text-danger">Creative<br> and Best Arts</h1>
+
+            <h3>“Art for all, buy art relax your life”</h3> 
         </div>
-        
-        
-        
+
+
+
         <!<!-- Landscapes section starts -->
         <div class="container" >
             <h3 class="text-center">Landscapes</h3>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img alt="" src="img/arts/starrynight.jpg" style="
-                                 width:180px; height:150px" class="img-thumblin">
-                            <p> Starry Nights</p>
-                            <p>Vincent Van gogh </p>
-                            <p>Categories: Landscape</p>
-                            <div class="col">
-                                <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
-                                <a href="" class="btn btn-success btn-sm ml-1"> View Details</a>
-                                <a href="" class="btn btn-danger btn-sm ml-1"> $599</a>
+
+                    <c:forEach var="art" items="${artlist}">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img alt="" src="img/arts/${art.photoName}" style="
+                                     width:180px; height:150px" class="img-thumblin">
+                                <p> <c:out value="${art.artName}"/></p>
+                                <p>${art.artistName} fdhfg</p>
+                                <p>${art.artCategory}</p>
+                                <div class="col">
+                                    <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
+                                    <a href="viewDetails.jsp" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                    <a href="" class="btn btn-danger btn-sm ml-1"> ${art.price}</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                    </c:forEach>
                 </div>
-                
+
             </div>
-            
-            <div class="container" >
+        </div>
+
+        <div class="container" >
             <h3 class="text-center">Portrait</h3>
             <div class="row">
                 <div class="col-md-3">
@@ -72,17 +79,18 @@
                             <p>Categories: Landscape</p>
                             <div class="col">
                                 <a href="" class="btn btn-danger btn-sm ml-2"> Add Cart</a>
-                                <a href="" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                <a href="viewDetails.jsp" class="btn btn-success btn-sm ml-1"> View Details</a>
                                 <a href="" class="btn btn-danger btn-sm ml-1"> $599</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                
+
             </div>
-            </div>
-            
-            <div class="container" >
+        </div>
+
+        <div class="container" >
             <h3 class="text-center">Abstract</h3>
             <div class="row">
                 <div class="col-md-3">
@@ -101,10 +109,10 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-            
-          <%@include file="all_components/footer.jsp"%>  
+
+        <%@include file="all_components/footer.jsp"%>  
     </body>
 </html>

@@ -24,6 +24,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/home.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ProductDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/login.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
@@ -37,7 +38,9 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AddArtServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/css/style.css</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
         </group>

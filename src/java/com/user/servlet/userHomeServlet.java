@@ -29,25 +29,25 @@ import java.util.List;
  */
 public class userHomeServlet extends HttpServlet {
 
-    HomeArtdao homearts;
-
-    @Override
-    public void init() {
-        homearts = new HomeArtdao();
-    }
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-    }
-
-    protected void doGets(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        List<ArtDetails> artlist = homearts.selectAllArts();
-        
-        RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
-        request.setAttribute("arts", artlist);
-        rd.forward(request, response);
-    }
+//    HomeArtdao homearts;
+//
+//    @Override
+//    public void init() {
+//        homearts = new HomeArtdao();
+//    }
+//
+//    @Override
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//    }
+//
+//    protected void doGets(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//        List<ArtDetails> artlist = homearts.selectAllArts();
+//        
+//        RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+//        request.setAttribute("arts", artlist);
+//        rd.forward(request, response);
+//    }
 
 }
