@@ -21,17 +21,15 @@
         <div class="container">
             <div class="row p-5">
 
-                <c:forEach var="art" items="${artlist}">
-
                     <div class="col-md-6 text-center p-5 border bg-white">
-                        <img src="img/arts/${art.photoName}" style="height:300px; width:300px;"><br>
-                        <h4>Art Name : ${art.artName}</h4>
-                        <h4>Artist Name : ${art.artistName}</h4>
-                        <h4>Category : ${art.artCategory}</h4>
+                        <img src="img/arts/${artlist.photoName}" style="height:300px; width:300px;"><br>
+                        <h4>Art Name : ${artlist.artName}</h4>
+                        <h4>Artist Name : ${artlist.artistName}</h4>
+                        <h4>Category : ${artlist.artCategory}</h4>
                     </div>
 
                     <div class="col-md-6 text-center p-5 border bg-white">
-                        <h2>${art.artName}</h2>
+                        <h2>${artlist.artName}</h2>
                         <div class="row">
                             <div class="col-md-4 text-danger text-center p-2">
                                 <i class="fas fa-money-bill-wave fa-2x"></i>
@@ -49,11 +47,11 @@
                         <div class ="col">
 
                             <a href=""class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
-                            <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${art.price}</a>
+                            <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${artlist.price}</a>
                         </div> 
                     </div>
                 </div>
-            </c:forEach>   
+  
 
         </div>
     </body>

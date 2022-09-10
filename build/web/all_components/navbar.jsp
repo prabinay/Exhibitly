@@ -3,9 +3,12 @@
     Created on : Sep 4, 2022, 1:08:16 AM
     Author     : Prab1n
 --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page  isELIgnored="false"%>
+
 
 <div class="container-fluid" style="height: 10px;background-color: #303f9f">
-    
+
 </div>
 <div class="container-fluid p-3">
     <div class="row">
@@ -13,30 +16,33 @@
             <h3> <i class="fa-brands fa-artstation"></i> Exhibitly</h3>      
         </div>
         <div class="col-md-6">
-            <form class="d-flex" role="search">
+            <form class="d-flex" style="width:400px;"role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
         
-        <div class="col-md-3">
-        <c:if test="${not empty userobj}" >
-<!--                <a href="login.jsp" class="btn btn-success"> 
-                    <i class="fas fa-user"></i>${userobj.name} </a> 
-                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="../logout" class="btn btn-primary text-white">
-                    <i class="fas fa-sign-in-alt"></i>Logout</a>
-                </c:if>
-
-            <c:if test="${empty userobj}" >
-                <a href="../login.jsp" class="btn btn-success"> 
-                    <i class="fas fa-sign-in-alt"></i>Login </a> 
-                <a href="../register.jsp" class="btn btn-primary text-white">
-                    <i class="fas fa-user-plus"></i>Register</a>
-                </c:if>-->
         
-            <a href="login.jsp" class="btn btn-success"> Login </a> 
-            <a href="register.jsp" class="btn btn-primary text-white"> Register</a>
-        </div>
+        
+
+        <c:if test="${not empty userobj}">
+            <div class="col-md-3">
+
+                <!--CART-->
+                <a href="cart.jsp" class=""><i class="fas fa-cart-plus fa-2x"></i> </a>
+
+                <a href="" class="btn btn-success"  .> <i class="fas fa-user"></i> ${userobj.name} </a> 
+                <a href="logout" class="btn btn-primary text-white"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </c:if>  
+
+        <c:if test="${ empty userobj}">
+            <div class="col-md-3">
+
+                <a href="login.jsp" class="btn btn-success"> Login </a> 
+                <a href="register.jsp" class="btn btn-primary text-white"> Register</a>
+            </div>
+        </c:if> 
 
     </div>
 </div>
@@ -50,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Landscape</a>
@@ -63,10 +69,10 @@
                     <a class="nav-link active ">Abstract</a>
                 </li>
             </ul>
-<!--            <form class="d-flex" role="search">
-                <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-cog"></i>Setting</button>
-                <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit"><i class="fas fa-phone-square-alt"></i>Contact Us</button>
-            </form>-->
+            <!--            <form class="d-flex" role="search">
+                            <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-cog"></i>Setting</button>
+                            <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit"><i class="fas fa-phone-square-alt"></i>Contact Us</button>
+                        </form>-->
         </div>
     </div>
 </nav>

@@ -18,8 +18,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import com.dao.HomeArtdao;
 import com.model.ArtDetails;
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.annotation.WebServlet;
 import java.util.List;
 
+@WebServlet(name = "InexServlet", urlPatterns = {"/index"})
 public class IndexServlet extends HttpServlet {
 
     private HomeArtdao homearts;

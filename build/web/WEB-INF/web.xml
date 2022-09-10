@@ -60,6 +60,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>IndexServlet</servlet-name>
+       
         <url-pattern/>
     </servlet-mapping>
     <servlet-mapping>

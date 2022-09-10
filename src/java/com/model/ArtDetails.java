@@ -56,6 +56,20 @@ public class ArtDetails {
 
     }
 
+    public ArtDetails(int id, String photo, String aname, String atname, String category, String price) {
+        this.artID = id;
+
+        this.artName = aname;
+
+        this.artistName = atname;
+
+        this.price = price;
+
+        this.artCategory = category;
+
+        this.photoName = photo;
+    }
+
     public int getArtID() {
         return artID;
     }

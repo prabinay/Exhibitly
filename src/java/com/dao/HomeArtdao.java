@@ -31,7 +31,7 @@ public class HomeArtdao {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 ad = new ArtDetails();
-//                ad.setArtID(rs.getInt(1));
+                ad.setArtID(rs.getInt("artID"));
                 ad.setPhotoName(rs.getString("photo"));
                 ad.setArtName(rs.getString("artName"));
                 ad.setArtistName(rs.getString("artistName"));
@@ -49,8 +49,7 @@ public class HomeArtdao {
         }
         return homelist;
     }
-    
-    
+
     public List<ArtDetails> selectArts() {
 
         List<ArtDetails> homelist = new ArrayList<>();
@@ -70,9 +69,7 @@ public class HomeArtdao {
                 ad.setArtistName(rs.getString("artistName"));
                 ad.setArtCategory(rs.getString("artCategory"));
                 ad.setPrice(rs.getString("price"));
-//                ad.setStatus(rs.getString(6));
-//                ad.setPhotoName(rs.getString(7));
-//                ad.setEmail(rs.getString(8));
+                
                 homelist.add(ad);
 
             }
@@ -82,31 +79,37 @@ public class HomeArtdao {
         }
         return homelist;
     }
-    
-    public List<ArtDetails> viewArtDetails() {
 
-        List<ArtDetails> homelist = new ArrayList<>();
+    public ArtDetails viewArtDetails(int artID) {
+//
+        ArtDetails homelist = new ArtDetails();
         ArtDetails ad = null;
+        System.out.println(artID);
         
         try {
-            String sql = "select * from  art_details";
+            String sql = "select * from art_details where artID =?";
             Connection conn = DBconnect.getConn();
             PreparedStatement ps = conn.prepareStatement(sql);
-
+            
+            ps.setInt(1, artID);
             ResultSet rs = ps.executeQuery();
+           
+            
+            
             while (rs.next()) {
-                ad = new ArtDetails();
+//                ad = new ArtDetails();
 //                ad.setArtID(rs.getInt(1));
-                ad.setPhotoName(rs.getString("photo"));
-                ad.setArtName(rs.getString("artName"));
-                ad.setArtistName(rs.getString("artistName"));
-                ad.setArtCategory(rs.getString("artCategory"));
-                ad.setPrice(rs.getString("price"));
-//                ad.setStatus(rs.getString(6));
-//                ad.setPhotoName(rs.getString(7));
-//                ad.setEmail(rs.getString(8));
-                homelist.add(ad);
-                
+                int id= rs.getInt("artID");
+                String photo = rs.getString("photo");
+                String aname= rs.getString("artName");
+                String atname = rs.getString("artistName");
+                String category = rs.getString("artCategory");
+                String price = rs.getString("price");
+//   ad.setArtCategory(rs.getString("allCategory"));
+//                ad.setStatus(rs.getString("status"));
+//                ad.setEmail(rs.getString("email"));
+                homelist= (new ArtDetails(id,photo,aname,atname,category, price) );
+         
             }
 
         } catch (Exception e) {

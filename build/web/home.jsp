@@ -32,7 +32,7 @@
                         <div class="card">
                             <div class="card-body text-center">
                                 <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" style="
-                                     width:180px; height:150px" class="img-thumblin">
+                                     width:180px; height:200px" class="img-thumblin">
                                 <p>${art.artName}<br>
                                     ${art.artistName} <br>
                                     ${art.artCategory}</p>

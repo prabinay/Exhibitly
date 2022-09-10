@@ -21,8 +21,6 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.annotation.WebServlet;
 import java.util.List;
 
-
-
 public class ViewArtDetails extends HttpServlet {
 
     private HomeArtdao homearts;
@@ -35,8 +33,19 @@ public class ViewArtDetails extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        List<ArtDetails> artlist = homearts.viewArtDetails();
+
+        String artno = request.getParameter("id");
+        
+        System.out.println("artno is " +artno);
+        if(artno == null) {
+            artno = "" + 0;
+        }
+        
+        int artID =Integer.parseInt(artno);
+        
+        ArtDetails artlist = homearts.viewArtDetails(artID);
         System.out.println("artlist is" + artlist);
+         System.out.println("artlist Name is" + artlist.getArtName());
         RequestDispatcher rd = request.getRequestDispatcher("viewDetails.jsp");
         request.setAttribute("artlist", artlist);
         rd.forward(request, response);

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Sep 4, 2022, 1:08:56 AM
+    Document   : landscape.jsp
+    Created on : Sep 11, 2022, 3:13:33 AM
     Author     : Prab1n
 --%>
 
@@ -9,11 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title> Exhibitly</title>
-        <%@include file="all_components/allCss.jsp"%>
+        <title>Landscape Arts</title>
     </head>
     <body>
-        <%@include file="all_components/navbar.jsp"%>
+        <h1>Hello World!</h1>
     </body>
 </html>

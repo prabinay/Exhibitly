@@ -12,7 +12,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Exhibitly</title>
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
         <%@include file="all_components/allCss.jsp"%>
         <style type="text/css">
             .back-img{
@@ -49,13 +50,13 @@
                         <div class="card">
                             <div class="card-body text-center">
                                 <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" style="
-                                     width:180px; height:150px" class="img-thumblin">
+                                     width:200px; height:200px" class="img-thumblin">
                                 <p>${art.artName}<br>
                                     ${art.artistName} <br>
                                     ${art.artCategory}</p>
                                 <div class="col">
                                     <a href="" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i></a>
-                                    <a href="ViewArtDetails" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> View Details</a>
                                     <a  class="btn btn-danger btn-sm ml-1"> <i class="fas fa-dollar-sign"></i>${art.price}</a>
                                 </div>
                             </div>
