@@ -31,6 +31,17 @@
     <body style="background-color: #f7f7f7;">
         <%@include file="all_components/navbar.jsp"%>
 
+
+        <c:if test="${errorMessage != null}">
+            ${errorMessage}
+
+        </c:if>
+
+        <c:if test="${successMessage != null}">
+            ${successMessage}
+               
+        </c:if>
+
         <div class="container-fluid back-img p-5" style=" ">
             <h1 class="text-left text-danger">Creative<br> and Best Arts</h1>
 
@@ -55,7 +66,7 @@
                                     ${art.artistName} <br>
                                     ${art.artCategory}</p>
                                 <div class="col">
-                                    <a href="" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i></a>
+                                    <a href="cart?action=addtocart&id=${art.artID}" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i>Add</a>
                                     <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> View Details</a>
                                     <a  class="btn btn-danger btn-sm ml-1"> <i class="fas fa-dollar-sign"></i>${art.price}</a>
                                 </div>

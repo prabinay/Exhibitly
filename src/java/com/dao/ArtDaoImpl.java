@@ -23,6 +23,7 @@ public class ArtDaoImpl implements ArtDao{
         super();
         this.conn = conn;
     }
+
     
     @Override
     public boolean addArts(ArtDetails ad){

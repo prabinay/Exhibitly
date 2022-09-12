@@ -13,10 +13,48 @@ public class Cart {
     private int cartID;
     private int artID;
     private int userID;
-    private String artName;
-    private String artistName;
+//    private String artName;
+//    private String artistName;
     private Double price;
-    private Double totalPrice;
+//;
+//    private Double totalPrice;
+
+    private int quantity;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public Cart() {
+
+    }
+
+    public Cart(int cartID, int artID, int userID, int quantity, Double price) {
+        this.cartID = cartID;
+        this.artID = artID;
+        this.userID = userID;
+//        this.artName = artName;
+//        this.artistName = artistName;
+        this.quantity = quantity;
+        this.price = price;
+//        this.totalPrice = totalPrice;
+    }
+
+    public Cart( int artID, int userID, int quantity, Double price) {
+
+        this.artID = artID;
+        this.userID = userID;
+//        this.artName = artName;
+//        this.artistName = artistName;
+        this.quantity = quantity;
+        this.price = price;
+//        this.totalPrice = totalPrice;
+
+    }
 
     public int getCartID() {
         return cartID;
@@ -41,22 +79,22 @@ public class Cart {
     public void setUserID(int userID) {
         this.userID = userID;
     }
-
-    public String getArtName() {
-        return artName;
-    }
-
-    public void setArtName(String artName) {
-        this.artName = artName;
-    }
-
-    public String getArtistName() {
-        return artistName;
-    }
-
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
-    }
+//
+//    public String getArtName() {
+//        return artName;
+//    }
+//
+//    public void setArtName(String artName) {
+//        this.artName = artName;
+//    }
+//
+//    public String getArtistName() {
+//        return artistName;
+//    }
+//
+//    public void setArtistName(String artistName) {
+//        this.artistName = artistName;
+//    }
 
     public Double getPrice() {
         return price;
@@ -66,12 +104,11 @@ public class Cart {
         this.price = price;
     }
 
-    public Double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(Double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
+//    public Double getTotalPrice() {
+//        return totalPrice;
+//    }
+//
+//    public void setTotalPrice(Double totalPrice) {
+//        this.totalPrice = totalPrice;
+//    }
 }

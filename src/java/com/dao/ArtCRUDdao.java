@@ -23,7 +23,6 @@ import java.util.logging.Level;
  */
 public class ArtCRUDdao {
 
-
     private static final String SELECT_ART_BY_ID = "select artID, artName,artistName,price,artCategory,"
             + "status,photo from art_details where artID =?";
 
@@ -31,10 +30,8 @@ public class ArtCRUDdao {
     private static final String EDIT_ARTS_SQL = "update art_details set artName = ?,artistName= ?, price =? , artCategory=?, "
             + "status=?, photo=?, email=? where id = ?;";
 
-
     public ArtCRUDdao() {
     }
-
 
     public static ArtDetails selectArt(int id) throws ClassNotFoundException {
         ArtDetails art = null;
@@ -58,7 +55,7 @@ public class ArtCRUDdao {
                 art = new ArtDetails(id, artname, artistname, price, artcategory, status, photoname);
             }
         } catch (SQLException e) {
-            
+
         }
         return art;
     }
@@ -104,4 +101,3 @@ public class ArtCRUDdao {
         }
     }
 }
-

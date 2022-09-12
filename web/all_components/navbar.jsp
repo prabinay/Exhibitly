@@ -29,7 +29,7 @@
             <div class="col-md-3">
 
                 <!--CART-->
-                <a href="cart.jsp" class=""><i class="fas fa-cart-plus fa-2x"></i> </a>
+                <a href="cart" class=""><i class="fas fa-cart-plus fa-2x"></i> </a>
 
                 <a href="" class="btn btn-success"  .> <i class="fas fa-user"></i> ${userobj.name} </a> 
                 <a href="logout" class="btn btn-primary text-white"><i class="fas fa-sign-out-alt"></i> Logout</a>

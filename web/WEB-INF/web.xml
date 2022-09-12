@@ -32,6 +32,10 @@
         <servlet-name>ViewArtDetails</servlet-name>
         <servlet-class>com.servlet.ViewArtDetails</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.servlet.CartServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -60,13 +64,16 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>IndexServlet</servlet-name>
-       
         <url-pattern/>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ViewArtDetails</servlet-name>
         <url-pattern>/ViewArtDetails</url-pattern>
-        
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/CartServlet</url-pattern>
+        <url-pattern>/remove</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

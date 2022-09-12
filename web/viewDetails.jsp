@@ -18,6 +18,15 @@
     <body style="background-color: #f0f1f2;">
         <%@include file="all_components/navbar.jsp"%>
 
+        <c:if test="${errorMessage != null}">
+            ${errorMessage}
+
+        </c:if>
+
+        <c:if test="${successMessage != null}">
+            ${successMessage}
+               
+        </c:if>
         <div class="container">
             <div class="row p-5">
 
@@ -46,7 +55,7 @@
                         </div>
                         <div class ="col">
 
-                            <a href=""class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
+                            <a href="cart?action=addtocart&id=${artlist.artID}"class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
                             <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${artlist.price}</a>
                         </div> 
                     </div>

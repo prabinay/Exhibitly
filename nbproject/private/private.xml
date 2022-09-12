@@ -5,51 +5,53 @@
         <group>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/footer.jsp</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/registerServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/addArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/AllArtsDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AllArtsServlet.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/ViewArtDetails.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/register.jsp</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDaoImpl.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/user/servlet/userHomeServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/CartServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/admin/css/style.css</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/registerServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ProductDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/login.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDao.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDaoImpl.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/user/servlet/userHomeServlet.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/portrait.jsp</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/abstract.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/ArtCRUDServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/ArtDetails.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/orders.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AddArtServlet.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/index.jsp</file>
-            <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/admin/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>
         </group>
     </open-files>
 </project-private>
