@@ -36,7 +36,7 @@
                 <h3> Total Price: $723 </h3> <a class="mx-3 btn btn-primary" href="">Check Out </a>
             </div>
 
-                
+
 
             <table class="table table-loght">
                 <thead>
@@ -49,23 +49,22 @@
 
                 <tbody>
                     <c:forEach var="cartItem" items="${cartItemList}">
-                    <tr>
-                        <td>${cartItem.artID}</td>
-                        <td>${cartItem.userID}</td>
-                        <td>${cartItem.price}</td>
-                        <td>${cartItem.quantity}
-                        <!--                                <form action="" method="post" class="form-inline">
-                                                                    <input type="hidden" name="id" value="1" class="form-input">
-                                                                    <div class="form-group d-flex justify-content-between">
-                                                                        <a class="btn btn-sm btn-incre" href=""> <i class="fas fa-plus-square"></i> </a> 
-                                                                        <input type="text" name="quantity" class="form-control" value="1" readonly>
-                                
-                                                                        <a class="btn btn-sm btn-decre" href=""> <i class="fas fa-minus-square"></i> </a>
-                                                                    </div>
-                                                                </form>-->
-                        </td>
-                        <td><a href="remove?id=${cartItem.cartID}" class="btn btn-sm btn-danger" >Remove</td>
-                    </tr>
+                        <tr>
+                            <td>${cartItem.artID}</td>
+                            <td>${cartItem.userID}</td>
+                            <td>${cartItem.price}</td>
+                            <td>${cartItem.quantity}
+                                <!--  <form action="" method="post" class="form-inline">
+                                           <input type="hidden" name="id" value="1" class="form-input">
+                                            <div class="form-group d-flex justify-content-between">
+                                            <a class="btn btn-sm btn-incre" href=""> <i class="fas fa-plus-square"></i> </a> 
+                                                <input type="text" name="quantity" class="form-control" value="1" readonly>
+                                        <a class="btn btn-sm btn-decre" href=""> <i class="fas fa-minus-square"></i> </a>
+                                                 </div>
+                                        </form>-->
+                            </td>
+                            <td><a href="remove?id=${cartItem.cartID}" class="btn btn-sm btn-danger" >Remove</td>
+                        </tr>
                     </c:forEach>
                 </tbody>
             </table>

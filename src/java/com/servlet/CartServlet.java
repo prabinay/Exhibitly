@@ -119,7 +119,7 @@ public class CartServlet extends HttpServlet {
 //                RequestDispatcher dispatcher = request.getRequestDispatcher("cart");
 //                request.setAttribute("SuccessMessage", SuccessMessage);
 //                dispatcher.forward(request, response);
-                response.sendRedirect("cart");
+//                response.sendRedirect("cart");
             } else {
                 System.out.println("Couldnot delete cart item.");
             }

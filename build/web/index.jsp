@@ -33,13 +33,12 @@
 
 
         <c:if test="${errorMessage != null}">
-            ${errorMessage}
+            <h5 class="text-center text-danger">${errorMessage}</h5>
+        </c:if>       
 
-        </c:if>
 
         <c:if test="${successMessage != null}">
-            ${successMessage}
-               
+            <h5 class="text-center text-success">${successMessage}</h5>
         </c:if>
 
         <div class="container-fluid back-img p-5" style=" ">
@@ -78,11 +77,6 @@
                 </c:forEach>
             </div>
         </div>
-
-
-
-
-
         <%@include file="all_components/footer.jsp"%>  
     </body>
 </html>

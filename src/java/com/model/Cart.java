@@ -13,13 +13,28 @@ public class Cart {
     private int cartID;
     private int artID;
     private int userID;
-//    private String artName;
-//    private String artistName;
+    private String artName;
+    private String artistName;
     private Double price;
 //;
 //    private Double totalPrice;
 
     private int quantity;
+
+    public Cart(int cartID, int user_id, int art_id, int quantity, Double price,
+            String art_name, String artist_name, Double artprice) {
+        super();
+        this.cartID = cartID;
+        this.userID = user_id;
+        this.artID = art_id;
+        this.quantity = quantity;
+
+        this.artName = art_name;
+        this.artistName = artist_name;
+        this.price = artprice;
+        this.price = price;
+
+    }
 
     public int getQuantity() {
         return quantity;
@@ -44,7 +59,7 @@ public class Cart {
 //        this.totalPrice = totalPrice;
     }
 
-    public Cart( int artID, int userID, int quantity, Double price) {
+    public Cart(int artID, int userID, int quantity, Double price) {
 
         this.artID = artID;
         this.userID = userID;

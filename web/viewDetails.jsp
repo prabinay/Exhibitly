@@ -25,42 +25,42 @@
 
         <c:if test="${successMessage != null}">
             ${successMessage}
-               
+
         </c:if>
         <div class="container">
             <div class="row p-5">
 
-                    <div class="col-md-6 text-center p-5 border bg-white">
-                        <img src="img/arts/${artlist.photoName}" style="height:300px; width:300px;"><br>
-                        <h4>Art Name : ${artlist.artName}</h4>
-                        <h4>Artist Name : ${artlist.artistName}</h4>
-                        <h4>Category : ${artlist.artCategory}</h4>
-                    </div>
-
-                    <div class="col-md-6 text-center p-5 border bg-white">
-                        <h2>${artlist.artName}</h2>
-                        <div class="row">
-                            <div class="col-md-4 text-danger text-center p-2">
-                                <i class="fas fa-money-bill-wave fa-2x"></i>
-                                <p>Cash on Delivery</p>
-                            </div>
-                            <div class="col-md-4 text-danger text-center p-2">
-                                <i class="fas fa-undo-alt fa-2x"></i>
-                                <p>Return Available</p>
-                            </div>
-                            <div class="col-md-4 text-danger text-center p-2">
-                                <i class="fas fa-truck-moving fa-2x"></i>s
-                                <p> Free Shipping</p>
-                            </div>
-                        </div>
-                        <div class ="col">
-
-                            <a href="cart?action=addtocart&id=${artlist.artID}"class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
-                            <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${artlist.price}</a>
-                        </div> 
-                    </div>
+                <div class="col-md-6 text-center p-5 border bg-white">
+                    <img src="img/arts/${artlist.photoName}" style="height:300px; width:300px;"><br>
+                    <h4>Art Name : ${artlist.artName}</h4>
+                    <h4>Artist Name : ${artlist.artistName}</h4>
+                    <h4>Category : ${artlist.artCategory}</h4>
                 </div>
-  
+
+                <div class="col-md-6 text-center p-5 border bg-white">
+                    <h2>${artlist.artName}</h2>
+                    <div class="row">
+                        <div class="col-md-4 text-danger text-center p-2">
+                            <i class="fas fa-money-bill-wave fa-2x"></i>
+                            <p>Cash on Delivery</p>
+                        </div>
+                        <div class="col-md-4 text-danger text-center p-2">
+                            <i class="fas fa-undo-alt fa-2x"></i>
+                            <p>Return Available</p>
+                        </div>
+                        <div class="col-md-4 text-danger text-center p-2">
+                            <i class="fas fa-truck-moving fa-2x"></i>s
+                            <p> Free Shipping</p>
+                        </div>
+                    </div>
+                    <div class ="col">
+                        
+                        <a href="cart?action=addtocart&id=${artlist.artID}"class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
+                        <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${artlist.price}</a>
+                    </div> 
+                </div>
+            </div>
+
 
         </div>
     </body>
