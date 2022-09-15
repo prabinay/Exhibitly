@@ -59,7 +59,7 @@
                     <a class="nav-link active" aria-current="page" href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="landscape.jsp">Landscape</a>
+                    <a class="nav-link active" href="landscape">Landscape</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="portrait.jsp">Portrait</a>

@@ -13,6 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Exhibitly: login</title>
+        <meta name="google-signin-client_id" content="56995776500-gqqrusv5in95uggsg8ag0b6a6ckq5rn8.apps.googleusercontent.com" >
+        <script src="https://apis.google.com/js/platform.js"></script>
         <%@include file="all_components/allCss.jsp"%>
     </head>
     <body style="background-color: #f0f1f2">
@@ -29,7 +31,7 @@
                                 <h5 class="text-center text-danger">${failed}</h5>
                                 <c:remove var="failed" scope="session"/>
                             </c:if>
-                                
+
                             <c:if test="${not empty success}">
                                 <h5 class="text-center text-success">${success}</h5>
                                 <c:remove var="success" scope="session"/>
@@ -48,15 +50,23 @@
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" name="password" required="required" >
                                 </div>
-<!--                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                                </div>-->
+                                <!--                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                                                </div>-->
+
 
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary ">Login</button><br>
-                                    <a href="register.jsp"> Create Account</a>
+                                    <a href="register.jsp"> Create Account</a><br>
+                                    <!--google login-->
+
+                                    <p>Or</p>                                  
+                                    <div class="g-signin2 " style="padding-left: 100px;">
+                                    </div>
                                 </div>
+
+
                             </form> 
                         </div>
 

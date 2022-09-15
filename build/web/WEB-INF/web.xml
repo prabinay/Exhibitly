@@ -36,6 +36,10 @@
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>com.servlet.CartServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>IndexbyCategoryServlet</servlet-name>
+        <servlet-class>com.servlet.IndexbyCategoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -74,6 +78,11 @@
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
         <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IndexbyCategoryServlet</servlet-name>
+        <url-pattern>/IndexbyCategoryServlet</url-pattern>
+        <url-pattern>/landscape</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
