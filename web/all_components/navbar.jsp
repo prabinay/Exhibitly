@@ -62,11 +62,11 @@
                     <a class="nav-link active" href="landscape">Landscape</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="portrait.jsp">Portrait</a>
+                    <a class="nav-link active" href="portrait">Portrait</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active " href="abstract.jsp">Abstract</a>
+                    <a class="nav-link active " href="abstract">Abstract</a>
                 </li>
             </ul>
             <!--            <form class="d-flex" role="search">

@@ -38,7 +38,11 @@
     </servlet>
     <servlet>
         <servlet-name>IndexbyCategoryServlet</servlet-name>
-        <servlet-class>com.servlet.IndexbyCategoryServlet</servlet-class>
+        <servlet-class>com.servlet.LandscapeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PortraitServlet</servlet-name>
+        <servlet-class>com.servlet.PortraitServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
@@ -80,9 +84,14 @@
         <url-pattern>/remove</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>IndexbyCategoryServlet</servlet-name>
-        <url-pattern>/IndexbyCategoryServlet</url-pattern>
+        <servlet-name>LandscapeServlet</servlet-name>
+        <url-pattern>/LandscapeServlet</url-pattern>
         <url-pattern>/landscape</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PortraitServlet</servlet-name>
+        <url-pattern>/PortraitServlet</url-pattern>
+        <url-pattern>/portrait</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

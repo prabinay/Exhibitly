@@ -20,8 +20,8 @@ import java.util.List;
  *
  * @author Prab1n
  */
-@WebServlet(name = "IndexbyCategoryServlet", urlPatterns = {"/landscape"})
-public class IndexbyCategoryServlet extends HttpServlet {
+@WebServlet(name = "LandscapeServlet", urlPatterns= {"/landscape"})
+public class LandscapeServlet extends HttpServlet {
 
     private ViewbyCategoryDao arts;
 
@@ -33,17 +33,37 @@ public class IndexbyCategoryServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        List<ArtDetails> artlist = arts.selectHomeArts();
+       
+
+        List<ArtDetails> artlist = arts.selectLandscape();
+
         System.out.println("artlist is" + artlist);
         RequestDispatcher rd = request.getRequestDispatcher("landscape.jsp");
         request.setAttribute("artlist", artlist);
         rd.forward(request, response);
     }
+    
+//    public void selectPortrait(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//
+//        List<ArtDetails> artlist = arts.selectLandscape();
+//
+//        System.out.println("artlist is" + artlist);
+//        RequestDispatcher rd = request.getRequestDispatcher("portrait.jsp");
+//        request.setAttribute("artlist", artlist);
+//        rd.forward(request, response);
+//    }
+    
+//    public void selectAbstract(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//
+//        List<ArtDetails> artlist = arts.selectAbstract();
+//
+//        System.out.println("artlist is" + artlist);
+//        RequestDispatcher rd = request.getRequestDispatcher("abstract.jsp");
+//        request.setAttribute("artlist", artlist);
+//        rd.forward(request, response);
+//    }
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-    }
 
 }
