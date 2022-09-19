@@ -1,2 +1,2 @@
 # Exhibitly
-It is an online art gallery solely designed as a college project.
+It is an online art gallery solely designed as a college project. On progress now.
