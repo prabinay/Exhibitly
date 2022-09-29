@@ -23,8 +23,8 @@ public class CartDao {
 
     private static final String INSERT_INTO_CART = "INSERT INTO cart" + "  ( artID, userID, quantity, price) VALUES " + " (?, ?, ?, ?);";
     private static final String SELECT_ALL_CART = "select * from cart";
-    private static final String SELECT_CART_BY_ID = "select * from cart where id = ?";
-    private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.cartID where cart.user_id = ?";
+    private static final String SELECT_CART_BY_ID = "select * from cart where cartID = ?";
+    private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.cartID where cart.userID = ?";
 //    private static final String SELECT_CART_BY_USER_ID = "select * from cart where user_id=?";
     private static final String SELECT_CART_BY_BOOK_AND_USER_ID = "select * from cart where user_id = ? and book_id = ?";
     private static final String UPDATE_CART = "update cart set userID = ?,artID = ?, quantity = ?, price=? where cartID = ?;";
@@ -78,10 +78,10 @@ public class CartDao {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 int user_id = rs.getInt("userID");
-                int book_id = rs.getInt("artID");
+                int art_id = rs.getInt("artID");
                 int quantity = rs.getInt("quantity");
                 Double price = rs.getDouble("price");
-                cartItem = new Cart(id, user_id, book_id, quantity, price);
+                cartItem = new Cart(id, user_id, art_id, quantity, price);
             }
 
         } catch (Exception e) {
@@ -137,6 +137,8 @@ public class CartDao {
 //        }
 //        return userCart;
 //    }
+//    
+    
 //    
     public Cart selectCartByBookAndUserId(int book_id, int user_id) {
         Cart cartItem = new Cart();

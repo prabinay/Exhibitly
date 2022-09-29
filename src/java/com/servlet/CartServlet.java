@@ -112,6 +112,8 @@ public class CartServlet extends HttpServlet {
         User user = (User) session.getAttribute("userobj");
         int id = Integer.parseInt(request.getParameter("id"));
         Cart cartItem = cartdao.selectCart(id);
+        System.out.println("user is "+user.getId());
+//        System.out.println("cart is"+ cartItem);
         if (cartItem.getUserID() == user.getId()) {
             if (cartdao.deleteCartById(id)) {
 //                System.out.println("one Cart item Successfully Deleted.");

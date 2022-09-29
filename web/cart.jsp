@@ -63,7 +63,7 @@
                                                  </div>
                                         </form>-->
                             </td>
-                            <td><a href="remove?id=${cartItem.cartID}" class="btn btn-sm btn-danger" >Remove</td>
+                            <td><a href="cart?action=remove&id=${cartItem.cartID}" class="btn btn-sm btn-danger" >Remove</td>
                         </tr>
                     </c:forEach>
                 </tbody>
