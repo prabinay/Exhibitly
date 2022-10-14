@@ -45,5 +45,7 @@
                 </c:forEach>
             </div>
         </div>
+        
+        <%@include file="all_components/footer.jsp"%>  
     </body>
 </html>
