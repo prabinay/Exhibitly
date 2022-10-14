@@ -43,10 +43,10 @@
 
             <table class="table table-loght">
                 <thead>
-                <!--<th>Photo</th>-->
+                    <!--<th>Photo</th>-->
                 <th>Art Name</th>
                 <th>Artist Name</th>
-              
+
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Action</th>
@@ -55,10 +55,10 @@
                 <tbody>
                     <c:forEach var="cartItem" items="${cartItemList}">
                         <tr>
-                         
+
                             <td>${cartItem.artName}</td>
                             <td>${cartItem.artistName}</td>
-                            
+
                             <td>${cartItem.price}</td>
                             <td>${cartItem.quantity}
                                 <!--  <form action="" method="post" class="form-inline">
@@ -141,6 +141,8 @@
         </div>
 
     </div>
-    <%@include file="all_components/footer.jsp"%>      
+    <div style="margin-top:185px;">
+        <%@include file="all_components/footer.jsp"%>  
+    </div>
 </body>
 </html>

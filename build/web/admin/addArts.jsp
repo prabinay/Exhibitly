@@ -94,7 +94,7 @@
                                     </div>
 
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <button type="submit" class="btn btn-primary "><a class="nav-link active" aria-current="page" href="home.jsp">Home</a></button>
+                                    <!--<button type="submit" class="btn btn-primary "><a class="nav-link active" aria-current="page" href="home.jsp">Home</a></button>-->
                                     
                                 </form>
                         </div>
@@ -104,6 +104,6 @@
                 </div>
             </div>
         </div>
-
+<%@include file="footer.jsp"%>
     </body>
 </html>

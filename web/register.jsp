@@ -19,7 +19,7 @@
     <body style="background-color: #f0f1f2">
         <%@include file="all_components/navbar.jsp"%>
 
-        <div class="container p-2">
+        <div class="container p-3">
             <div class="row">
                 <div class="col-md-4 offset-md-4">
                     <div class="card">

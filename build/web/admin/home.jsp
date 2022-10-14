@@ -31,9 +31,9 @@
         <c:if test="${empty userobj}">
             <c:redirect url="../login.jsp" />
         </c:if>
-        
+        <h1 class="text-center p-5">Welcome Admin</h1>
         <div class="container ">
-            <div class="row p-5">
+            <div class="row p-2">
                 <div class="col-md-3">
                     <a href="addArts.jsp" >
                         <div class="card">
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div style="margin-top:275px;">
+        <div style="margin-top:205px;">
             <%@include file="footer.jsp"%>
         </div>
 

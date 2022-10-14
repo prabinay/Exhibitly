@@ -22,7 +22,7 @@
     <body style="background-color: #f0f1f2">
         <%@include file="all_components/navbar.jsp"%>
 
-        <div class="container p-2">
+        <div class="container p-5">
             <div class="row"> 
                 <div class="col-md-4 offset-md-4">
                     <div class="card">
@@ -75,7 +75,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <%--<%@include file="all_components/footer.jsp"%>--%>
-</body>
+
+
+        <div style="margin-top:75px;">
+            <%@include file="all_components/footer.jsp"%>
+        </div>
+    </body>
 </html>

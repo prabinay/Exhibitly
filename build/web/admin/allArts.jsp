@@ -23,7 +23,7 @@
             <c:redirect url="../login.jsp" />
         </c:if>
 
-        <h3 class="text-center">Hello Admin</h3>
+        <h3 class="text-center p-2">All Arts</h3>
 
         <table class="table ">
             <thead class="bg-primary">
@@ -61,11 +61,11 @@
 
             </tbody>
         </table>
-        <div class="text-center">
+<!--        <div class="text-center">
             <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
-        </div>
+        </div>-->
 
-        <div style="margin-top:220px;">
+        <div style="margin-top:50px;">
             <%@include file="footer.jsp"%>
         </div>
     </body>
