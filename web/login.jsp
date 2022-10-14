@@ -61,8 +61,8 @@
                                     <a href="register.jsp"> Create Account</a><br>
                                     <!--google login-->
 
-                                    <p>Or</p>                                  
-                                    <div class="g-signin2 " style="padding-left: 100px;">
+<!--                                    <p>Or</p>                                  
+                                    <div class="g-signin2 " style="padding-left: 100px;">-->
                                     </div>
                                 </div>
 

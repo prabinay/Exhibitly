@@ -48,7 +48,7 @@ public class Cart {
 
     }
 
-    public Cart(int cartID, int artID, int userID, int quantity, Double price) {
+    public Cart(int cartID,int userID, int artID,  int quantity, Double price) {
         this.cartID = cartID;
         this.artID = artID;
         this.userID = userID;
@@ -126,4 +126,32 @@ public class Cart {
 //    public void setTotalPrice(Double totalPrice) {
 //        this.totalPrice = totalPrice;
 //    }
+
+    /**
+     * @return the artName
+     */
+    public String getArtName() {
+        return artName;
+    }
+
+    /**
+     * @param artName the artName to set
+     */
+    public void setArtName(String artName) {
+        this.artName = artName;
+    }
+
+    /**
+     * @return the artistName
+     */
+    public String getArtistName() {
+        return artistName;
+    }
+
+    /**
+     * @param artistName the artistName to set
+     */
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
 }

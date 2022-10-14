@@ -24,9 +24,9 @@ public class CartDao {
     private static final String INSERT_INTO_CART = "INSERT INTO cart" + "  ( artID, userID, quantity, price) VALUES " + " (?, ?, ?, ?);";
     private static final String SELECT_ALL_CART = "select * from cart";
     private static final String SELECT_CART_BY_ID = "select * from cart where cartID = ?";
-    private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.cartID where cart.userID = ?";
+    private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.artID where cart.userID = ?";
 //    private static final String SELECT_CART_BY_USER_ID = "select * from cart where user_id=?";
-    private static final String SELECT_CART_BY_BOOK_AND_USER_ID = "select * from cart where user_id = ? and book_id = ?";
+    private static final String SELECT_CART_BY_BOOK_AND_USER_ID = "select * from cart where userID = ? and artID = ?";
     private static final String UPDATE_CART = "update cart set userID = ?,artID = ?, quantity = ?, price=? where cartID = ?;";
     private static final String DELETE_CART_ITEM = "delete from cart where cartID = ?;";
 

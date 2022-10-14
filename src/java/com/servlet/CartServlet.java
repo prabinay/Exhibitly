@@ -112,8 +112,8 @@ public class CartServlet extends HttpServlet {
         User user = (User) session.getAttribute("userobj");
         int id = Integer.parseInt(request.getParameter("id"));
         Cart cartItem = cartdao.selectCart(id);
-        System.out.println("user is "+user.getId());
-//        System.out.println("cart is"+ cartItem);
+        System.out.println("user is " + user.getId());
+        System.out.println("cart is " + cartItem.getUserID());
         if (cartItem.getUserID() == user.getId()) {
             if (cartdao.deleteCartById(id)) {
 //                System.out.println("one Cart item Successfully Deleted.");
@@ -121,7 +121,7 @@ public class CartServlet extends HttpServlet {
 //                RequestDispatcher dispatcher = request.getRequestDispatcher("cart");
 //                request.setAttribute("SuccessMessage", SuccessMessage);
 //                dispatcher.forward(request, response);
-//                response.sendRedirect("cart");
+                response.sendRedirect("cart");
             } else {
                 System.out.println("Couldnot delete cart item.");
             }
@@ -218,7 +218,9 @@ public class CartServlet extends HttpServlet {
                 dispatcher.forward(request, response);
             } else {
 //                int user_id = (int) session.getAttribute();
-                List<Cart> cartItemList = cartdao.selectAllCart();
+//                HttpSession session = request.getSession(false);
+                User user = (User) session.getAttribute("userobj");
+                List<Cart> cartItemList = cartdao.selectCartByUserId(user.getId());
                 RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
                 request.setAttribute("cartItemList", cartItemList);
                 dispatcher.forward(request, response);

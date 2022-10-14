@@ -22,6 +22,9 @@
             .btn-incre, .btn-decre{
                 box-shadow: none;
                 font-size: 25px;
+                .body{
+                    height:100%;
+                }
             }
         </style>
     </head>
@@ -40,8 +43,10 @@
 
             <table class="table table-loght">
                 <thead>
-                <th>UserID</th>
-                <th>ArtID</th>
+                <!--<th>Photo</th>-->
+                <th>Art Name</th>
+                <th>Artist Name</th>
+              
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Action</th>
@@ -50,8 +55,10 @@
                 <tbody>
                     <c:forEach var="cartItem" items="${cartItemList}">
                         <tr>
-                            <td>${cartItem.artID}</td>
-                            <td>${cartItem.userID}</td>
+                         
+                            <td>${cartItem.artName}</td>
+                            <td>${cartItem.artistName}</td>
+                            
                             <td>${cartItem.price}</td>
                             <td>${cartItem.quantity}
                                 <!--  <form action="" method="post" class="form-inline">
