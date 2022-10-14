@@ -12,6 +12,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Exhibitly: Register</title>
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
+
         <%@include file="all_components/allCss.jsp"%>
     </head>
     <body style="background-color: #f0f1f2">
@@ -23,17 +25,17 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="text-center p-2">Registration Page</h4>
-                            
-                             <c:if test= "${not empty success}">
+
+                            <c:if test= "${not empty success}">
                                 <p class="text-center text-success">${success}</p> 
                                 <c:remove var="success" scope="session" />
                             </c:if>
-                                
+
                             <c:if test= "${not empty failed}">
                                 <p class="text-center text-danger">${failed}</p> 
                                 <c:remove var="failed" scope="session" />
                             </c:if>
-                                
+
                             <form action="register" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Full Name</label>
@@ -44,12 +46,12 @@
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required="required">
                                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Phone Number</label>
                                     <input type="number" class="form-control" id="exampleInputPassword1" name="phone"required="required">
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" name="pwd" required="required">

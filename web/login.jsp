@@ -13,7 +13,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Exhibitly: login</title>
-        <meta name="google-signin-client_id" content="56995776500-gqqrusv5in95uggsg8ag0b6a6ckq5rn8.apps.googleusercontent.com" >
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
+
+        <!--<meta name="google-signin-client_id" content="56995776500-gqqrusv5in95uggsg8ag0b6a6ckq5rn8.apps.googleusercontent.com" >-->
         <script src="https://apis.google.com/js/platform.js"></script>
         <%@include file="all_components/allCss.jsp"%>
     </head>
@@ -61,19 +63,19 @@
                                     <a href="register.jsp"> Create Account</a><br>
                                     <!--google login-->
 
-<!--                                    <p>Or</p>                                  
-                                    <div class="g-signin2 " style="padding-left: 100px;">-->
-                                    </div>
+                                    <!--                                    <p>Or</p>                                  
+                                                                        <div class="g-signin2 " style="padding-left: 100px;">-->
                                 </div>
-
-
-                            </form> 
                         </div>
 
+
+                        </form> 
                     </div>
+
                 </div>
             </div>
         </div>
-        <%--<%@include file="all_components/footer.jsp"%>--%>
-    </body>
+    </div>
+    <%--<%@include file="all_components/footer.jsp"%>--%>
+</body>
 </html>
