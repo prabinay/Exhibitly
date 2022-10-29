@@ -1,8 +1,14 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.servlet;
+
+
 
 import com.dao.ViewbyCategoryDao;
 import com.model.ArtDetails;
@@ -20,7 +26,7 @@ import java.util.List;
  *
  * @author Prab1n
  */
-@WebServlet(name = "LandscapeServlet", urlPatterns= {"/portrait"})
+@WebServlet(name = "AbstractServlet", urlPatterns= {"/abstract"})
 public class PortraitServlet extends HttpServlet {
      private ViewbyCategoryDao arts;
 

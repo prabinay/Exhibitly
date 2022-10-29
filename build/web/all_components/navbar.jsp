@@ -16,20 +16,22 @@
             <h3> <i class="fa-brands fa-artstation"></i> Exhibitly</h3>      
         </div>
         <div class="col-md-6">
+
             <form class="d-flex" style="width:400px;"role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
+
         </div>
-        
-        
-        
+
+
 
         <c:if test="${not empty userobj}">
             <div class="col-md-3">
 
                 <!--CART-->
-                <a href="cart" class=""><i class="fas fa-cart-plus fa-2x"></i> </a>
+
+
 
                 <a href="" class="btn btn-success"  .> <i class="fas fa-user"></i> ${userobj.name} </a> 
                 <a href="logout" class="btn btn-primary text-white"><i class="fas fa-sign-out-alt"></i> Logout</a>
@@ -67,6 +69,17 @@
 
                 <li class="nav-item">
                     <a class="nav-link active " href="abstract">Abstract</a>
+                </li>
+
+                <li>
+                    <a href="cart" class="text-white position-relative ">
+
+                        <i class="fas fa-cart-plus fa-2x"></i> 
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            ${cartItemList.size()}
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
                 </li>
             </ul>
             <!--            <form class="d-flex" role="search">

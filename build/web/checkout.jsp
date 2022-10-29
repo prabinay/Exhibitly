@@ -28,46 +28,38 @@
 
         <div class="container">
             <div class="row g-5">
+
                 <!--cart Page-->
                 <div class="col-md-5 col-lg-4 order-md-last">
+
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">Cart Summary</span>
-                        <span class="badge bg-primary rounded-pill">3</span>
+                        <span class="badge bg-primary rounded-pill"></span>
                     </h4>
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Product name</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$5</span>
-                        </li>
-                        <!--                            <li class="list-group-item d-flex justify-content-between bg-light">
-                                                        <div class="text-success">
-                                                            <h6 class="my-0">Promo code</h6>
-                                                            <small>EXAMPLECODE</small>
-                                                        </div>
-                                                        <span class="text-success">−$5</span>
-                                                    </li>-->
+                    <c:forEach var="cartItem" items="${cartItemList}">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">${cartItem.artName}</h6>
+                                    <small class="text-muted">Art by ${cartItem.artistName}</small>
+                                </div>
+                                <span class="text-muted">${cartItem.price}</span>
+                            </li>
+
+                            <!--                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                                            <div class="text-success">
+                                                                <h6 class="my-0">Promo code</h6>
+                                                                <small>EXAMPLECODE</small>
+                                                            </div>
+                                                            <span class="text-success">−$5</span>
+                                                        </li>-->
+                        </c:forEach>
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total (USD)</span>
-                            <strong>$20</strong>
+                            <strong>$</strong>
                         </li>
                     </ul>
+
 
                     <form class="card p-2">
                         <div class="input-group">
@@ -79,8 +71,9 @@
 
                 <!--billing infos-->
                 <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">Billing address</h4>
-                    <form class="needs-validation" novalidate="">
+                    <h4 class="mb-3 text-primary">Billing address</h4>
+
+                    <form action="/checkout" method="post" class="needs-validation" novalidate="">
                         <div class="row g-3">
                             <!--                            <div class="col-sm-6">
                                                             <label for="firstName" class="form-label">First name</label>
@@ -165,31 +158,38 @@
                                     Post code required.
                                 </div>
                             </div>
+                            
+                            <div class="col-12">
+                                <label for="address" class="form-label">Contact No</label>
+                                <input type="text" class="form-control" id="address" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
                         </div>
+
+                        <!--                        <hr class="my-4">
+                        
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                                                </div>
+                        
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="save-info">
+                                                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+                                                </div>-->
 
                         <hr class="my-4">
 
+                        <h4 class="mb-3 text-primary">Payment</h4>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="same-address">
-                            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                            <input type="checkbox" class="form-check-input" id="save-info" required>
+                            <label class="form-check-label" for="save-info">Cash On Delivery</label>
                         </div>
 
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Save this information for next time</label>
-                        </div>
 
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Payment</h4>
-                        <div class="form-check">
-                            <input id="cod" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                            <label class="form-check-label" for="credit">Cash on Delivery</label>
-                        </div>
-                        <div class="form-check">
-                            <input id="cod" name="paymentMethod" type="radio" class="form-check-input" >
-                            <label class="form-check-label" for="credit">Others</label>
-                        </div>
                         <!--                        <div class="my-3">
                                                     <div class="form-check">
                                                         <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
@@ -253,7 +253,10 @@
     </form>
 </div>
 
-</body>
 
-<%@include file="all_components/footer.jsp"%>
+
+</body>
+<div style="margin-top:105px;">
+    <%@include file="all_components/footer.jsp"%>
+</div>
 </html>

@@ -38,7 +38,7 @@
 
 
             <div class="d-flex py-3">
-                <h3> Total Price: $723 </h3> <a class="mx-3 btn btn-primary" href="">Check Out </a>
+                <h3> Total Price: $723 </h3> <a class="mx-3 btn btn-primary" href="checkout">Check Out </a>
             </div>
 
 

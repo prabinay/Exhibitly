@@ -209,4 +209,19 @@ public class CartDao {
         return deleted;
     }
     
+//    public double getTotalPrice(ArrayList<Cart> cartList){
+//        double sum=0;
+//         try{
+//             if(cartList.size()>0){
+//                 for(Cart item:cartList){
+//                     query ="select price from art_details where id=?";
+//                     pst= this.con.prepareStatement(query);
+//                     pst.setInt(1,item.getid());
+//                     rs = pst.executeQuery();
+//                     
+//                 }
+//             }
+//         }
+//    }
+    
 }

@@ -48,8 +48,6 @@
         </div>
 
 
-
-        <!<!-- Landscapes section starts -->
         <div class="container" >
             <h3 class="text-center">Available Arts</h3><br>
             <div class="row">

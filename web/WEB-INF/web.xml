@@ -44,6 +44,10 @@
         <servlet-name>PortraitServlet</servlet-name>
         <servlet-class>com.servlet.PortraitServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>com.servlet.CheckoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -92,6 +96,11 @@
         <servlet-name>PortraitServlet</servlet-name>
         <url-pattern>/PortraitServlet</url-pattern>
         <url-pattern>/portrait</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/CheckoutServlet</url-pattern>
+        <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
