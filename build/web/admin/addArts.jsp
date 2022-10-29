@@ -12,6 +12,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add an Art</title>
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
         <%@include file="allCss.jsp"%>
     </head>
     <body>
@@ -95,7 +96,7 @@
 
                                     <button type="submit" class="btn btn-primary">Add</button>
                                     <!--<button type="submit" class="btn btn-primary "><a class="nav-link active" aria-current="page" href="home.jsp">Home</a></button>-->
-                                    
+
                                 </form>
                         </div>
 
@@ -104,6 +105,6 @@
                 </div>
             </div>
         </div>
-<%@include file="footer.jsp"%>
+        <%@include file="footer.jsp"%>
     </body>
 </html>

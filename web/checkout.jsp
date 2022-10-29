@@ -14,6 +14,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Checkout Here</title>
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
+
         <%@include file="all_components/allCss.jsp"%>
     </head>
     <body>
@@ -123,10 +125,10 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
+                            <!--                            <div class="col-12">
+                                                            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                                                        </div>-->
 
                             <div class="col-md-5">
                                 <label for="country" class="form-label">Country</label>
@@ -157,10 +159,10 @@
                             </div>
 
                             <div class="col-md-3">
-                                <label for="zip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <label for="zip" class="form-label">Post code</label>
+                                <input type="text" class="form-control" id="post" placeholder="" required="">
                                 <div class="invalid-feedback">
-                                    Zip code required.
+                                    Post code required.
                                 </div>
                             </div>
                         </div>
