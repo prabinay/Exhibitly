@@ -19,7 +19,7 @@
     <body>
         <%@include file="all_components/navbar.jsp"%>      
         <div class="container" >
-            <h3 class="text-center">All Portrait Arts</h3><br>
+            <h3 class="text-center p-2">All Portrait Arts</h3><br>
             <div class="row">
                 <c:forEach var="art" items="${artlist}">
                     <div class="col-md-3 p-1">

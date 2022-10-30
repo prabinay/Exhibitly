@@ -17,10 +17,10 @@
         </div>
         <div class="col-md-6">
 
-            <form class="d-flex" style="width:400px;"role="search">
+<!--            <form class="d-flex" style="width:400px;"role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form>-->
 
         </div>
 
@@ -74,7 +74,7 @@
                 <li>
                     <a href="cart" class="text-white position-relative ">
 
-                        <i class="fas fa-cart-plus fa-2x"></i> 
+                        <i class="fas fa-cart-plus fa-2x p-1"></i> 
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             ${cartItemList.size()}
                             <span class="visually-hidden">unread messages</span>

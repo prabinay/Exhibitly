@@ -9,15 +9,16 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/AllArtsDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AllArtsServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/ViewArtDetails.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CheckoutDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/register.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/PortraitServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/cartdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/LandscapeServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDaoImpl.java</file>
@@ -33,10 +34,12 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/AbstractServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/OrderDetails.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/CheckoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ProductDao.java</file>

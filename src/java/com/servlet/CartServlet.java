@@ -194,13 +194,13 @@ public class CartServlet extends HttpServlet {
                     Logger.getLogger(CartServlet.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } else {
-                String errorMessage = "Sorrry! you should log in first to add items to the cart.";
+                String errorMessage = "Sorry! you should log in first to add items to the cart.";
                 RequestDispatcher dispatcher = request.getRequestDispatcher("index");
                 request.setAttribute("errorMessage", errorMessage);
                 dispatcher.forward(request, response);
             }
         } else {
-            String errorMessage = "Sorrry! you should log in first to add items to the cart.";
+            String errorMessage = "Sorry! you should log in first to add items to the cart.";
             RequestDispatcher dispatcher = request.getRequestDispatcher("index");
             request.setAttribute("errorMessage", errorMessage);
             dispatcher.forward(request, response);
@@ -212,7 +212,7 @@ public class CartServlet extends HttpServlet {
         HttpSession session = request.getSession(false);
         if (session != null) {
             if (session.getAttribute("userobj") == null) {
-                String errorMessage = "Ohh! I think you not logged in yet. Please login first.";
+                String errorMessage = "Ohh! I think you are not logged in yet. Please login first.";
                 RequestDispatcher dispatcher = request.getRequestDispatcher("index");
                 request.setAttribute("errorMessage", errorMessage);
                 dispatcher.forward(request, response);
@@ -227,7 +227,7 @@ public class CartServlet extends HttpServlet {
 
             }
         } else {
-            String errorMessage = "Ohh! It seems you not logged in yet. Please login first.";
+            String errorMessage = "Ohh! It seems you are not logged in yet. Please login first.";
             RequestDispatcher dispatcher = request.getRequestDispatcher("index");
             request.setAttribute("errorMessage", errorMessage);
             dispatcher.forward(request, response);

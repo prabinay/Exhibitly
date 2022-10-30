@@ -16,10 +16,10 @@
             <h3><i class="fa-brands fa-artstation"></i> Exhibitly</h3>      
         </div>
         <div class="col-md-6">
-            <form class="d-flex" role="search">
+<!--            <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form>-->
         </div>
 
         <div class="col-md-3">
