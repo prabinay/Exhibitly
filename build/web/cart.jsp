@@ -33,17 +33,12 @@
 
     <body style="background-color: #f0f1f2;">
         <%@include file="all_components/navbar.jsp"%>      
+        
+        <div class="container p-3" >
 
-        <div class="container" >
+            <h2 class="text-primary">My Cart</h2>
 
-
-            <div class="d-flex py-3">
-                <h3> Total Price: $723 </h3> <a class="mx-3 btn btn-primary" href="checkout">Check Out </a>
-            </div>
-
-
-
-            <table class="table table-loght">
+            <table class="table table-loght ">
                 <thead>
                     <!--<th>Photo</th>-->
                 <th>Art Name</th>
@@ -54,8 +49,16 @@
                 <th>Action</th>
                 </thead>
 
+
                 <tbody>
+                    <!--total price calculation-->
+                    <c:set  var="total_price" value="${0}"/>
+
+
                     <c:forEach var="cartItem" items="${cartItemList}">
+
+                        <c:set  var="total_price" value="${total_price+cartItem.price}"/>
+
                         <tr>
 
                             <td>${cartItem.artName}</td>
@@ -77,6 +80,15 @@
                     </c:forEach>
                 </tbody>
             </table>
+
+
+            <div class="float-right w-full py-3 " style="text-align:right">
+                <div class="">
+                    <h3> Total Price: $${total_price}</h3> <a class="mx-3 btn btn-primary w-25" href="checkout">Check Out </a>
+                </div>
+            </div>
+
+
 
             <!--                <div class="col-md-6">
                                 <div class="card">

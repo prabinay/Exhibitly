@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -18,6 +18,7 @@ import java.util.List;
 
 import com.DB.DBconnect;
 import com.model.Cart;
+import com.model.OrderDetails;
 
 /**
  *
@@ -25,7 +26,7 @@ import com.model.Cart;
  */
 public class CheckoutDao {
 
-    private static final String INSERT_INTO_CART = "INSERT INTO orders" + "  ( artID, userID, quantity, price) VALUES " + " (?, ?, ?, ?);";
+    private static final String INSERT_INTO_ORDER = "INSERT INTO orders" + "  ( orderID, address, payment, country, state, postcode, contact_no, order_date, order_status) VALUES " + " (?, ?, ?, ?,?, ?, ?, ?, ?);";
     private static final String SELECT_ALL_CART = "select * from cart";
     private static final String SELECT_CART_BY_ID = "select * from cart where cartID = ?";
     private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.artID where cart.userID = ?";
@@ -57,7 +58,6 @@ public class CheckoutDao {
 //        }
 //        return allCart;
 //    }
-
 //    public Cart selectCart(int id) {
 //        Cart cartItem = new Cart();
 //        try {
@@ -78,7 +78,6 @@ public class CheckoutDao {
 //        }
 //        return cartItem;
 //    }
-
     public List<Cart> selectCartByUserId(int userID) {
         List<Cart> userCart = new ArrayList<>();
         try {
@@ -95,9 +94,8 @@ public class CheckoutDao {
                 String art_name = rs.getString("artName");
                 String artist_name = rs.getString("artistName");
                 Double artprice = Double.parseDouble(rs.getString("price"));
-       
 
-                userCart.add(new Cart(id, userID, art_id, quantity, price,art_name,artist_name,artprice));
+                userCart.add(new Cart(id, userID, art_id, quantity, price, art_name, artist_name, artprice));
             }
 
         } catch (Exception e) {
@@ -106,18 +104,22 @@ public class CheckoutDao {
         return userCart;
     }
 
-
- 
-    public void insertOrder(Cart newCartItem) {
+    public void insertOrder(OrderDetails order) {
         try {
             Connection connection = DBconnect.getConn();
-            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_INTO_CART);
+            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_INTO_ORDER);
 //            preparedStatement.setInt(1, newCartItem.getCartID());
-            preparedStatement.setInt(1, newCartItem.getArtID());
-            preparedStatement.setInt(2, newCartItem.getUserID());
-            preparedStatement.setInt(3, newCartItem.getQuantity());
-            preparedStatement.setDouble(4, newCartItem.getPrice());
-//            preparedStatement.setDate(4, newCartItem.getCreated_date());
+            preparedStatement.setString(1, order.getOrderID());
+            preparedStatement.setString(2, order.getAddress());
+            preparedStatement.setString(3, order.getPayment());
+            preparedStatement.setString(4, order.getCountry());
+            preparedStatement.setString(5, order.getState());
+            preparedStatement.setString(6, order.getPostcode());
+            preparedStatement.setString(7, order.getContactno());
+            preparedStatement.setDate(8, order.getOrder_date());
+            preparedStatement.setString(9, order.getStatus());
+            
+            
             preparedStatement.executeUpdate();
 
         } catch (Exception e) {
@@ -125,9 +127,4 @@ public class CheckoutDao {
         }
     }
 
-    
-   
-
-  
-    
 }

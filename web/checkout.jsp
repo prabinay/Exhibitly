@@ -28,7 +28,8 @@
 
         <div class="container">
             <div class="row g-5">
-
+                <!--total price calculation-->
+                <c:set  var="total_price" value="${0}"/>
                 <!--cart Page-->
                 <div class="col-md-5 col-lg-4 order-md-last">
 
@@ -37,6 +38,7 @@
                         <span class="badge bg-primary rounded-pill"></span>
                     </h4>
                     <c:forEach var="cartItem" items="${cartItemList}">
+                        <c:set  var="total_price" value="${total_price+cartItem.price}"/>
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div>
@@ -56,7 +58,7 @@
                         </c:forEach>
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total (USD)</span>
-                            <strong>$</strong>
+                            <strong>$${total_price}</strong>
                         </li>
                     </ul>
 
@@ -73,7 +75,7 @@
                 <div class="col-md-7 col-lg-8">
                     <h4 class="mb-3 text-primary">Billing address</h4>
 
-                    <form action="/checkout" method="post" class="needs-validation" novalidate="">
+                    <form action="checkout" method="post" class="needs-validation" novalidate="">
                         <div class="row g-3">
                             <!--                            <div class="col-sm-6">
                                                             <label for="firstName" class="form-label">First name</label>
@@ -112,7 +114,7 @@
 
                             <div class="col-12">
                                 <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                                <input type="text" class="form-control" name="address" placeholder="1234 Main St" required="">
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
@@ -125,7 +127,7 @@
 
                             <div class="col-md-5">
                                 <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" required="">
+                                <select class="form-select" name="country" required="">
                                     <option value="">Choose...</option>
                                     <option vcalue="Nepal"> Nepal</option>
                                 </select>
@@ -136,15 +138,15 @@
 
                             <div class="col-md-4">
                                 <label for="state" class="form-label">State</label>
-                                <select class="form-select" id="state" required="">
+                                <select class="form-select" name="state" required="">
                                     <option value="">Choose...</option>
-                                    <option value="1"> Province No 1</option>
-                                    <option value="2"> Province No 2</option>
-                                    <option value="3"> Province No 3</option>
-                                    <option value="4"> Province No 4</option>
-                                    <option value="5"> Province No 5</option>
-                                    <option value="6"> Province No 6</option>
-                                    <option value="7"> Province No 7</option>
+                                    <option value="Province No 1"> Province No 1</option>
+                                    <option value="Province No 2"> Province No 2</option>
+                                    <option value="Province No 3"> Province No 3</option>
+                                    <option value="Province No "> Province No 4</option>
+                                    <option value="Province No 5"> Province No 5</option>
+                                    <option value="Province No 6"> Province No 6</option>
+                                    <option value="Province No 7"> Province No 7</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please provide a valid state.
@@ -153,15 +155,15 @@
 
                             <div class="col-md-3">
                                 <label for="zip" class="form-label">Post code</label>
-                                <input type="text" class="form-control" id="post" placeholder="" required="">
+                                <input type="text" class="form-control" name="postcode" placeholder="" required="">
                                 <div class="invalid-feedback">
                                     Post code required.
                                 </div>
                             </div>
-                            
+
                             <div class="col-12">
                                 <label for="address" class="form-label">Contact No</label>
-                                <input type="text" class="form-control" id="address" placeholder="" required="">
+                                <input type="text" class="form-control" name="contactno" placeholder="" required="">
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>

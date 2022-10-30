@@ -4,17 +4,18 @@
  */
 package com.model;
 
+import java.sql.Date;
+
 /**
  *
  * @author Prab1n
  */
 public class OrderDetails {
-    private int orderID;
+
+    private String orderID;
     private int userID;
     private int cartID;
     private int artID;
-
-    
     private String artName;
     private String artistName;
     private Double price;
@@ -22,10 +23,49 @@ public class OrderDetails {
     private String address;
     private String country;
     private String state;
-    private int postcode;
+    private String postcode;
+    private String contactno;
+    private Date order_date;
+    private String status;
 
-    
-    
+    public OrderDetails(String orderid, String address, String payment, String country,
+            String state, String postcode, String contactno, String status, Date order_date) {
+        this.address = address;
+        this.orderID = orderid;
+        this.payment = payment;
+        this.country = country;
+        this.state = state;
+        this.postcode = postcode;
+        this.order_date = order_date;
+        this.contactno = contactno;
+        this.status = status;
+
+    }
+
+    public String getContactno() {
+        return contactno;
+    }
+
+    public void setContactno(String contactno) {
+        this.contactno = contactno;
+    }
+
+    public Date getOrder_date() {
+        return order_date;
+    }
+
+    public void setOrder_date(Date order_date) {
+        this.order_date = order_date;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public int getArtID() {
         return artID;
     }
@@ -33,6 +73,7 @@ public class OrderDetails {
     public void setArtID(int artID) {
         this.artID = artID;
     }
+
     public int getCartID() {
         return cartID;
     }
@@ -40,11 +81,12 @@ public class OrderDetails {
     public void setCartID(int cartID) {
         this.cartID = cartID;
     }
-    public int getOrderID() {
+
+    public String getOrderID() {
         return orderID;
     }
 
-    public void setOrderID(int orderID) {
+    public void setOrderID(String orderID) {
         this.orderID = orderID;
     }
 
@@ -112,12 +154,12 @@ public class OrderDetails {
         this.state = state;
     }
 
-    public int getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(int postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
-    
+
 }
