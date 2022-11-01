@@ -4,6 +4,7 @@
  */
 package com.admin.servlet;
 
+import com.DB.DBconnect;
 import com.model.User;
 
 import java.io.IOException;
@@ -18,6 +19,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import com.dao.ArtCRUDdao;
+import com.dao.ArtDaoImpl;
 import com.model.ArtDetails;
 import jakarta.servlet.http.Part;
 import java.util.logging.Level;
@@ -96,15 +98,26 @@ public class ArtCRUDServlet extends HttpServlet {
 
     }
 
-//        private void insertUser(HttpServletRequest request, HttpServletResponse response)
-//                throws SQLException, IOException {
-//            String name = request.getParameter("name");
-//            String email = request.getParameter("email");
-//            String country = request.getParameter("country");
-//            User newUser = new User(name, email, country);
-//            userDAO.insertUser(newUser);
-//            response.sendRedirect("list");
-//        }
+    private void insertUser(HttpServletRequest request, HttpServletResponse response)
+            throws SQLException, IOException {
+        try {
+            String artName = request.getParameter("art_name");
+            String artistName = request.getParameter("artist_name");
+            String price = request.getParameter("price");
+            String categories = request.getParameter("categories");
+            String status = request.getParameter("status");
+            Part part = request.getPart("art_image");
+            String fileName = part.getSubmittedFileName();
+
+            ArtDetails ad = new ArtDetails(artName, artistName, price, categories, status, fileName, "admin");
+
+            ArtDaoImpl dao = new ArtDaoImpl(DBconnect.getConn());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private void editArt(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         try {
@@ -140,4 +153,3 @@ public class ArtCRUDServlet extends HttpServlet {
     }
 
 }
-

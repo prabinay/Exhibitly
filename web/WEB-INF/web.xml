@@ -48,6 +48,10 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>com.servlet.CheckoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>OrdersDisplayServlet</servlet-name>
+        <servlet-class>com.servlet.OrdersDisplayServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
@@ -102,6 +106,15 @@
         <url-pattern>/CheckoutServlet</url-pattern>
         <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrdersDisplayServlet</servlet-name>
+  
+        <url-pattern>/admin/OrdersDisplayServlet</url-pattern>
+
+
+    </servlet-mapping>
+    
+    
     <session-config>
         <session-timeout>
             30

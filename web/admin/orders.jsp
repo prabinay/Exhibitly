@@ -17,6 +17,11 @@
     </head>
     <body>
         <%@include file="navbar.jsp"%>
+
+        <c:if test="${empty userobj}">
+            <c:redirect url="../login.jsp" />
+        </c:if>
+        
         <h3 class="text-center">Hello Admin</h3>
 
         <table class="table ">
@@ -34,37 +39,23 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Thornton</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Thornton</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
+
+                <c:forEach var="order" items="${orderlist}">
+                    <tr>
+                        <th scope="row">${order.orderID}</th>
+          
+                        <td>${order.address}</td>
+                        <td>${order.payment}</td>
+                        <td>${order.unit_price}</td>
+                        <td>${order.total_price}</td>
+                        <td>${order.contactno}</td>
+                        <td>${order.order_date}</td>
+                        <td>${order.status}</td>
+                        <td>@mdo</td>
+                    </tr>
+
+
+                </c:forEach>
 
             </tbody>
         </table>

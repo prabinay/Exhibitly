@@ -139,8 +139,8 @@ public class CartDao {
 //    }
 //    
     
-//    
-    public Cart selectCartByBookAndUserId(int book_id, int user_id) {
+    
+    public Cart selectCartByArtAndUserId(int book_id, int user_id) {
         Cart cartItem = new Cart();
         try {
             Connection connection = DBconnect.getConn();

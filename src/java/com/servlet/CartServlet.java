@@ -167,7 +167,7 @@ public class CartServlet extends HttpServlet {
 //                Date created_date = new Date(System.currentTimeMillis());
 
                     ArtDetails art = artdao.selectArt(art_id);
-                    Cart cartItem = cartdao.selectCartByBookAndUserId(art_id, user.getId());
+                    Cart cartItem = cartdao.selectCartByArtAndUserId(art_id, user.getId());
                     if (cartItem.getArtID() == art_id && cartItem.getUserID() == user.getId()) {
                         quantity = cartItem.getQuantity() + 1;
                         Cart updateCart = new Cart(cartItem.getCartID(), art_id, user.getId(), quantity, Double.parseDouble(art.getPrice()));

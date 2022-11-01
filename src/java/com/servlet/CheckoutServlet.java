@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author Prab1n
  */
-import com.dao.CartDao;
+import com.dao.*;
 import com.dao.ArtDao;
 import com.dao.ArtDaoImpl;
 
@@ -20,6 +20,7 @@ import com.dao.CheckoutDao;
 import com.model.ArtDetails;
 import com.model.Cart;
 import com.model.OrderDetails;
+import com.model.OrderList;
 import com.model.User;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.annotation.WebServlet;
@@ -38,12 +39,14 @@ public class CheckoutServlet extends HttpServlet {
     private CartDao cartdao;
     private ArtCRUDdao artdao;
     private CheckoutDao orderdao;
+    private OrderlistDao orderlistdao;
 
     @Override
     public void init() {
         cartdao = new CartDao();
         artdao = new ArtCRUDdao();
         orderdao = new CheckoutDao();
+        orderlistdao = new OrderlistDao();
 
     }
 
@@ -80,9 +83,24 @@ public class CheckoutServlet extends HttpServlet {
             OrderDetails order = new OrderDetails(orderid, address, payment, country, state, postcode, contactno, status, order_date);
 
             orderdao.insertOrder(order);
+            HttpSession session = request.getSession();
+            User user = (User) session.getAttribute("userobj");
+//            int art_id = Integer.parseInt(request.getParameter("id"));
 
-            List<Cart> cartlist = cartdao.selectAllCart();
-            
+            List<Cart> cartlist = cartdao.selectCartByUserId(user.getId());
+            for (Cart cart : cartlist) {
+                int quantity = cart.getQuantity();
+                Double price = cart.getPrice();
+                int artid = cart.getArtID();
+                double total_price = quantity * price;
+
+                OrderList orderlist = new OrderList(orderid, quantity,price, artid, total_price);
+                orderlistdao.insertOrderlist(orderlist);
+                response.sendRedirect("index");
+                
+                
+            }
+
             response.sendRedirect("index");
 
         } catch (Exception e) {

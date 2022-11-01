@@ -30,8 +30,10 @@ public class OrderDetails {
 
     public OrderDetails(String orderid, String address, String payment, String country,
             String state, String postcode, String contactno, String status, Date order_date) {
-        this.address = address;
+        super();
         this.orderID = orderid;
+        this.address = address;
+        
         this.payment = payment;
         this.country = country;
         this.state = state;
@@ -40,6 +42,11 @@ public class OrderDetails {
         this.contactno = contactno;
         this.status = status;
 
+    }
+
+    public OrderDetails() {
+        super();
+        
     }
 
     public String getContactno() {
