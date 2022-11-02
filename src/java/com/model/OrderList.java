@@ -27,6 +27,11 @@ public class OrderList {
     private String contactno;
     private Date order_date;
     private String status;
+    
+    private String artName;
+    private String artistName;
+    private String artCategory;
+    private String photo;
 
    
 
@@ -212,5 +217,61 @@ public class OrderList {
      */
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    /**
+     * @return the artName
+     */
+    public String getArtName() {
+        return artName;
+    }
+
+    /**
+     * @param artName the artName to set
+     */
+    public void setArtName(String artName) {
+        this.artName = artName;
+    }
+
+    /**
+     * @return the artistName
+     */
+    public String getArtistName() {
+        return artistName;
+    }
+
+    /**
+     * @param artistName the artistName to set
+     */
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
+
+    /**
+     * @return the artCategory
+     */
+    public String getArtCategory() {
+        return artCategory;
+    }
+
+    /**
+     * @param artCategory the artCategory to set
+     */
+    public void setArtCategory(String artCategory) {
+        this.artCategory = artCategory;
+    }
+
+    /**
+     * @return the photo
+     */
+    public String getPhoto() {
+        return photo;
+    }
+
+    /**
+     * @param photo the photo to set
+     */
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }

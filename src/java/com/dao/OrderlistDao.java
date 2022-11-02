@@ -44,7 +44,8 @@ public class OrderlistDao {
 
     public List<OrderList> selectAllOrderlist() {
         String SELECT_ORDERS = "select * from order_list "
-                + "INNER JOIN orders ON  order_list.orderID= orders.orderID;";
+                + "INNER JOIN orders ON  order_list.orderID= orders.orderID "
+                + "INNER JOIN art_details ON order_list.artID = art_details.artID;";
 
         List<OrderList> list = new ArrayList<>();
         OrderList ad = null;
@@ -66,6 +67,10 @@ public class OrderlistDao {
                 ad.setContactno(rs.getString("contact_no"));
                 ad.setOrder_date(rs.getDate("order_date"));
                 ad.setStatus(rs.getString("order_status"));
+                ad.setArtName(rs.getString("artName"));
+                ad.setArtistName(rs.getString("artistName"));
+                ad.setArtCategory(rs.getString("artCategory"));
+                ad.setPhoto(rs.getString("photo"));
                 
 
                 list.add(ad);
