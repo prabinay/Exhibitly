@@ -24,7 +24,7 @@
 
         <div class="col-md-3">
             <c:if test="${not empty userobj}" >
-                <a href="login.jsp" class="btn btn-success"> 
+                <a href="" class="btn btn-success"> 
                     <i class="fas fa-user"></i>${userobj.name} </a> 
                 <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="../logout" class="btn btn-primary text-white">
                     <i class="fas fa-sign-in-alt"></i>Logout</a>
