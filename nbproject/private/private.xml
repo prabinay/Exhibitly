@@ -27,6 +27,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/OrdersServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/OrderlistDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
@@ -35,6 +36,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/registerServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/UserDaoImpl.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/OrdersDisplayServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/home.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/AbstractServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/OrderDetails.java</file>

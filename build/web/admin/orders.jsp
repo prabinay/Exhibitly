@@ -22,20 +22,20 @@
             <c:redirect url="../login.jsp" />
         </c:if>
         
-        <h3 class="text-center">Hello Admin</h3>
+        <h3 class="text-center p-2">All Orders</h3>
 
         <table class="table ">
             <thead class="bg-primary">
                 <tr>
                     <th scope="col">Order_ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Phone No</th>
-                    <th scope="col">Art Name</th>
-                    <th scope="col">Artist Name</th>
+                    <th scope="col">Shipping Address</th>
+                    <th scope="col">Payment Option</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Payment Type</th>
+                    <th scope="col">Phone No</th>
+                    <th scope="col">Ordered Date</th>
+                    <th scope="col">Order Status</th>
+<!--                    <th scope="col">Price</th>
+                    <th scope="col">Payment Type</th>-->
                 </tr>
             </thead>
             <tbody>
@@ -47,11 +47,11 @@
                         <td>${order.address}</td>
                         <td>${order.payment}</td>
                         <td>${order.unit_price}</td>
-                        <td>${order.total_price}</td>
+                        <!--<td>${order.total_price}</td>-->
                         <td>${order.contactno}</td>
                         <td>${order.order_date}</td>
                         <td>${order.status}</td>
-                        <td>@mdo</td>
+                        <!--<td>@mdo</td>-->
                     </tr>
 
 
