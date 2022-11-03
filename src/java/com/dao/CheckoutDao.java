@@ -26,7 +26,7 @@ import com.model.OrderDetails;
  */
 public class CheckoutDao {
 
-    private static final String INSERT_INTO_ORDER = "INSERT INTO orders" + "  ( orderID, address, payment, country, state, postcode, contact_no, order_date, order_status) VALUES " + " (?, ?, ?, ?,?, ?, ?, ?, ?);";
+    private static final String INSERT_INTO_ORDER = "INSERT INTO orders" + "  ( orderID, address, payment, country, state, postcode, contact_no, order_date, order_status, userID) VALUES " + " (?, ?, ?, ?,?, ?, ?, ?, ?,?);";
     private static final String SELECT_ALL_CART = "select * from cart";
     private static final String SELECT_CART_BY_ID = "select * from cart where cartID = ?";
     private static final String SELECT_CART_BY_USER_ID = "select * from cart INNER JOIN art_details ON  cart.artID=  art_details.artID where cart.userID = ?";
@@ -118,6 +118,7 @@ public class CheckoutDao {
             preparedStatement.setString(7, order.getContactno());
             preparedStatement.setDate(8, order.getOrder_date());
             preparedStatement.setString(9, order.getStatus());
+            preparedStatement.setInt(10, order.getUserID());
             
             
             preparedStatement.executeUpdate();

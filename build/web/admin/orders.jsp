@@ -36,6 +36,7 @@
                     <th scope="col">Phone No</th>
                     <th scope="col">Ordered Date</th>
                     <th scope="col">Order Status</th>
+                     <th scope="col">Order Status</th>
                     <!--                    <th scope="col">Price</th>
                                         <th scope="col">Payment Type</th>-->
                 </tr>
@@ -55,6 +56,7 @@
                         <td>${order.contactno}</td>
                         <td>${order.order_date}</td>
                         <td>${order.status}</td>
+                        <td>${order.name}</td>
                         <!--<td>@mdo</td>-->
                     </tr>
 

@@ -29,7 +29,7 @@ public class OrderDetails {
     private String status;
 
     public OrderDetails(String orderid, String address, String payment, String country,
-            String state, String postcode, String contactno, String status, Date order_date) {
+            String state, String postcode, String contactno, String status, Date order_date, int userID) {
         super();
         this.orderID = orderid;
         this.address = address;
@@ -41,6 +41,7 @@ public class OrderDetails {
         this.order_date = order_date;
         this.contactno = contactno;
         this.status = status;
+        this.userID = userID;
 
     }
 

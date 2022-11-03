@@ -67,6 +67,9 @@ public class CheckoutServlet extends HttpServlet {
 //        new Random().nextBytes(array);
 //        String orderid = new String(array, Charset.forName("UTF-8"));
 //        System.out.println(orderid);
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("userobj");
+
 //        
         String orderid = java.util.UUID.randomUUID().toString();
 
@@ -80,12 +83,9 @@ public class CheckoutServlet extends HttpServlet {
             String status = "Pending";
             Date order_date = new Date(System.currentTimeMillis());
 
-            OrderDetails order = new OrderDetails(orderid, address, payment, country, state, postcode, contactno, status, order_date);
+            OrderDetails order = new OrderDetails(orderid, address, payment, country, state, postcode, contactno, status, order_date, user.getId());
 
             orderdao.insertOrder(order);
-            HttpSession session = request.getSession();
-            User user = (User) session.getAttribute("userobj");
-//            int art_id = Integer.parseInt(request.getParameter("id"));
 
             List<Cart> cartlist = cartdao.selectCartByUserId(user.getId());
             for (Cart cart : cartlist) {
@@ -94,10 +94,8 @@ public class CheckoutServlet extends HttpServlet {
                 int artid = cart.getArtID();
                 double total_price = quantity * price;
 
-                OrderList orderlist = new OrderList(orderid, quantity,price, artid, total_price);
+                OrderList orderlist = new OrderList(orderid, quantity, price, artid, total_price);
                 orderlistdao.insertOrderlist(orderlist);
-                response.sendRedirect("index");
-                
                 
             }
 
