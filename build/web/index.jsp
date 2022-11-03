@@ -38,7 +38,7 @@
 
 
         <c:if test="${successMessage != null}">
-            
+
             <h5 class="text-center text-success">${successMessage}</h5>
         </c:if>
 
@@ -76,6 +76,41 @@
                 </c:forEach>
             </div>
         </div>
+                
+            <br><hr>
+
+        <h3 class="text-center p-3">Our Features</h3>
+        <section id="feature" class="section-p1"> 
+            <div class="feature-box">
+                <img src="img/features/f1.png" alt="">
+                <h6>Free Shipping</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/features/f2.png" alt="">
+                <h6>Online Order</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/features/f3.png" alt="">
+                <h6>Save Money</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/features/f4.png" alt="">
+                <h6>Promotions</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/features/f5.png" alt="">
+                <h6>Happy Sell and Buy</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/features/f6.png" alt="">
+                <h6>support</h6>
+            </div>
+        </section>
         <%@include file="all_components/footer.jsp"%>  
     </body>
 </html>

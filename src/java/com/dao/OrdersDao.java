@@ -27,7 +27,7 @@ public class OrdersDao {
         List<OrderDetails> list = new ArrayList<>();
         OrderDetails ad = null;
         try {
-            String sql = "select * from orders";
+            String sql = "select * from orders ";
             Connection conn = DBconnect.getConn();
             PreparedStatement ps = conn.prepareStatement(sql);
 
