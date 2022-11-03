@@ -26,17 +26,30 @@
         </c:if>
 
         <h3 class="text-center p-2">All Arts</h3>
+        <c:if test= "${not empty success}">
+            <p class="text-center text-success">${success}</p> 
+            <c:remove var="success" scope="session" />
+        </c:if>
 
-        <div class="table-responsive">
+        <c:if test= "${not empty failed}">
+            <p class="text-center text-danger">${failed}</p> 
+            <c:remove var="failed" scope="session" />
+        </c:if>
+
+
+        <div class="container my-4">
             <table class="table table-striped">
-                <thead class="table-dark">
+                <thead class="table-dark ">
                     <tr>
                         <!--<th scope="col">ID</th>-->
-                        <th scope="col">Art Product</th>
+
+
+                        <th scope="col">Product</th>
                         <th scope="col">Art Name</th>
                         <th scope="col">Artist Name</th>
+
                         <th scope="col">Price</th>
-                        <th scope="col">Categories</th>
+                        <!--                        <th scope="col">Categories</th>-->
                         <th scope="col">Status</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -47,12 +60,22 @@
                     <c:forEach var="art" items="${artlist}">
                         <tr>
                             <!--<td> ${art.artID}</td>-->
-                            <td><img src="../img/arts/${art.photoName}"  style=" width:120px; height:120px;"></td>
-                            <td>${art.artName} </td>
+
+                            <td>
+                                <img src="../img/arts/${art.photoName}" class="rounded float-start" style=" width:80px; height:80px; ">
+
+                            </td>
+
+                            <td> 
+                                <p class="fw-bold- mb-1"> ${art.artName} </p
+                                <p class="text-muted mb-0">${art.artCategory} </p>
+                            </td>
+
                             <td>${art.artistName} </td>
                             <td>$${art.price} </td>
-                            <td>${art.artCategory} </td>
-                            <td>${art.status} </td>
+                            <td>
+                                <span class="badge bg-success">${art.status} </span>
+                            </td>
 
                             <td>
                                 <a href="edit?id=<c:out value='${art.artID}' />"  class="btn btn-sm btn-primary"><i class=" fas fa-edit"></i> Edit </a>

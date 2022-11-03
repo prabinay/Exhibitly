@@ -23,48 +23,52 @@
         </c:if>
 
         <h3 class="text-center p-2">All Orders</h3>
-
-        <table class="table ">
-            <thead class="bg-primary">
-                <tr>
-                    <th scope="col">Product</th>
-                    <th scope="col">Art Name</th>
-                    <th scope="col">Shipping Address</th>
-
-                    <th scope="col">Payment Option</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Phone No</th>
-                    <th scope="col">Ordered Date</th>
-                    <th scope="col">Order Status</th>
-                     <th scope="col">Order Status</th>
-                    <!--                    <th scope="col">Price</th>
-                                        <th scope="col">Payment Type</th>-->
-                </tr>
-            </thead>
-            <tbody>
-
-                <c:forEach var="order" items="${orderlist}">
+        <div class="container my-3">
+            <table class="table table-striped ">
+                <thead class="table-dark">
                     <tr>
-                        <!--<th scope="row">${order.orderID}</th>-->
-                        <td><img src="../img/arts/${order.photo}"  style=" width:100px; height:100px;"></td>
+                        <th scope="col">Product</th>
+                        <th scope="col">Art Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Ordered By</th>
+                        <th scope="col">Phone No</th>
+                        <th scope="col">Shipping Address</th>
+                        <th scope="col">Ordered Date</th>
+                        <th scope="col">Payment Option</th>
+                        <th scope="col">Order Status</th>
 
-                        <td>${order.artName}</td>
-                        <td>${order.address}</td>
-                        <td>${order.payment}</td>
-                        <td>${order.unit_price}</td>
-                        <!--<td>${order.total_price}</td>-->
-                        <td>${order.contactno}</td>
-                        <td>${order.order_date}</td>
-                        <td>${order.status}</td>
-                        <td>${order.name}</td>
-                        <!--<td>@mdo</td>-->
+                        <!--                    <th scope="col">Price</th>
+                                            <th scope="col">Payment Type</th>-->
                     </tr>
+                </thead>
+                <tbody>
+
+                    <c:forEach var="order" items="${orderlist}">
+                        <tr>
+                            <!--<th scope="row">${order.orderID}</th>-->
+                            <td><img src="../img/arts/${order.photo}"  class="rounded" style=" width:100px; height:100px;"></td>
+
+                            <td>${order.artName}</td>
+                            <td>$${order.unit_price}</td>
+                            <td>${order.name}</td>
+                            <td>${order.contactno}</td>
+                            <td>${order.address}</td>
+                            <td>${order.order_date}</td>
+                            <td>${order.payment}</td>
+                            <td>
+                                <span class="badge bg-secondary">${order.status}</span>
+                            </td>
+                         <!--<td>${order.total_price}</td>-->
+
+                            <!--<td>@mdo</td>-->
+                        </tr>
 
 
-                </c:forEach>
+                    </c:forEach>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 
         <div class="text-center">
             <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
