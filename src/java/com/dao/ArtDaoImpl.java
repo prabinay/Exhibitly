@@ -50,6 +50,35 @@ public class ArtDaoImpl implements ArtDao{
         }
         return f;
     }
+    
+    public boolean UpdateArts(ArtDetails ad){
+        boolean f = false ;
+        try{
+            String sql ="update art_details set artName = ?,artistName= ?, price =? , artCategory=?, "
+            + "status=?, photo=?, email=? where artID = ?;";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, ad.getArtName() );
+            ps.setString(2, ad.getArtistName() );
+            ps.setString(3, ad.getPrice());
+            ps.setString(4, ad.getArtCategory() );
+            ps.setString(5, ad.getStatus() );
+            ps.setString(6, ad.getPhotoName() );
+            ps.setString(7, ad.getEmail() );
+            ps.setInt(8, ad.getArtID());
+            
+            int i =ps.executeUpdate() ;
+            
+            if(i==1){
+                f=true;
+            }
+
+//            f= ps.executeUpdate() > 0;
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return f;
+    }
 
 
     @Override

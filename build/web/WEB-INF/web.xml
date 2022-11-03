@@ -59,6 +59,7 @@
     <servlet-mapping>
         <servlet-name>AddArtServlet</servlet-name>
         <url-pattern>/AddArtServlet</url-pattern>
+        
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AllArtsServlet</servlet-name>
@@ -68,6 +69,7 @@
         <servlet-name>ArtCRUDServlet</servlet-name>
         <url-pattern>/ArtCRUDServlet</url-pattern>
         <url-pattern>/admin/edit</url-pattern>
+        <url-pattern>/admin/updateArt</url-pattern>
         <url-pattern>/admin/delete</url-pattern>
     </servlet-mapping>
     <servlet-mapping>

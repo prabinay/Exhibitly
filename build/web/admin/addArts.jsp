@@ -40,9 +40,10 @@
                             </c:if>
 
                             <c:if test="${art!= null}">
-                                <form class="justify-content-md-cente" action="../edit" method="post" enctype="multipart/form-data">
+                                <form class="justify-content-md-cente" action="../admin/update" method="post" enctype="multipart/form-data">
 
                                 </c:if>
+                                    
                                 <c:if test="${art == null}">
 
                                     <form action="../add_arts" method="post" enctype="multipart/form-data">

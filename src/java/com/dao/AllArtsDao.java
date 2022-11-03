@@ -24,7 +24,7 @@ public class AllArtsDao {
         List<ArtDetails> list = new ArrayList<>();
         ArtDetails ad = null;
         try {
-            String sql = "select * from  art_details";
+            String sql = "select * from  art_details ORDER BY artID DESC";
             Connection conn = DBconnect.getConn();
             PreparedStatement ps = conn.prepareStatement(sql);
 

@@ -35,6 +35,7 @@
                         <div class="card-body">
                             <h4 class="text-center">Update an Art</h4>
 
+
                             <c:if test= "${not empty success}">
                                 <p class="text-center text-success">${success}</p> 
                                 <c:remove var="success" scope="session" />
@@ -45,14 +46,16 @@
                                 <c:remove var="failed" scope="session" />
                             </c:if>
 
+
                             <c:if test="${art!= null}">
-                                <form class="justify-content-md-cente" action="../edit" method="post" enctype="multipart/form-data">
+                                <form class="justify-content-md-cente" action="../update_arts" method="post" enctype="multipart/form-data">
 
                                 </c:if>
                                 <c:if test="${art == null}">
 
                                     <form action="../add_arts" method="post" enctype="multipart/form-data">
                                     </c:if>
+                                    <input type="hidden" name="id" value="${art.artID}"">
                                     <div class="mb-3">
                                         <label for="exampleInputPassword1" class="form-label">Art Name*</label>
                                         <input type="text" class="form-control"  required="required" name="art_name" value='${art.artName}'>

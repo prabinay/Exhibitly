@@ -52,9 +52,7 @@ public class ArtCRUDServlet extends HttpServlet {
                 case "/new":
                     showNewForm(request, response);
                     break;
-//                    case "/insert":
-//                        insertUser(request, response);
-//                        break;
+
                 case "/admin/delete":
                     deleteArt(request, response);
                     break;
@@ -63,6 +61,9 @@ public class ArtCRUDServlet extends HttpServlet {
                     break;
                 case "/admin/update":
                     editArt(request, response);
+                    break;
+                case "/admin/updateArt":
+                    updateArt(request, response);
                     break;
 //                    default:
 //                        listUser(request, response);
@@ -92,15 +93,16 @@ public class ArtCRUDServlet extends HttpServlet {
             throws SQLException, ServletException, IOException, ClassNotFoundException {
         int id = Integer.parseInt(request.getParameter("id"));
         ArtDetails existingArt = ArtCRUDdao.selectArt(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("../admin/addArts.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("../admin/updateArt.jsp");
         request.setAttribute("art", existingArt);
         dispatcher.forward(request, response);
 
     }
 
-    private void insertUser(HttpServletRequest request, HttpServletResponse response)
+    private void updateArt(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         try {
+            int id = Integer.parseInt(request.getParameter("id"));
             String artName = request.getParameter("art_name");
             String artistName = request.getParameter("artist_name");
             String price = request.getParameter("price");
@@ -109,10 +111,13 @@ public class ArtCRUDServlet extends HttpServlet {
             Part part = request.getPart("art_image");
             String fileName = part.getSubmittedFileName();
 
-            ArtDetails ad = new ArtDetails(artName, artistName, price, categories, status, fileName, "admin");
+            ArtDetails art = new ArtDetails(id, artName, artistName, price, categories, status, fileName);
+            ArtCRUDdao.updateArt(art);
+            response.sendRedirect("ArtCRUDServlet");
 
-            ArtDaoImpl dao = new ArtDaoImpl(DBconnect.getConn());
-
+//            ArtDetails ad = new ArtDetails(id, artName, artistName, price, categories, status, fileName, "admin");
+//
+//            ArtDaoImpl dao = new ArtDaoImpl(DBconnect.getConn());
         } catch (Exception e) {
             e.printStackTrace();
         }

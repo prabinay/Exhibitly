@@ -30,6 +30,9 @@ public class ArtCRUDdao {
     private static final String EDIT_ARTS_SQL = "update art_details set artName = ?,artistName= ?, price =? , artCategory=?, "
             + "status=?, photo=?, email=? where id = ?;";
 
+    private static final String UPDATE_ARTS_SQL = "update art_details set artName = ?,artistName= ?, price =? , artCategory=?, "
+            + "status=?, photo=?, email=? where artID = ?;";
+
     public ArtCRUDdao() {
     }
 
@@ -69,8 +72,8 @@ public class ArtCRUDdao {
         return rowDeleted;
     }
 
-    public static boolean editArt(ArtDetails art) throws SQLException, ClassNotFoundException {
-        boolean rowUpdated;
+    public static void editArt(ArtDetails art) throws SQLException, ClassNotFoundException {
+//        boolean rowUpdated;
         try ( Connection connection = DBconnect.getConn();  PreparedStatement statement = connection.prepareStatement(EDIT_ARTS_SQL);) {
             statement.setString(1, art.getArtName());
             statement.setString(2, art.getArtistName());
@@ -79,6 +82,27 @@ public class ArtCRUDdao {
             statement.setString(5, art.getStatus());
             statement.setString(6, art.getPhotoName());
             statement.setString(7, art.getEmail());
+            statement.executeUpdate();
+
+//            rowUpdated = statement.executeUpdate() > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static boolean updateArt(ArtDetails art) throws SQLException, ClassNotFoundException {
+        boolean rowUpdated;
+        try ( Connection connection = DBconnect.getConn();  PreparedStatement statement = connection.prepareStatement(UPDATE_ARTS_SQL);) {
+
+            statement.setInt(1, art.getArtID());
+            statement.setString(2, art.getArtName());
+            statement.setString(3, art.getArtistName());
+            statement.setString(4, art.getPrice());
+            statement.setString(5, art.getArtCategory());
+            statement.setString(6, art.getStatus());
+            statement.setString(7, art.getPhotoName());
+            statement.setString(8, art.getEmail());
 
             rowUpdated = statement.executeUpdate() > 0;
         }
