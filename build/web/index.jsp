@@ -50,6 +50,7 @@
 
 
         <div class="container" >
+            <hr>
             <h3 class="text-center">Available Arts</h3><br>
             <div class="row">
                 <c:forEach var="art" items="${artlist}">
@@ -110,7 +111,11 @@
                 <img src="img/features/f6.png" alt="">
                 <h6>support</h6>
             </div>
+
         </section>
+        
+        
+        
         <%@include file="all_components/footer.jsp"%>  
     </body>
 </html>

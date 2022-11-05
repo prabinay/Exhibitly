@@ -170,8 +170,9 @@
 
         footer .copyright{
             width:100%;
-            font-size: 20px;
+            font-size: 40px;
             text-align: center;
+            color: white;
         }
 
 
@@ -219,7 +220,7 @@
                 </div>-->
 
         <div class="col">
-            <h4>Follow Us</h4>
+            <h4 >Follow Us On</h4>
             <div class="container">
                 <!-- Section: Social media -->
                 <!--<section class="mb-4">-->`
@@ -260,8 +261,9 @@
 
 
         <hr>
-        <div class="copyright">
-            <p> Copyright ©2022 Exhibitly.</p>
+        <div class="copyright ">
+            <hr>
+            <h4> Copyright  © 2022 Exhibitly</h4>
         </div>
     </footer>
 </html>

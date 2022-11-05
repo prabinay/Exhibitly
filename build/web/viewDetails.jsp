@@ -32,9 +32,9 @@
 
                 <div class="col-md-6 text-center p-5 border bg-white">
                     <img src="img/arts/${artlist.photoName}" style="height:300px; width:300px;"><br>
-                    <h4>Art Name : ${artlist.artName}</h4>
-                    <h4>Artist Name : ${artlist.artistName}</h4>
-                    <h4>Category : ${artlist.artCategory}</h4>
+                    <h3>Art Name : ${artlist.artName}</h3>
+                    <h3>Artist Name : ${artlist.artistName}</h3>
+                    <h3>Category : ${artlist.artCategory}</h3>
                 </div>
 
                 <div class="col-md-6 text-center p-5 border bg-white">

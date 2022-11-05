@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div style="margin-top:205px;">
+        <div style="margin-top:255px;">
             <%@include file="footer.jsp"%>
         </div>
 

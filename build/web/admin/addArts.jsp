@@ -28,6 +28,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="text-center">Add an Art</h4>
+                            <hr>
 
                             <c:if test= "${not empty success}">
                                 <p class="text-center text-success">${success}</p> 

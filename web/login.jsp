@@ -59,8 +59,9 @@
 
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary ">Login</button><br>
-                                    <a href="register.jsp"> Create Account</a><br>
+                                    <button type="submit" class="btn btn-primary ">Login</button><br><br>
+                                    or,<br>
+                                    New user? <a href="register.jsp"> Create an Account</a><br>
                                     <!--google login-->
 
                                     <!--                                    <p>Or</p>                                  

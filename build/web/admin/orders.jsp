@@ -21,8 +21,10 @@
         <c:if test="${empty userobj}">
             <c:redirect url="../login.jsp" />
         </c:if>
-
+        <div class="container">
+        <hr>
         <h3 class="text-center p-2">All Orders</h3>
+        <hr>
         <div class="container my-3">
             <table class="table table-striped ">
                 <thead class="table-dark">
@@ -69,6 +71,9 @@
                 </tbody>
             </table>
         </div>
+         <hr>
+    </div>
+   
 
         <div class="text-center">
             <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
