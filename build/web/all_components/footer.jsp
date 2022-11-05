@@ -170,6 +170,7 @@
 
         footer .copyright{
             width:100%;
+            font-size: 20px;
             text-align: center;
         }
 
@@ -178,7 +179,7 @@
     <footer class="section-p1">
         <div class="col ">
             <img class="logo" src="img/logo2.jpg" alt="">
-                        <!--<h5 > <i class="fa-brands fa-artstation text-success" style="height:40px;width:40px;">Exhibitly</i> </h5>-->      
+            <!--<h5 > <i class="fa-brands fa-artstation text-success" style="height:40px;width:40px;">Exhibitly</i> </h5>-->      
 
             <h4>Contact<br>
                 <strong>Address:</strong> Gongabu, Kathmandu, Nepal <br>
@@ -186,18 +187,7 @@
                 <strong>Hours:</strong> 10:00 -18:00, Sun-Fri<br>
             </h4>
 
-            <div class="follow">
-                <h4>Follow Us</h4>
-                <div class="icon">
-                    <i class="fa fa-facebook-square"></i>
-                    <i class="fa fa-google"></i
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-pinterest-square"></i
-                    <i class="fa fa-youtube"></i>
 
-                </div>
-            </div>
         </div>
 
         <div class="col">
@@ -220,17 +210,58 @@
 
         </div>
 
-        <div class="col payment">
-            <h4> Secured Payment Gateways</h4> 
-            <i class="fa fa-cc-mastercard"></i>
-            <i class="fa fa-cc-visa"></i
-            <i class="fa fa-cc-jcb"></i>
+        <!--        <div class="col payment">
+                    <h4> Secured Payment Gateways</h4> 
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-visa"></i
+                    <i class="fa fa-cc-jcb"></i>
+        
+                </div>-->
+
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="container">
+                <!-- Section: Social media -->
+                <!--<section class="mb-4">-->`
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-twitter"></i
+                        ></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-google"></i
+                        ></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-instagram"></i
+                        ></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-linkedin-in"></i
+                        ></a>
+
+<!--                     Github 
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                       ><i class="fab fa-github"></i
+                        ></a>-->
+                </section>
+                <!-- Section: Social media -->
+            </div>
 
         </div>
 
+
         <hr>
         <div class="copyright">
-            <p> Copyright ©2022 Exhibitly.
+            <p> Copyright ©2022 Exhibitly.</p>
         </div>
     </footer>
 </html>
