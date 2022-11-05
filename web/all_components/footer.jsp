@@ -204,7 +204,7 @@
             <h4>About</h4>
             <a href="#">About us</a>
             <a href="#" >Delivery Information</a>
-            <a href="#" >privacy Policy</a> 
+            <a href="#" >Privacy Policy</a> 
             <a href="#" >Terms & Conditions</a>
             <a href="#">Contact us</a>
 
