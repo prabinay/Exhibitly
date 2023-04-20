@@ -11,13 +11,13 @@ Run the following commands from your terminal:
 
 ## Tools and Technology Used:
 
-  Java
-  Jsp servlet
-  Mysql Workbench
-  JDBC
-  Apache Tomcat server
-  Netbeans IDE 13
-  HTML, CSS, Bootstrap
+ - Java
+ - Jsp servlet
+ - Mysql Workbench
+ - JDBC
+ - Apache Tomcat server
+ - Netbeans IDE 13
+ - HTML, CSS, Bootstrap
 
 
 ## Screenshots
