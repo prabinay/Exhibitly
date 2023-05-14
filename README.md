@@ -21,6 +21,6 @@ Run the following commands from your terminal:
 
 
 ## Screenshots!
-[context diagram](https://github.com/prabinay/Exhibitly/assets/64364650/e08cd06c-b34b-47eb-b747-8e7be52568b1)
+(https://github.com/prabinay/Exhibitly/assets/64364650/e08cd06c-b34b-47eb-b747-8e7be52568b1)
 
 
