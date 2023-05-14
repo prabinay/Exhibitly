@@ -37,3 +37,8 @@ DFD level 1 Diagram
 ER Diagram
 ![ER diagram](https://github.com/prabinay/Exhibitly/assets/64364650/d12610e0-427f-4980-a7b5-3cc9677d04f5)
 
+Use Case Diagram
+![Use case Diagram](https://github.com/prabinay/Exhibitly/assets/64364650/2dc6383b-e8a6-441f-b789-9a3cb35a3771)
+
+
+
