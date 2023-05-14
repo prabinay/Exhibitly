@@ -20,7 +20,11 @@ Run the following commands from your terminal:
  - HTML, CSS, Bootstrap
 
 
-## Screenshots!
-(https://github.com/prabinay/Exhibitly/assets/64364650/e08cd06c-b34b-47eb-b747-8e7be52568b1)
+## Process Modeling!
+![context diagram](https://github.com/prabinay/Exhibitly/assets/64364650/76bf181a-7c34-48a1-8901-1a80e1527eb7)
+![DFD level 0 diagram](https://github.com/prabinay/Exhibitly/assets/64364650/fa93c51d-5582-40ea-ad77-18aed31bcb15)
 
+
+##Conceptual Modeling!
+![ER diagram](https://github.com/prabinay/Exhibitly/assets/64364650/d12610e0-427f-4980-a7b5-3cc9677d04f5)
 
