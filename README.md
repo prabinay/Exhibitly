@@ -21,10 +21,13 @@ Run the following commands from your terminal:
 
 
 ## Process Modeling!
+Context Diagram
 ![context diagram](https://github.com/prabinay/Exhibitly/assets/64364650/76bf181a-7c34-48a1-8901-1a80e1527eb7)
+DFD level 0 Diagram
 ![DFD level 0 diagram](https://github.com/prabinay/Exhibitly/assets/64364650/fa93c51d-5582-40ea-ad77-18aed31bcb15)
 
 
-##Conceptual Modeling!
+## Conceptual Modeling!
+ER Diagram
 ![ER diagram](https://github.com/prabinay/Exhibitly/assets/64364650/d12610e0-427f-4980-a7b5-3cc9677d04f5)
 
