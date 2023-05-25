@@ -42,3 +42,10 @@ Use Case Diagram
 
 
 
+## Contributors
+- [Prabin Thapa Magar](https://github.com/prabinay/)  
+- [Umesh Niure Sharma](https://github.com/umeshniure)
+
+## Feedback
+Any suggestion and feedback is welcome. You can email me.
+- <a href = "mailto: prabiney.garcia.23@gmail.com"> Email me here!</a>
