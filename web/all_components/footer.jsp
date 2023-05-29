@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>company</h4>
+                        <h4>Company</h4>
                         <ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">our services</a></li>
@@ -48,7 +48,7 @@
                             <li><a href="landscape">Landscape</a></li>
                             <li><a href="portrait">Portrait</a></li>
                             <li><a href="abstract#">Abstract</a></li>
-                            <li><a href="cart">My Art</a></li>
+                            <li><a href="cart">My Cart</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">

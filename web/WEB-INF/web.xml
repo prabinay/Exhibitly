@@ -107,6 +107,7 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <url-pattern>/CheckoutServlet</url-pattern>
         <url-pattern>/checkout</url-pattern>
+      
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>OrdersDisplayServlet</servlet-name>

@@ -45,7 +45,7 @@
                                     <h6 class="my-0">${cartItem.artName}</h6>
                                     <small class="text-muted">Art by ${cartItem.artistName}</small>
                                 </div>
-                                <span class="text-muted">${cartItem.price}</span>
+                                <span class="text-muted">Rs.${cartItem.price}</span>
                             </li>
 
                             <!--                            <li class="list-group-item d-flex justify-content-between bg-light">
@@ -57,8 +57,8 @@
                                                         </li>-->
                         </c:forEach>
                         <li class="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$${total_price}</strong>
+                            <span>Total (NRs)</span>
+                            <strong>Rs.${total_price}</strong>
                         </li>
                     </ul>
 
@@ -127,9 +127,9 @@
 
                             <div class="col-md-5">
                                 <label for="country" class="form-label">Country</label>
-                                <select class="form-select" name="country" required="">
+                                <select class="form-select" name="country" required>
                                     <option value="">Choose...</option>
-                                    <option vcalue="Nepal"> Nepal</option>
+                                    <option value="Nepal"> Nepal</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please select a valid country.
@@ -138,12 +138,12 @@
 
                             <div class="col-md-4">
                                 <label for="state" class="form-label">State</label>
-                                <select class="form-select" name="state" required="">
+                                <select class="form-select" name="state" required>
                                     <option value="">Choose...</option>
                                     <option value="Province No 1"> Province No 1</option>
                                     <option value="Province No 2"> Province No 2</option>
                                     <option value="Province No 3"> Province No 3</option>
-                                    <option value="Province No "> Province No 4</option>
+                                    <option value="Province No 4"> Province No 4</option>
                                     <option value="Province No 5"> Province No 5</option>
                                     <option value="Province No 6"> Province No 6</option>
                                     <option value="Province No 7"> Province No 7</option>
@@ -155,15 +155,16 @@
 
                             <div class="col-md-3">
                                 <label for="zip" class="form-label">Post code</label>
-                                <input type="text" class="form-control" name="postcode" placeholder="" required="">
+                                <input type="text" class="form-control" name="postcode" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Post code required.
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <label for="address" class="form-label">Contact No</label>
-                                <input type="text" class="form-control" name="contactno" placeholder="" required="">
+                                <label for="contactNo" class="form-label">Contact No</label>
+                                <input type="text" class="form-control" name="contactno"  pattern="[0-9]{10}" required="required">
+                                
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
@@ -171,24 +172,14 @@
 
                         </div>
 
-                        <!--                        <hr class="my-4">
-                        
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="same-address">
-                                                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                                                </div>
-                        
-                                                <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="save-info">
-                                                    <label class="form-check-label" for="save-info">Save this information for next time</label>
-                                                </div>-->
-
                         <hr class="my-4">
 
                         <h4 class="mb-3 text-primary">Payment</h4>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info" required>
-                            <label class="form-check-label" for="save-info">Cash On Delivery</label>
+
+                            <label class="form-check-label" for="save-info">
+                                <input type="checkbox" name="checkboxGroup" class="form-check-input" id="save-info" required>Cash On Delivery
+                            </label>
                         </div>
 
 
@@ -244,7 +235,7 @@
 
                         <hr class="my-4">
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
                     </form>
                 </div>
             </div>    
@@ -252,13 +243,9 @@
         </div>
 
 
-    </form>
-</div>
 
-
-
-</body>
-<div style="margin-top:105px;">
-    <%@include file="all_components/footer.jsp"%>
-</div>
+    </body>
+    <div style="margin-top:105px;">
+        <%@include file="all_components/footer.jsp"%>
+    </div>
 </html>

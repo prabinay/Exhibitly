@@ -99,7 +99,7 @@ public class CheckoutServlet extends HttpServlet {
                 
             }
 
-            response.sendRedirect("index");
+            response.sendRedirect("thankyou.jsp");
 
         } catch (Exception e) {
             e.printStackTrace();
