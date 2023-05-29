@@ -55,8 +55,8 @@
                     </div>
                     <div class ="col">
                         
-                        <a href="cart?action=addtocart&id=${artlist.artID}"class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
-                        <a href=""class="btn btn-danger"> <i class="fas fa-dollar-sign"></i>${artlist.price}</a>
+                        <a href="cart?action=addtocart&id=${artlist.artID}" class="btn btn-primary"> <i class="fas fa-cart-plus"></i>Add cart</a>
+                        <a href="" class="btn btn-danger"> Rs.${artlist.price}</a>
                     </div> 
                 </div>
             </div>

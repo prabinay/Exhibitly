@@ -33,7 +33,7 @@
 
     <body style="background-color: #f0f1f2;">
         <%@include file="all_components/navbar.jsp"%>      
-        
+
         <div class="container p-3" >
 
             <h2 class="text-primary">My Cart</h2>
@@ -64,7 +64,7 @@
                             <td>${cartItem.artName}</td>
                             <td>${cartItem.artistName}</td>
 
-                            <td>${cartItem.price}</td>
+                            <td>Rs.${cartItem.price}</td>
                             <td>${cartItem.quantity}
                                 <!--  <form action="" method="post" class="form-inline">
                                            <input type="hidden" name="id" value="1" class="form-input">
@@ -84,7 +84,7 @@
 
             <div class="float-right w-full py-3 " style="text-align:right">
                 <div class="">
-                    <h3> Total Price: $${total_price}</h3> <a class="mx-3 btn btn-primary w-25" href="checkout">Check Out </a>
+                    <h3> Total Price: Rs.${total_price}</h3> <a class="mx-3 btn btn-primary w-25" href="checkout">Check Out </a>
                 </div>
             </div>
 
@@ -154,9 +154,9 @@
 
         </div>
 
-    </div>
-    <div style="margin-top:185px;">
-        <%@include file="all_components/footer.jsp"%>  
-    </div>
-</body>
+
+        <div style="margin-top:185px;">
+            <%@include file="all_components/footer.jsp"%>  
+        </div>
+    </body>
 </html>

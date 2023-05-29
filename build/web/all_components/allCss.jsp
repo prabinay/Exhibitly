@@ -19,4 +19,13 @@ crossorigin="anonymous"></script>
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<link rel="stylesheet" href="all_components/css/features.css" >
 <link rel="stylesheet" href="all_components/css/style.css" >
+<link rel="stylesheet" href="all_components/css/footer.css" >
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+<!--<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">-->
+
+

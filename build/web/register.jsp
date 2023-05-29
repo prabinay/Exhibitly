@@ -39,7 +39,7 @@
                             <form action="register" method="post">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" name="name">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" name="name" pattern="[A-Za-z\s]+">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email Address</label>
@@ -49,7 +49,7 @@
 
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control" id="exampleInputPassword1" name="phone"required="required">
+                                    <input type="text" class="form-control" id="phone-number" name="phone" required="required" pattern="[0-9]{10}">
                                 </div>
 
                                 <div class="mb-3">

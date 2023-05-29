@@ -4,8 +4,8 @@
     Author     : Prab1n
 --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page  isELIgnored="false"%>
-
+<%--<%@page  isELIgnored="false"%>--%>
+<jsp:include page="all_components/displayAlerts.jsp"/>
 
 <div class="container-fluid" style="height: 10px;background-color: #303f9f">
 
