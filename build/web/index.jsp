@@ -49,7 +49,7 @@
         </div>
 
 
-        <div class="container" >
+        <div class="container-fluid" >
             <hr>
             <h3 class="text-center">Available Arts</h3><br>
             <div class="row">
@@ -60,13 +60,13 @@
                         <div class="card">
                             <div class="card-body text-center">
                                 <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" style="
-                                     width:200px; height:200px" class="img-thumblin">
+                                     width:220px; height:220px" class="img-thumblin">
                                 <p>${art.artName}<br>
                                     ${art.artistName} <br>
                                     ${art.artCategory}</p>
                                 <div class="col">
                                     <a href="cart?action=addtocart&id=${art.artID}" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i>Add</a>
-                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> Details</a>
                                     <a  class="btn btn-danger btn-sm ml-1"> <i class=""></i>Rs.${art.price}</a>
                                 </div>
                             </div>
@@ -77,8 +77,47 @@
                 </c:forEach>
             </div>
         </div>
+        <!--        <hr>
+                <div class="container">
+        
+                    <h3 class="text-center">Available Arts</h3><hr><br>
+                    <div class="container d-flex justify-content-center mt-100">	
+        
+                        <div class="row"> 
+        
+        <c:forEach var="art" items="${artlist}">
+            <div class="col-md-3 p-2">
+                <div class="product-wrapper mb-45 text-center">
 
-        <br><hr>
+
+                    <div class="card">
+                        <a href="#" data-abc="true"> 
+                            <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" 
+                                 </a>
+                            <span class="text-center"><i class="fa fa-rupee">
+
+                                </i>Rs.${art.price}<</span> <div class="product-action"> 
+                                <div class="product-action-style"> 
+                                    <a href="#"> 
+                                        <i class="fa fa-plus"></i> 
+                                    </a> <a href="#"> 
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                    <a href="#"> <i class="fa fa-shopping-cart">
+
+                                        </i> </a> 
+                                </div> 
+                            </div> 
+                    </div> 
+
+                </div> 
+            </div> 
+        </c:forEach>
+    </div>
+
+</div>
+</div>
+<br><hr>-->
 
         <h3 class="text-center p-3">Our Features</h3>
         <section id="feature" class="section-p1"> 

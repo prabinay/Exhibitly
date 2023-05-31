@@ -17,22 +17,48 @@
         <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
 
         <%@include file="all_components/allCss.jsp"%>
+        <style>
+            .print {
+                display:none;
+            }
+            .no-print{
+                display:block;
+
+            }
+            @media print{
+                .print {
+                    display:block;
+
+                }
+                .no-print{
+                    display:none;
+                }
+            }
+        </style>
+        <script>         var jsPrintAll = function () {
+                            setTimeout(function () {
+                                    window.print();
+                            }, 500);
+                    }     </script>
     </head>
     <body>
-        <%@include file="all_components/navbar.jsp"%>
-        <div class="container">
+        <div class="no-print">
+            <%@include file="all_components/navbar.jsp"%>
+        </div>
+        <div class="container print">
             <div class="py-3 text-center">
-                <h2>Checkout Here</h2>
+                <h2>Checkout by ${userobj.name}</h2>
             </div>
         </div>
 
-        <div class="container">
+
+        <div class="container" >
             <div class="row g-5">
                 <!--total price calculation-->
                 <c:set  var="total_price" value="${0}"/>
                 <!--cart Page-->
-                <div class="col-md-5 col-lg-4 order-md-last">
-
+                <div class="col-md-5 col-lg-4 order-md-last ">
+                   
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-primary">Cart Summary</span>
                         <span class="badge bg-primary rounded-pill"></span>
@@ -61,6 +87,9 @@
                             <strong>Rs.${total_price}</strong>
                         </li>
                     </ul>
+                        <div class="no-print ">
+                            <input class="w-100 btn btn-primary btn-lg" type="button" id="btnPrint" onclick="jsPrintAll()" value="Get Receipt" />
+                    </div>
 
 
                     <!--<form class="card p-2">
@@ -164,7 +193,7 @@
                             <div class="col-12">
                                 <label for="contactNo" class="form-label">Contact No</label>
                                 <input type="text" class="form-control" name="contactno"  pattern="[0-9]{10}" required="required">
-                                
+
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
@@ -234,8 +263,9 @@
                                                 </div>-->
 
                         <hr class="my-4">
+                        
+                        <button class="w-100 btn btn-primary btn-lg no-print" type="submit">Place Order</button>
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
                     </form>
                 </div>
             </div>    
@@ -245,7 +275,7 @@
 
 
     </body>
-    <div style="margin-top:105px;">
+    <div style="margin-top:105px;" class="no-print">
         <%@include file="all_components/footer.jsp"%>
     </div>
 </html>

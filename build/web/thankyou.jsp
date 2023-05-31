@@ -29,15 +29,15 @@
         <%@include file="all_components/navbar.jsp"%>
 
 
-        <div class="site-section">
-            <div class="container">
+        <div class="site-section mt-5">
+            <div class="container ">
                 <div class="row m-4">
-                    <div class="col-md-12 text-center">
-                        <i class="fas fa-check-circle" id="success-icon"></i>
+                    <div class="col-md-12 text-center mt-5">
+                        <i class="fas fa-check-circle " id="success-icon"></i>
 
-                        <h2 class="display-3 text-black">Thank you!</h2>
-                        <p class="lead mb-5">You order was successfully completed.</p>
-                        <p><a href="index" class="btn btn-sm height-auto px-4 py-3 btn-primary">Back to shop</a></p>
+                        <h2 class="display-3 text-black ">Thank you!</h2>
+                        <p class="lead mb-5 mt-2">You order was successfully completed.</p>
+                        <p><a href="index" class="btn btn-sm height-auto px-4 py-3 btn-primary">Buy More Arts</a></p>
                     </div>
                 </div>
             </div>

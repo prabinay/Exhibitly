@@ -8,78 +8,74 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 */
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 /**{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans",sans-serif;
     box-sizing: border-box;
-}*/
-
-/*body{
-    min-height: 100vh;
+}
+body{
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #f1f1f1;
+    align-items: center;
+    	background: #303F9F;
 }*/
 
-.about-section{
-    background: url('/img/about.jpg') no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
-}
-
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.skills{
+.about-sec{
     display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
+    padding: 3rem 0;
+    width: 100%;
+    justify-content: center;
+    /*background: #B3DFF2;*/
 }
-
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
+.about-img{
+    width: 350px;
+    height: 550px;
+    margin: 0 3rem;
 }
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
+.about-img img{
+    height: 100%;
+    width: 100%;
+}
+.about-intro{
+    color: #fff;
+    width: 670px;
+    height: 550px;
+    border-left: 3px solid #198754;
+    padding-left: 3rem;
+    margin: 0 3rem;
+    text-align: justify;
+}
+.about-intro p{
+    margin-top: 1.5rem;
+    font-size: 16px;
+    opacity: .7;
+}
+@media only screen and (max-width: 900px) {
+    .about-sec{
+        flex-direction: column;
+        align-items: center;
     }
-    .inner-container{
+    .about-img{
+        width: 80%;
+    }
+    .about-intro{
         width: 100%;
+        height: 100%;
+        border-top: 3px solid #198754;
+        border-left: none;
+        padding: 1rem;
+        margin-top: 2rem;
     }
-}
+    .about-intro h3,p{
+        width: 80%;
+    }
+    .about-intro p{
+        font-size: 12px;
+    }
 
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
+
 }

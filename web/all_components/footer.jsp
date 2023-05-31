@@ -29,8 +29,8 @@
                             <h4>Company</h4>
                             <li><a href="aboutUs.jsp">About</a></li>
                             <li><a href="services.jsp">our services</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                            <li><a href="#">affiliate program</a></li>
+                            <li><a href="policy.jsp">privacy policy</a></li>
+                            <li><a href="tcs.jsp">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">

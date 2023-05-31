@@ -35,7 +35,7 @@
                                     ${art.artCategory}</p>
                                 <div class="col">
                                     <a href="cart?action=addtocart&id=${art.artID}" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i>Add</a>
-                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> View Details</a>
+                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1">Details</a>
                                     <a  class="btn btn-danger btn-sm ml-1"> Rs.${art.price}</a>
                                 </div>
                             </div>
