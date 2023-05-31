@@ -23,18 +23,20 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">our services</a></li>
+                    <div class="footer-col" >
+                        
+                        <ul  style="list-style-type: none;">
+                            <h4>Company</h4>
+                            <li><a href="aboutUs.jsp">About</a></li>
+                            <li><a href="services.jsp">our services</a></li>
                             <li><a href="#">privacy policy</a></li>
                             <li><a href="#">affiliate program</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Get help</h4>
+                        
                         <ul>
+                            <h4>Get Help</h4>
                             <li><a href="#">Buyer FAQ</a></li>
                             <li><a href="#">Testimonials</a></li>
                             <li><a href="#">Return Policy</a></li>
@@ -43,8 +45,9 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Shop More</h4>
+                        
                         <ul>
+                            <h4>Shop More</h4>
                             <li><a href="landscape">Landscape</a></li>
                             <li><a href="portrait">Portrait</a></li>
                             <li><a href="abstract#">Abstract</a></li>
@@ -52,8 +55,9 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>follow us</h4>
+                        
                         <div class="social-links">
+                            <h4>Follow Us</h4>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>

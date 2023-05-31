@@ -17,6 +17,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/aboutUs.html</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
@@ -28,11 +29,14 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/user/servlet/userHomeServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/OrdersServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/displayAlerts.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/services.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/OrderlistDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/aboutUs.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/aboutUs.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/CartServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/OrderList.java</file>
@@ -69,8 +73,8 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/checkout.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/order_details.jsp</file>
         </group>
