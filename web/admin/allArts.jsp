@@ -26,7 +26,11 @@
         </c:if>
         <div class="container">
             <hr>
-            <h3 class="text-center p-2">All Arts</h3>
+            <!--<h3 class="text-center p-2">All Arts</h3>-->
+            <div class="text-center mb-8 mt-5">
+            <h1 class="text-4xl font-bold mb-2">All Arts</h1>
+            <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+        </div>
             <hr>
             <c:if test= "${not empty success}">
                 <p class="text-center text-success">${success}</p> 
@@ -89,10 +93,10 @@
                     </tbody>
                 </table>
             </div>
-
-                <hr>
+                <hr><br>
+             
             <div class="text-center">
-                <button type="submit" class="btn btn-primary  "><a class="nav-link active text-center" aria-current="page" href="home.jsp">Go to Home</a></button>
+                <button type="submit" ><a class=" bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium" aria-current="page" href="home.jsp">Go to Home</a></button>
             </div>
         </div>
 

@@ -31,14 +31,59 @@
                 background-size: cover;
                 background-position: center;
             }
+            .toast-container {
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                z-index: 9999;
+            }
+
+            .toast {
+                padding: 0.75rem 1rem;
+                border-radius: 0.25rem;
+                background-color: #333;
+                color: #fff;
+            }
         </style>
+
+        <script>
+            // Initialization for ES Users
+            import {
+            Toast,
+                    initTE,
+            } from "tw-elements";
+
+            initTE({Toast});
+        </script>
     </head>
     <body  class="bg-gray-100"  >
         <%@include file="all_components/navbar.jsp"%>
 
 
         <c:if test="${errorMessage != null}">
+
             <h5 class="text-center text-danger">${errorMessage}</h5>
+            <div id="toast" class="fixed top-4 right-4 transition-opacity duration-300 opacity-0">
+                <!-- Toast content -->
+                
+                <div
+                    class="pointer-events-auto mx-auto mb-4 hidden w-96 max-w-full rounded-lg bg-primary-100 bg-clip-padding text-sm text-primary-700 shadow-lg shadow-black/5 data-[te-toast-show]:block data-[te-toast-hide]:hidden"
+                    id="static-example"
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                    data-te-autohide="false"
+                    data-te-toast-init
+                    data-te-toast-show>
+
+                    <div
+                        class="break-words rounded-b-lg bg-primary-100 px-4 py-4 text-primary-700">
+                       ${errorMessage}
+                    </div>
+                </div>
+            </div>
+
+
         </c:if>       
 
 
@@ -52,7 +97,7 @@
         
                     <h3>“Art for all, buy art relax your life”</h3> 
                 </div>-->
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto mt-2">
 
             <div id="default-carousel" class="relative" data-carousel="static">
 

@@ -32,7 +32,11 @@
         <c:if test="${empty userobj}">
             <c:redirect url="../login.jsp" />
         </c:if>
-        <h1 class="text-center p-5">Welcome Admin</h1>
+        <!--<h1 class="text-center p-5">Welcome Admin</h1>-->
+        <div class="text-center mb-8 mt-5">
+            <h1 class="text-4xl font-bold mb-2">Welcome Admin</h1>
+            <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+        </div>
         <div class="container ">
             <div class="row p-2">
                 <div class="col-md-3">
@@ -81,7 +85,6 @@
                                 <h4>Logout</h4>
                             </div>
                         </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -100,10 +103,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="text-center">
+                        <div class="text-center mt-2">
                             <h4>Do You want to Logout?</h4>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <a href="../logout" type="button" class="btn btn-primary text-white"> Logout</a>
+                            <button type="button" class=" bg-gray-500 btn hover:bg-gray-100 text-white  py-2 px-4 rounded-md font-medium mb-1" data-dismiss="modal">Close</button>
+                            <button class=" mt-2 bg-red-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium"><a href="../logout" > Logout</a></button>
                         </div>
                         <div class="modal-footer">
 

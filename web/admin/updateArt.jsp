@@ -33,7 +33,11 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="text-center">Update an Art</h4>
+                            <!--<h4 class="text-center">Update an Art</h4>-->
+                            <div class="text-center mb-8 mt-5">
+                                <h3 class="text-4xl font-bold mb-2">Update an Art</h3>
+                                <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+                            </div>
                             <hr>
 
 

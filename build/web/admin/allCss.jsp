@@ -20,3 +20,4 @@ crossorigin="anonymous"></script>
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="css/style.css" >
+<script src="https://cdn.tailwindcss.com"></script>

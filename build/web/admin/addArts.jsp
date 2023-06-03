@@ -27,7 +27,11 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="text-center">Add an Art</h4>
+                            <!--<h4 class="text-center">Add an Art</h4>-->
+                            <div class="text-center mb-8 mt-5">
+                                <h4 class="text-4xl font-bold mb-2">Add an Art</h4>
+                                <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+                            </div>
                             <hr>
 
                             <c:if test= "${not empty success}">
@@ -44,7 +48,7 @@
                                 <form class="justify-content-md-cente" action="../admin/update" method="post" enctype="multipart/form-data">
 
                                 </c:if>
-                                    
+
                                 <c:if test="${art == null}">
 
                                     <form action="../add_arts" method="post" enctype="multipart/form-data">
@@ -62,7 +66,7 @@
 
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Price*</label>
-                                        <input type="number" class="form-control"  name="price" required="required"value='${art.price}'>
+                                        <input type="number" class="form-control"  name="price" required="required" value='${art.price}'>
 
                                     </div>
 
@@ -96,7 +100,7 @@
 
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium">Add</button>
                                     <!--<button type="submit" class="btn btn-primary "><a class="nav-link active" aria-current="page" href="home.jsp">Home</a></button>-->
 
                                 </form>
