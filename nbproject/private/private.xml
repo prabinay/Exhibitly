@@ -14,6 +14,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/PortraitServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/thankyou.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/bill.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
@@ -22,6 +23,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/OrdersDao.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/pcard.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/cartdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/LandscapeServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/WEB-INF/web.xml</file>
@@ -33,6 +35,8 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/Cart.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/cart.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/OrderlistDao.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/tcs.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/policy.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/allCss.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/aboutUs.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
@@ -72,6 +76,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/checkout.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/services.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>

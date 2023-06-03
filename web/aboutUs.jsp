@@ -45,7 +45,7 @@
                     artist looking for a platform to showcase your talent or an art lover seeking to discover new 
                     works, we invite you to embark on a creative journey with us. Explore, engage, and be inspired 
                     as you immerse yourself in the world of art on our platform.
-                    t.</p>
+                    </p>
             </div>
         </div>
 

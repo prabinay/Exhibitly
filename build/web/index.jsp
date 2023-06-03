@@ -26,9 +26,14 @@
             .crd-ho:hover{
                 background-color: #fcf7f7;
             }
+            .card-image {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+            }
         </style>
     </head>
-    <body style="background-color: #f7f7f7;">
+    <body  class="bg-gray-100"  >
         <%@include file="all_components/navbar.jsp"%>
 
 
@@ -42,84 +47,145 @@
             <h5 class="text-center text-success">${successMessage}</h5>
         </c:if>
 
-        <div class="container-fluid back-img p-5" style=" ">
-            <h1 class="text-left text-danger">Creative<br> and Best Arts</h1>
+        <!--        <div class="container-fluid back-img p-5" style=" ">
+                    <h1 class="text-left text-danger">Creative<br> and Best Arts</h1>
+        
+                    <h3>“Art for all, buy art relax your life”</h3> 
+                </div>-->
+        <div class="max-w-6xl mx-auto">
 
-            <h3>“Art for all, buy art relax your life”</h3> 
+            <div id="default-carousel" class="relative" data-carousel="static">
+
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
+                        <img src="img/c1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="img/c2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="img/c3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+
+
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                </div>
+
+                <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="hidden">Anterior</span>
+                    </span>
+                </button>
+                <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="hidden">Siguiente</span>
+                    </span>
+                </button>
+            </div>
+
+            <script>
+                const carousel = document.querySelector('[data-carousel="static"]');
+                const carouselItems = Array.from(carousel.querySelectorAll('[data-carousel-item]'));
+                const prevButton = carousel.querySelector('[data-carousel-prev]');
+                const nextButton = carousel.querySelector('[data-carousel-next]');
+                const slideButtons = Array.from(carousel.querySelectorAll('[data-carousel-slide-to]'));
+                let currentIndex = 0;
+
+                function showSlide(index) {
+                    carouselItems.forEach((item, i) => {
+                        item.classList.toggle('hidden', i !== index);
+                    });
+
+                    slideButtons.forEach((button, i) => {
+                        button.setAttribute('aria-current', i === index);
+                    });
+                }
+
+                function previousSlide() {
+                    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+                    showSlide(currentIndex);
+                }
+
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % carouselItems.length;
+                    showSlide(currentIndex);
+                }
+
+                slideButtons.forEach((button, index) => {
+                    button.addEventListener('click', () => {
+                        currentIndex = index;
+                        showSlide(currentIndex);
+                    });
+                });
+
+                prevButton.addEventListener('click', previousSlide);
+                nextButton.addEventListener('click', nextSlide);
+
+                setInterval(nextSlide, 3000); // Automatic slide change every 3 seconds
+            </script>
         </div>
 
+        <!--here ends slider section-->
 
-        <div class="container-fluid" >
-            <hr>
-            <h3 class="text-center">Available Arts</h3><br>
-            <div class="row">
+
+        <!--here starts propduct card--> 
+
+        <div class="container mx-auto px-4 py-6">
+
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold mb-2">Available Arts</h1>
+                <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+                <!-- Product Card -->
                 <c:forEach var="art" items="${artlist}">
-                    <div class="col-md-3 p-1">
-
-
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" style="
-                                     width:220px; height:220px" class="img-thumblin">
-                                <p>${art.artName}<br>
-                                    ${art.artistName} <br>
-                                    ${art.artCategory}</p>
-                                <div class="col">
-                                    <a href="cart?action=addtocart&id=${art.artID}" class="btn btn-danger btn-sm ml-2">  <i class="fas fa-cart-plus"></i>Add</a>
-                                    <a href="ViewArtDetails?id=${art.artID}" class="btn btn-success btn-sm ml-1"> Details</a>
-                                    <a  class="btn btn-danger btn-sm ml-1"> <i class=""></i>Rs.${art.price}</a>
-                                </div>
-                            </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 ">
+                        <div class="flex w-full min-h-40 rounded-md overflow-hidden lg:h-60 lg:aspect-none justify-center">
+                            <img src="img/arts/<c:out value="${art.photoName}"/>"   class="w-auto h-full object-center object-cover lg:w-auto lg:h-full rounded">
                         </div>
 
+                        <div class="p-2">
+                            <h3 class="text-xl font-semibold mb-2">${art.artName}</h3>
+                            <p class="text-gray-500 mb-1">${art.artistName}</p>
+                            <p class="text-black-500 mb-1">${art.artCategory}</p>
+                            <div class="flex items-center mb-2">
+                                <p class="text-lg font-semibold">Rs.${art.price}</p>
 
+                            </div>
+                            <div class="flex justify-between items-center mb-2 ">
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-2 rounded">
+                                    <a href="cart?action=addtocart&id=${art.artID}"  >  
+                                        Add to Cart </a>
+                                </button>
+                                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-2 py-2 rounded ">
+                                    <a href="ViewArtDetails?id=${art.artID}"  >View Details </a>
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </c:forEach>
+                <!-- Repeat the product card for other products -->
             </div>
+
         </div>
-        <!--        <hr>
-                <div class="container">
-        
-                    <h3 class="text-center">Available Arts</h3><hr><br>
-                    <div class="container d-flex justify-content-center mt-100">	
-        
-                        <div class="row"> 
-        
-        <c:forEach var="art" items="${artlist}">
-            <div class="col-md-3 p-2">
-                <div class="product-wrapper mb-45 text-center">
 
-
-                    <div class="card">
-                        <a href="#" data-abc="true"> 
-                            <img alt="" src="img/arts/<c:out value="${art.photoName}"/>" 
-                                 </a>
-                            <span class="text-center"><i class="fa fa-rupee">
-
-                                </i>Rs.${art.price}<</span> <div class="product-action"> 
-                                <div class="product-action-style"> 
-                                    <a href="#"> 
-                                        <i class="fa fa-plus"></i> 
-                                    </a> <a href="#"> 
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <a href="#"> <i class="fa fa-shopping-cart">
-
-                                        </i> </a> 
-                                </div> 
-                            </div> 
-                    </div> 
-
-                </div> 
-            </div> 
-        </c:forEach>
-    </div>
-
-</div>
-</div>
-<br><hr>-->
-
-        <h3 class="text-center p-3">Our Features</h3>
+        <!--here starts features Section-->s
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold mb-2">Our Features</h1>
+            <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+        </div>
         <section id="feature" class="section-p1"> 
             <div class="feature-box">
                 <img src="img/features/f1.png" alt="">

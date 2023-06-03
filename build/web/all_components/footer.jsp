@@ -15,7 +15,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title> Exhibitly</title>
-    
+
+        <script>
+            function generateCopyrightPage() {
+                var currentYear = new Date().getFullYear();
+                var copyrightText = `Copyright © ${currentYear} Your Company. All rights reserved.`;
+
+                return copyrightText;
+            }
+
+
+
+        </script>
+
     </head>
 
 
@@ -24,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col" >
-                        
+
                         <ul  style="list-style-type: none;">
                             <h4>Company</h4>
                             <li><a href="aboutUs.jsp">About</a></li>
@@ -34,7 +46,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        
+
                         <ul>
                             <h4>Get Help</h4>
                             <li><a href="#">Buyer FAQ</a></li>
@@ -45,7 +57,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        
+
                         <ul>
                             <h4>Shop More</h4>
                             <li><a href="landscape">Landscape</a></li>
@@ -55,7 +67,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        
+
                         <div class="social-links">
                             <h4>Follow Us</h4>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -66,6 +78,14 @@
                     </div>
                 </div>
             </div>
+
+<!--            <p id="copyright">
+                <script>
+                    var copyrightPage = generateCopyrightPage();
+                    document.getElementById('copyright').textContent = copyrightPage;
+                </script>
+            </p>-->
+
         </footer>
 
 

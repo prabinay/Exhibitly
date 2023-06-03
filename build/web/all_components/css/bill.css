@@ -7,19 +7,3 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Prab1n
 */
 
-.print {
-    display:none;
-}
-.no-print{
-    display:block;
-
-}
-@media print{
-    .print {
-        display:block;
-
-    }
-    .no-print{
-        display:none;
-    }
-}
