@@ -101,7 +101,7 @@ ${cartItemList.size()}
                     Exhibitly
                 </a>
                 <!-- Nav Links -->
-                <ul class="  md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+                <ul class="  md:flex items-center px-4 mx-auto font-semibold font-heading space-x-12">
                     <li><a class="hover:text-gray-200" href="index">Home</a></li>
                     <li><a class="hover:text-gray-200" href="landscape">Landscape</a></li>
                     <li><a class="hover:text-gray-200" href="portrait">Portrait</a></li>
