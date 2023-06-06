@@ -94,14 +94,14 @@ ${cartItemList.size()}
 <div class="flex flex-wrap place-items-center  ">
     <section class="relative mx-auto">
         <!-- navbar -->
-        <nav class="flex justify-between bg-blue-800 text-white w-screen">
+        <nav class="flex justify-between bg-blue-600 text-white w-screen">
             <div class="px-5 xl:px-12 py-6 flex w-full items-center">
                 <a class="text-3xl font-bold font-heading" href="index">
                     <!-- <img class="h-9" src="logo.png" alt="logo"> -->
                     Exhibitly
                 </a>
                 <!-- Nav Links -->
-                <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+                <ul class="  md:flex px-4 mx-auto font-semibold font-heading space-x-12">
                     <li><a class="hover:text-gray-200" href="index">Home</a></li>
                     <li><a class="hover:text-gray-200" href="landscape">Landscape</a></li>
                     <li><a class="hover:text-gray-200" href="portrait">Portrait</a></li>
@@ -132,7 +132,7 @@ ${cartItemList.size()}
                 </c:if> 
                 <c:if test="${ empty userobj}">
 
-                    <div class="hidden xl:flex items-center space-x-5 items-center">
+                    <div class=" xl:flex items-center space-x-5 items-center">
                         <button class="bg-white text-blue-800 hover:bg-blue-100 text-sm py-2 px-4 rounded">
                             <a href="login.jsp"  > Login </a> 
                         </button>

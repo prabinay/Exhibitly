@@ -33,16 +33,16 @@
 
     <body>
         <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col" >
+            <div class="container ml-8 mr-8">
+                <div class="row ">
+                    <div class="footer-col text-white-800" >
 
-                        <ul  style="list-style-type: none;">
+                        <ul  style="list-style-type: none;" class="list-disc">
                             <h4>Company</h4>
-                            <li><a href="aboutUs.jsp">About</a></li>
-                            <li><a href="services.jsp">our services</a></li>
-                            <li><a href="policy.jsp">privacy policy</a></li>
-                            <li><a href="tcs.jsp">Terms & Conditions</a></li>
+                            <li class="text-white-500"><a href="aboutUs.jsp">About</a></li>
+                            <li class="text-white-500"><a href="services.jsp">our services</a></li>
+                            <li class="text-white-500"><a href="policy.jsp">privacy policy</a></li>
+                            <li class="text-white-500"><a href="tcs.jsp">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">

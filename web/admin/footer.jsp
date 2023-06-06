@@ -5,5 +5,5 @@
 --%>
 
 <div class="container-fluid text-center text-white p-5 mt-2" style="background-color: #303f9f;">
-    <h5 > Copyright ©2022 Exhibitly</h5>
+    <h5 > Copyright ©2023 Exhibitly</h5>
 </div>

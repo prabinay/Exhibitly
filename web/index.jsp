@@ -44,6 +44,14 @@
                 background-color: #333;
                 color: #fff;
             }
+            #alert {
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .hidden {
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
         </style>
 
         <script>
@@ -62,34 +70,48 @@
 
         <c:if test="${errorMessage != null}">
 
-            <h5 class="text-center text-danger">${errorMessage}</h5>
-            <div id="toast" class="fixed top-4 right-4 transition-opacity duration-300 opacity-0">
-                <!-- Toast content -->
-                
-                <div
-                    class="pointer-events-auto mx-auto mb-4 hidden w-96 max-w-full rounded-lg bg-primary-100 bg-clip-padding text-sm text-primary-700 shadow-lg shadow-black/5 data-[te-toast-show]:block data-[te-toast-hide]:hidden"
-                    id="static-example"
-                    role="alert"
-                    aria-live="assertive"
-                    aria-atomic="true"
-                    data-te-autohide="false"
-                    data-te-toast-init
-                    data-te-toast-show>
+            <!--<h5 class="text-center text-danger">${errorMessage}</h5>-->
+            <!--            <div class="relative">
+                            <div id="alert" class="absolute top-0 right-0 mt-4 mr-4 p-4 bg-red-500 text-white rounded shadow">
+            ${errorMessage}
+        </div>
 
-                    <div
-                        class="break-words rounded-b-lg bg-primary-100 px-4 py-4 text-primary-700">
-                       ${errorMessage}
-                    </div>
-                </div>
+         Other containerent 
+    </div>-->
+
+            <div id="alert" class="fixed top-0 right-0    bg-red-500 text-white p-4 rounded shadow ">
+                <span class="block">${errorMessage}</span>
+                <button id="closeBtn" class="absolute top-0 right-0 p-2">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
-
 
         </c:if>       
 
 
         <c:if test="${successMessage != null}">
 
-            <h5 class="text-center text-success">${successMessage}</h5>
+            <h5 class="text-center text-success"></h5>
+            <!--            <div class="relative">
+                            <div id="alert" class="absolute top-0 right-0 mt-4 mr-4 p-4 bg-green-500 text-white rounded shadow">
+            ${successMessage}
+        </div>
+
+         Other content 
+    </div>-->
+
+            <div id="alert" class="fixed top-0 right-0 bg-red-500 text-white p-4 rounded shadow">
+                <span class="block">${successMessage}</span>
+                <button id="closeBtn" class="absolute top-0 right-0 p-2">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+
         </c:if>
 
         <!--        <div class="container-fluid back-img p-5" style=" ">
@@ -97,7 +119,7 @@
         
                     <h3>“Art for all, buy art relax your life”</h3> 
                 </div>-->
-        <div class="max-w-6xl mx-auto mt-2">
+        <div class="max-w-7xl mx-auto mt-2">
 
             <div id="default-carousel" class="relative" data-carousel="static">
 
@@ -185,7 +207,7 @@
 
         <!--here starts propduct card--> 
 
-        <div class="container mx-auto px-4 py-6">
+        <div class="container mx-8 px-4 py-6">
 
             <div class="text-center mb-8">
                 <h1 class="text-4xl font-bold mb-2">Available Arts</h1>
@@ -226,7 +248,7 @@
 
         </div>
 
-        <!--here starts features Section-->s
+        <!--here starts features Section-->
         <div class="text-center mb-8">
             <h1 class="text-4xl font-bold mb-2">Our Features</h1>
             <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
@@ -268,4 +290,26 @@
 
         <%@include file="all_components/footer.jsp"%>  
     </body>
+
+
+    <script>
+        // Get the alert and close button elements
+        const alertElement = document.getElementById('alert');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Set a timeout to show the slider after 5 seconds (5000 milliseconds)
+        setTimeout(() => {
+            alertElement.classList.add('hidden');
+            sliderElement.classList.remove('hidden');
+        }, 4000);
+
+
+        // Add an event listener to the close button
+        closeBtn.addEventListener('click', () => {
+            alertElement.classList.add('hidden');
+        });
+
+
+    </script>
+
 </html>

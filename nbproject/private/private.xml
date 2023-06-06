@@ -41,6 +41,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/aboutUs.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/logoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/aboutUs.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/slider.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/nbproject/build-impl.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/CartServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/OrderList.java</file>
@@ -78,8 +79,8 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/services.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/order_details.jsp</file>
         </group>
