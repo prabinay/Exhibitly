@@ -50,8 +50,8 @@
                         <ul>
                             <h4>Get Help</h4>
                             <li><a href="#">Buyer FAQ</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Return Policy</a></li>
+                            <!--<li><a href="#">Testimonials</a></li>-->
+                            <li><a href="returnPolicy.jsp">Return Policy</a></li>
                             <li><a href="#">order status</a></li>
                             <li><a href="#">payment options</a></li>
                         </ul>
