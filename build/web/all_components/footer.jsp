@@ -33,7 +33,7 @@
 
     <body>
         <footer class="footer">
-            <div class="container ml-8 mr-8">
+            <div class="container mx-auto">
                 <div class="row ">
                     <div class="footer-col text-white-800" >
 
