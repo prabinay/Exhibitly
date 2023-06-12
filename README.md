@@ -9,15 +9,18 @@ Run the following commands from your terminal:
 1) `git clone https://github.com/prabinay/Exhibitly` to clone this repository 
 
 
-## Tools and Technology Used:
+### Technologies and Tools
 
- - Java
- - Jsp servlet
- - Mysql Workbench
- - JDBC
- - Apache Tomcat server
- - Netbeans IDE 13
- - HTML, CSS, Bootstrap
+[![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)](https://www.java.com/)
+[![JSP](https://img.shields.io/badge/-JSP-007396?style=flat-square&logo=jsp&logoColor=white)](https://www.oracle.com/java/technologies/java-server-pages-jsp.html)
+[![Servlet](https://img.shields.io/badge/-Servlet-007396?style=flat-square&logo=servlet&logoColor=white)](https://javaee.github.io/servlet-spec/)
+[![MySQL Workbench](https://img.shields.io/badge/-MySQL%20Workbench-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/products/workbench/)
+[![JDBC](https://img.shields.io/badge/-JDBC-007396?style=flat-square&logo=jdbc&logoColor=white)](https://www.oracle.com/java/technologies/jdbc/)
+[![Apache Tomcat](https://img.shields.io/badge/-Apache%20Tomcat-F8DC75?style=flat-square&logo=apache-tomcat&logoColor=black)](https://tomcat.apache.org/)
+[![NetBeans IDE](https://img.shields.io/badge/-NetBeans%20IDE-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white)](https://netbeans.apache.org/)
+[![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
 
 ## Process Modeling!
