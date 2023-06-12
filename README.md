@@ -9,7 +9,7 @@ Run the following commands from your terminal:
 1) `git clone https://github.com/prabinay/Exhibitly` to clone this repository 
 
 
-### Technologies and Tools
+<!-- ### Technologies and Tools
 
 [![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)](https://www.java.com/)
 [![JSP](https://img.shields.io/badge/-JSP-007396?style=flat-square&logo=jsp&logoColor=white)](https://www.oracle.com/java/technologies/java-server-pages-jsp.html)
@@ -24,6 +24,21 @@ Run the following commands from your terminal:
 [![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
+ -->
+ 
+ ### Technologies and Tools
+
+<a href="https://www.java.com/"><img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java" height="40" /></a>
+<a href="https://www.oracle.com/java/technologies/java-server-pages-jsp.html"><img src="https://img.shields.io/badge/-JSP-007396?style=flat-square&logo=jsp&logoColor=white" alt="JSP" height="40" /></a>
+<a href="https://javaee.github.io/servlet-spec/"><img src="https://img.shields.io/badge/-Servlet-007396?style=flat-square&logo=servlet&logoColor=white" alt="Servlet" height="40" /></a>
+<a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" height="40" /></a>
+<a href="https://www.oracle.com/java/technologies/jdbc/"><img src="https://img.shields.io/badge/-JDBC-007396?style=flat-square&logo=jdbc&logoColor=white" alt="JDBC" height="40" /></a>
+<a href="https://tomcat.apache.org/"><img src="https://img.shields.io/badge/-Apache%20Tomcat-F8DC75?style=flat-square&logo=apache-tomcat&logoColor=black" alt="Apache Tomcat" height="40" /></a>
+<a href="https://netbeans.apache.org/"><img src="https://img.shields.io/badge/-NetBeans%20IDE-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white" alt="NetBeans IDE" height="40" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML" height="40" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS" height="40" /></a>
+<a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap" height="40" /></a>
+<a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" height="40" /></a>
 
 
 ## Process Modeling!
