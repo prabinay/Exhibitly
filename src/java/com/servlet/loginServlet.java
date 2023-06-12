@@ -35,7 +35,7 @@ public class loginServlet extends HttpServlet {
             String email = request.getParameter("email");
             String pwd = request.getParameter("password");
 
-            if ("admin@gmail.com".equals(email) && "admin".equals(pwd)) {
+            if ("admin@gmail.com".equals(email) && "Admin77#".equals(pwd)) {
                 User us = new User();
 
                 us.setName("Admin");
@@ -48,7 +48,7 @@ public class loginServlet extends HttpServlet {
                     response.sendRedirect("index");
                 } else {
                     session.setAttribute("failed", "Email & Password Invalid");
-                    response.sendRedirect("login.jsp");
+                    response.sendRedirect("loginAndSignin.jsp");
                 }
            
 //                response.sendRedirect("home.jsp");

@@ -24,6 +24,7 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" href="all_components/css/footer.css" >
 <link rel="stylesheet" href="all_components/css/pcard.css" >
 <link rel="stylesheet" href="all_components/css/services.css" >
+<link rel="stylesheet" href="all_components/css/loginRegister.css" >
 
 
 

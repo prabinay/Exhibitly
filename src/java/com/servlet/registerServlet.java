@@ -49,16 +49,16 @@ public class registerServlet extends HttpServlet {
                 if (f) {
 //                    System.out.println("User Registered Successfully");
                     session.setAttribute("success", "Registered Successfully..");
-                    response.sendRedirect("register.jsp");
+                    response.sendRedirect("loginAndSignin.jsp");
                 } else {
 //                    System.out.println("Something wrong!");
                     session.setAttribute("failed", "Something wrong on Server..");
-                    response.sendRedirect("register.jsp");
+                    response.sendRedirect("loginAndSignin.jsp");
                 }
             } else {
 //                System.out.println("Please accept terms & Conditions");
                 session.setAttribute("failed", "Please Accept Terms & Conditions..");
-                response.sendRedirect("register.jsp");
+                response.sendRedirect("loginAndSignin.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();

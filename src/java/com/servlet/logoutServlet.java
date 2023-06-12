@@ -25,7 +25,7 @@ public class logoutServlet extends HttpServlet {
                 
                 HttpSession session2 = request.getSession();
                 session2.setAttribute("success", "Logout Successfully");
-                response.sendRedirect("login.jsp");
+                response.sendRedirect("loginAndSignin.jsp");
                 
             }catch(Exception e){
                 e.printStackTrace();
