@@ -134,11 +134,11 @@ ${cartItemList.size()}
 
                     <div class=" xl:flex items-center space-x-5 items-center">
                         <button class="bg-white text-blue-800 hover:bg-blue-100 text-sm py-2 px-4 rounded">
-                            <a href="loginAndSignin.jsp"  > Login </a> 
+                            <a href="loginAndSignin.jsp"  > Login/Signup </a> 
                         </button>
-                        <button class="bg-green-500 hover:bg-blue-400 text-white text-sm py-2 px-4 rounded">
-                            <a href="register.jsp"  > Sign Up</a>
-                        </button>
+<!--                        <button class="bg-green-500 hover:bg-blue-400 text-white text-sm py-2 px-4 rounded">
+                            <a href="loginAndSignin.jsp"  > Sign Up</a>
+                        </button>-->
                     </div
                 </c:if> 
             </div>
