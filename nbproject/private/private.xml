@@ -17,6 +17,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/bill.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtCRUDdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/style.css</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/loginRegister.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/aboutUs.html</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
@@ -56,6 +57,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/js/validation.js</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/CheckoutServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/updateArt.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/index.jsp</file>
@@ -80,6 +82,8 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/services.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/loginAndSignin.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/all_components/js/main.js</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>

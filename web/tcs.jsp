@@ -13,9 +13,9 @@
         <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
         <%@include file="all_components/allCss.jsp"%> 
     </head>
-    <body>
+    <body class="bg-gray-100">
         <%@include file="all_components/navbar.jsp"%>
-        <div class="container mx-auto bg-gray-100 max-w-screen-xl mt-2 mb-2 " style="max-width: 800px;">
+        <div class="container mx-auto bg-blue-100 max-w-screen-xl mt-2 mb-2 " style="max-width: 800px;">
             <div class="text-center mb-8 ">
                 <h1 class="text-3xl font-bold mb-2 ">Terms & Conditions</h1>
                 <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>

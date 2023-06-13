@@ -17,84 +17,73 @@
 
         <%@include file="all_components/allCss.jsp"%>
     </head>
-    <body>
 
+    <body class="bg-gray-100">
         <%@include file="all_components/navbar.jsp"%>
 
         <!--main code starts here--> 
-        <div class="container-fluid">
-            <h1 class="text-center mt-5 display-5 fw-bold">Our <span class="theme-text">Services</span></h1>
-            <hr class="mx-auto mb-5 w-25">
-            <div class="row mb-5">
-                <div class="col-12 col-sm-6 col-md-3 m-auto">
-                    <!-- card starts here -->
-                    <div class="card shadow">
-                        <img src="img/buy.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="text-center">Secure and Seamless Online Purchases</h3>
-                            <hr class="mx-auto w-75">
-                            <p>
-                                For art enthusiasts, we offer a secure and seamless online purchasing experience. Detailed images, descriptions, and secure payment gateways ensure confident browsing and safe transactions, fostering a trusted environment for buyers.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- card ends here -->
-                </div>
-                <!-- col ends here -->
-                <div class="col-12 col-sm-6 col-md-3 m-auto">
-                    <!-- card starts here -->
-                    <div class="card shadow">
-                        <img src="img/filter.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="text-center">Artwork Discovery and Filtering</h3>
-                            <hr class="mx-auto w-75">
-                            <p>
-                                Our online art gallery enhances the browsing experience with robust search and filtering options. Users can easily explore artworks based on categories, genre, medium, artist, and more, finding pieces that align with their preferences and interests.
+        <div class="container mx-auto mb-4">
 
-
-                            </p>
-                        </div>
+            <h1 class="text-center mt-3 text-3xl font-bold">Our <span class="text-blue-600">Services</span></h1>
+            <hr class="mx-auto my-3 w-1/4 border border-gray-300">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mx-auto">
+                <div class="max-w-md mx-auto bg-white rounded-lg shadow">
+                    <!--<img src="img/buy.jpg" alt="" class="object-cover h-48">-->
+                    <div class="flex justify-center items-center">
+                        <img src="img/purchase.jpg" alt="" class="object-cover h-48">
                     </div>
-                    <!-- card ends here -->
-                </div>
-                <!-- col ends here -->
-                <div class="col-12 col-sm-6 col-md-3 m-auto">
-                    <!-- card starts here -->
-                    <div class="card shadow">
-                        <img src="img/promotion.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="text-center">Artist Promotion and Representation</h3>
-                            <hr class="mx-auto w-75">
-                            <p>
-                                Through our platform, we promote artists and their work to a wider audience. Artists gain exposure and recognition as we feature their artwork prominently in curated collections, connecting them with potential buyers and art enthusiasts.
-
-
-                            </p>
-                        </div>
+                    <div class="p-5">
+                        <h3 class="text-center text-xl font-bold">Secure and Seamless Online Purchases</h3>
+                        <hr class="mx-auto my-3 w-3/4 border border-gray-300">
+                        <p class="text-gray-700">
+                            For art enthusiasts, we offer a secure and seamless online purchasing experience. Detailed images, descriptions, and secure payment gateways ensure confident browsing and safe transactions, fostering a trusted environment for buyers.
+                        </p>
                     </div>
-                    <!-- card ends here -->
                 </div>
-                <!-- col ends here -->
-                <div class="col-12 col-sm-6 col-md-3 m-auto">
-                    <!-- card starts here -->
-                    <div class="card shadow">
-                        <img src="img/support.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="text-center">Customer Support for user experience</h3>
-                            <hr class="mx-auto w-75">
-                            <p>
-                                Our dedicated customer support team is available to assist and help users with inquiries, concerns, or technical issues on our platform. We strive to ensure a positive user experience for all, providing timely and helpful assistance.
-                            </p>
-                        </div>
+                <div class="max-w-md mx-auto bg-white rounded-lg shadow">
+                    <!--<img src="img/filter.jpg" alt="" class="object-cover h-48">-->
+                    <div class="flex justify-center items-center">
+                        <img src="img/filter.jpg" alt="" class="object-cover h-48">
                     </div>
-                    <!-- card ends here -->
+                    <div class="p-5">
+                        <h3 class="text-center text-xl font-bold">Artwork Discovery and Filtering</h3>
+                        <hr class="mx-auto my-3 w-3/4 border border-gray-300">
+                        <p class="text-gray-700">
+                            Our online art gallery enhances the browsing experience with robust search and filtering options. Users can easily explore artworks based on categories, genre, medium, artist, and more, finding pieces that align with their preferences and interests.
+                        </p>
+                    </div>
                 </div>
-                <!-- col ends here -->
+                <div class="max-w-md mx-auto bg-white rounded-lg shadow">
+                    <!--<img src="img/promo.png" alt="" class="object-cover h-48">-->
+                    <div class="flex justify-center items-center">
+                        <img src="img/promo.png" alt="" class="object-cover h-48">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-center text-xl font-bold">Artist Promotion and Representation</h3>
+                        <hr class="mx-auto my-3 w-3/4 border border-gray-300">
+                        <p class="text-gray-700">
+                            Through our platform, we promote artists and their work to a wider audience. Artists gain exposure and recognition as we feature their artwork prominently in curated collections, connecting them with potential buyers and art enthusiasts.
+                        </p>
+                    </div>
+                </div>
+                <div class="max-w-md mx-auto bg-white rounded-lg shadow">
+                    <!--<img src="img/support.jpg" alt="" class="object-cover h-48">-->
+                    <div class="flex justify-center items-center">
+                        <img src="img/support.jpg" alt="" class="object-cover h-48">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-center text-xl font-bold">Customer Support for User Experience</h3>
+                        <hr class="mx-auto my-3 w-3/4 border border-gray-300">
+                        <p class="text-gray-700">
+                            Our dedicated customer support team is available to assist and help users with inquiries, concerns, or technical issues on our platform. We strive to ensure a positive user experience for all, providing timely and helpful assistance.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-        <%@include file="all_components/footer.jsp"%> 
     </body>
+
+
+    <%@include file="all_components/footer.jsp"%> 
+
 </html>

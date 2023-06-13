@@ -20,11 +20,11 @@
 
         <%@include file="all_components/allCss.jsp"%>  
     </head>
-    <body>
+    <body class="bg-gray-100">
 
         <%@include file="all_components/navbar.jsp"%>
 
-        <div class="container mx-auto max-w-screen-xl mt-4 bg-gray-100" style="max-width: 800px;">
+        <div class="container mx-auto max-w-screen-xl mt-2 bg-blue-100" style="max-width: 800px;">
             <!--<h1 class="text-3xl font-bold mb-4"></h1>-->
             <div class="text-center mb-8 ">
                 <h1 class="text-3xl font-bold mb-2 ">Privacy Policy for Exhibitly</h1>

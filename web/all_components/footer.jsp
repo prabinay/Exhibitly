@@ -132,6 +132,7 @@
                             <li><a href="services.jsp" class="animate-slide animate-slide-right">Our Services</a></li>
                             <li><a href="policy.jsp" class="animate-slide animate-slide-right">Privacy Policy</a></li>
                             <li><a href="tcs.jsp" class="animate-slide animate-slide-right">Terms &amp; Conditions</a></li>
+                            <li><a href="access.jsp" class="animate-slide animate-slide-right">Accessibility</a></li>
                         </ul>
                     </div>
                     <div class="col-span-1">

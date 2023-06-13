@@ -127,11 +127,11 @@
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
-                        <img src="img/c1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="img/slider11.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                     </div>
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="img/c2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <img src="img/slider22.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                     </div>
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
