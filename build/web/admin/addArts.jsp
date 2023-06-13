@@ -75,7 +75,7 @@
                                         <label for="inputState" >Art Categories</label>
                                         <select id="inputState" name="categories" class="form-control"    >
                                             <option selected>--select--</option>
-                                            <option></option>
+                                        
                                             <option value="Landscape">Landscape</option>
                                             <option value="Portrait">Portrait</option>
                                             <option value="Abstract">Abstract</option>
@@ -87,7 +87,7 @@
                                         <label for="inputState" >Art Status</label>
                                         <select id="inputState" name="status"   class="form-control"  >
                                             <option selected>--select--</option>
-                                            <option></option>
+                                        
                                             <option value="Active">Active</option>
                                             <option value="Inactive">Inactive</option>
 

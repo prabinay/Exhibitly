@@ -37,7 +37,7 @@
             <h1 class="text-4xl font-bold mb-2">Welcome Admin</h1>
             <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
         </div>
-        <div class="container ">
+<!--        <div class="container ">
             <div class="row p-2">
                 <div class="col-md-3">
                     <a href="addArts.jsp" >
@@ -87,7 +87,40 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+
+<div class="container mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <a href="addArts.jsp" class="flex justify-center items-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <i class="fas fa-plus-square fa-5x text-primary"></i>
+        <h4 class="mt-6 text-xl">Add an Art</h4>
+      </div>
+    </a>
+
+    <a href="AllArtsServlet" class="flex justify-center items-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <i class="fa-solid fa-palette fa-5x text-danger"></i>
+        <h4 class="mt-6 text-xl">All Arts</h4>
+      </div>
+    </a>
+
+    <a href="OrdersDisplayServlet" class="flex justify-center items-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <i class="fas fa-box-open fa-5x text-warning"></i>
+        <h4 class="mt-6 text-xl">Orders</h4>
+      </div>
+    </a>
+
+    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="" class="flex justify-center items-center">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <i class="fas fa-sign-out-alt fa-5x text-primary"></i>
+        <h4 class="mt-6 text-xl">Logout</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
 
         <div style="margin-top:255px;">
             <%@include file="footer.jsp"%>

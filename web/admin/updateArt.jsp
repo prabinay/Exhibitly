@@ -83,7 +83,7 @@
                                         <label for="inputState" >Art Categories</label>
                                         <select id="inputState" name="categories" class="form-control"    >
                                             <option selected>--select--</option>
-                                            <option></option>
+
                                             <option value="Landscape">Landscape</option>
                                             <option value="Portrait">Portrait</option>
                                             <option value="Abstract">Abstract</option>
@@ -95,7 +95,7 @@
                                         <label for="inputState" >Art Status</label>
                                         <select id="inputState" name="status"   class="form-control"  >
                                             <option selected>--select--</option>
-                                            <option></option>
+
                                             <option value="Active">Active</option>
                                             <option value="Inactive">Inactive</option>
 
@@ -108,7 +108,11 @@
 
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <!--<button type="submit" class="btn btn-primary">Update</button>-->
+                                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                                        Update
+                                    </button>
+
                                     <!--<button type="submit" class="btn btn-primary "><a class="nav-link active" aria-current="page" href="home.jsp">Home</a></button>-->
 
                                 </form>
