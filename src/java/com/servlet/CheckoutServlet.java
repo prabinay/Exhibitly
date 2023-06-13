@@ -75,7 +75,8 @@ public class CheckoutServlet extends HttpServlet {
 
         try {
             String address = request.getParameter("address");
-            String payment = "Cash on Delivery";
+//            String payment = "Cash on Delivery";
+            String payment = "Paid via Khalti";
             String country = request.getParameter("country");
             String state = request.getParameter("state");
             String postcode = request.getParameter("postcode");

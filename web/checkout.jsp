@@ -58,7 +58,7 @@
                 <c:set  var="total_price" value="${0}"/>
                 <!--cart Page-->
                 <div class="col-md-5 col-lg-4 order-md-last ">
-                   
+
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-lg font-bold text-blue-500 text-center">Cart Summary</span>
                         <span class="badge bg-primary rounded-pill"></span>
@@ -87,8 +87,8 @@
                             <strong>Rs.${total_price}</strong>
                         </li>
                     </ul>
-                        <div class="no-print bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium text-center ">
-                            <input   type="button" id="btnPrint" onclick="jsPrintAll()" value="Get Receipt" />
+                    <div class="no-print bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium text-center ">
+                        <input   type="button" id="btnPrint" onclick="jsPrintAll()" value="Get Receipt" />
                     </div>
 
                 </div>
@@ -99,7 +99,7 @@
 
                     <form action="checkout" method="post" class="needs-validation mt-2" novalidate="">
                         <div class="row g-3">
-             
+
                             <div class="col-12">
                                 <label for="address" class="form-label">Address</label>
                                 <input type="text" class="form-control" name="address" placeholder="1234 Main St" required="">
@@ -166,12 +166,20 @@
                         <div class="form-check">
 
                             <label class="form-check-label" for="save-info">
-                                <input type="checkbox" name="checkboxGroup" class="form-check-input" id="save-info" required>Cash On Delivery
+                                <input id="payment-button" type="checkbox" name="checkboxGroup" class="form-check-input" id="save-info" required>Pay via Khalti
                             </label>
                         </div>
 
+                        <!--                        <div class="justify-start mt-2">
+                                                    <button id="payment-button">
+                                                     <img src="img/khalti.jpg" alt="Khalti Logo" class="mr-2 h-6">
+                                                        
+                                                    </button>
+                                                </div>-->
+
+
                         <hr class="my-4">
-                        
+
                         <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium" type="submit">Place Order</button>
 
                     </form>
@@ -179,6 +187,45 @@
             </div>    
 
         </div>
+
+
+        <script>
+            var config = {
+                // replace the publicKey with yours
+                "publicKey": "test_public_key_6438ab66f99f4d6f97c19e6931cb9078",
+                "productIdentity": "1234567890",
+                "productName": "Dragon",
+                "productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
+                "paymentPreference": [
+                    "KHALTI",
+//                    "EBANKING",
+//                    "MOBILE_BANKING",
+//                    "CONNECT_IPS",
+//                    "SCT",
+                ],
+                "eventHandler": {
+                    onSuccess(payload) {
+                        // hit merchant api for initiating verfication
+                        console.log(payload);
+                        alert('Success! Payments successful.');
+                    },
+                    onError(error) {
+                        console.log(error);
+                        alert('Failed! Payments is not successful.');
+                    },
+                    onClose() {
+                        console.log('widget is closing');
+                    }
+                }
+            };
+
+            var checkout = new KhaltiCheckout(config);
+            var btn = document.getElementById("payment-button");
+            btn.onclick = function () {
+                // minimum transaction amount must be 10, i.e 1000 in paisa.
+                checkout.show({amount: ${total_price}*100});
+            }
+        </script>
 
 
 

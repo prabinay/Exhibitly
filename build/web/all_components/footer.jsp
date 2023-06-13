@@ -21,7 +21,7 @@
     </head>
 
 
-    <body>
+    <body class="flex flex-col min-h-screen">
         <!--        <footer class="footer">
                     <div class="container mx-auto px-8">
                         <div class="row ">

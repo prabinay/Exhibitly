@@ -25,7 +25,7 @@
 
 
     </head>
-    <body>
+    <body class="flex flex-col min-h-screen">
         <%@include file="all_components/navbar.jsp"%>
 
 
@@ -41,8 +41,11 @@
                     </div>
                 </div>
             </div>
+            <footer class="bg-blue-800 py-4">
+                <!-- Footer content here -->
+                <%@include file="all_components/footer.jsp"%> 
+            </footer>
 
-            <%@include file="all_components/footer.jsp"%>  
     </body>
 
 </html>

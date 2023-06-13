@@ -102,7 +102,7 @@
          Other content 
     </div>-->
 
-            <div id="alert" class="fixed top-0 right-0 bg-red-500 text-white p-4 rounded shadow">
+            <div id="alert" class="fixed top-0 right-0 bg-green-500 text-white p-4 rounded shadow">
                 <span class="block">${successMessage}</span>
                 <button id="closeBtn" class="absolute top-0 right-0 p-2">
                     <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
