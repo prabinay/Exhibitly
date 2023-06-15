@@ -41,7 +41,8 @@ DFD level 1 Diagram
 
 ## Conceptual Modeling!
 ER Diagram
-![ER Diagram](https://github.com/prabinay/Exhibitly/assets/64364650/4b8ee307-9f5e-4a2f-a8e7-5734c5d0132a)
+![ER Diagram](![image](https://github.com/prabinay/Exhibitly/assets/64364650/e856d247-20ad-47a2-a287-36573ec0964e)
+)
 
 Use Case Diagram
 ![Use case Diagram](https://github.com/prabinay/Exhibitly/assets/64364650/2dc6383b-e8a6-441f-b789-9a3cb35a3771)
