@@ -122,7 +122,7 @@
                     </div>
                 </footer>-->
 
-        <footer class="bg-blue-800 text-gray-300 py-6">
+        <footer class="bg-blue-500 text-gray-300 py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div class="col-span-1">

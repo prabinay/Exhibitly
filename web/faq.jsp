@@ -107,7 +107,7 @@
     <%@include file="all_components/navbar.jsp"%>  
 
     <body class="bg-gray-100">
-        <div class="wrapper mt-4 mb-32">
+        <div class="wrapper mt-4 mb-10">
             <h1 class="text-center text-5xl font-semibold mb-10">FAQ</h1>
             <div class="flex flex-col items-center gap-3">
                 <!-- First Question -->
@@ -137,6 +137,21 @@
                         and click on the "Add to Cart" or "Buy Now" button. Follow the prompts to complete 
                         purchase securely.                     </p>
                 </div>
+                
+                <div class="flex flex-col gap-2 bg-red-100 p-4 text-justify mx-5 md:w-9/12">
+                    <!-- Question -->
+                    <div class="flex justify-between items-center cursor-pointer text-blue-500">
+                        <h1 class="text-xl font-semibold text-green"> Are the prices of the artwork negotiable?</h1>
+                    </div>
+
+                    <!-- Answer -->
+                    <p class="text-sm md:text-base">
+                        The prices listed for the artwork on our online gallery are generally fixed. However, 
+                        if you have a specific inquiry or wish to discuss pricing options, please reach out to
+                        us, and we'll do our best to assist you.
+
+                    </p>
+                </div>
 
                 <div class="flex flex-col gap-2 bg-red-100 p-4 text-justify mx-5 md:w-9/12">
                     <!-- Question -->
@@ -165,27 +180,8 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col gap-2 bg-red-100 p-4 text-justify mx-5 md:w-9/12">
-                    <!-- Question -->
-                    <div class="flex justify-between items-center cursor-pointer text-blue-500">
-                        <h1 class="text-xl font-semibold text-green">How can I purchase artwork from the online gallery?</h1>
-                    </div>
-
-                    <!-- Answer -->
-                    <p class="text-sm md:text-base">
-                        To purchase artwork from our online gallery, simply select the piece you are interested in and click on the "Add to Cart" or "Buy Now" button. Follow the prompts to complete your purchase securely.                     </p>
-                </div>
-
-                <div class="flex flex-col gap-2 bg-red-100 p-4 text-justify mx-5 md:w-9/12">
-                    <!-- Question -->
-                    <div class="flex justify-between items-center cursor-pointer text-blue-500">
-                        <h1 class="text-xl font-semibold text-green">How can I purchase artwork from the online gallery?</h1>
-                    </div>
-
-                    <!-- Answer -->
-                    <p class="text-sm md:text-base">
-                        To purchase artwork from our online gallery, simply select the piece you are interested in and click on the "Add to Cart" or "Buy Now" button. Follow the prompts to complete your purchase securely.                     </p>
-                </div>
+                
+                
 
 
 

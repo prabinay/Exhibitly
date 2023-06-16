@@ -301,7 +301,7 @@
         setTimeout(() => {
             alertElement.classList.add('hidden');
             sliderElement.classList.remove('hidden');
-        }, 4000);
+        }, 2000);
 
 
         // Add an event listener to the close button
