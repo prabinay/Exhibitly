@@ -17,7 +17,7 @@
         <%@include file="all_components/navbar.jsp"%>   
        
         <main class="container mx-auto bg-blue-100 max-w-screen-xl px-4 py-8 mb-2 mt-2" style="max-width: 800px;" >
-            <h1 class="text-2xl font-semibold mb-4"></h1>
+            <!--<h1 class="text-2xl font-semibold mb-4"></h1>-->
             <div class="text-center mb-8 ">
                 <h1 class="text-3xl font-bold mb-2 ">Accessibility Statement</h1>
                 <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>

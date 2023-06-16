@@ -55,7 +55,7 @@
                             <td><img src="../img/arts/${order.photo}"  class="rounded" style=" width:100px; height:100px;"></td>
 
                             <td>${order.artName}</td>
-                            <td>$${order.unit_price}</td>
+                            <td>Rs.${order.unit_price}</td>
                             <td>${order.name}</td>
                             <td>${order.contactno}</td>
                             <td>${order.address}</td>

@@ -78,7 +78,7 @@
                                 </td>
 
                                 <td>${art.artistName} </td>
-                                <td>$${art.price} </td>
+                                <td>Rs.${art.price} </td>
                                 <td>
                                     <span class="badge bg-success">${art.status} </span>
                                 </td>

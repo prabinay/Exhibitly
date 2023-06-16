@@ -81,11 +81,12 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/checkout.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/services.css</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/access.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/loginAndSignin.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/js/main.js</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/order_details.jsp</file>
         </group>
