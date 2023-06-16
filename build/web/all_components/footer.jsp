@@ -138,7 +138,7 @@
                     <div class="col-span-1">
                         <h3 class="text-white text-lg mb-3">Get Help</h3>
                         <ul>
-                            <li><a href="#">Buyer FAQ</a></li>
+                            <li><a href="faq.jsp">Buyer FAQ</a></li>
                             <li><a href="returnPolicy.jsp">Return Policy</a></li>
                             <!--<li><a href="#">Order Status</a></li>-->
                             <li><a href="#">Payment Options</a></li>
