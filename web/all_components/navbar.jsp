@@ -250,7 +250,7 @@ Responsive navbar
 
                 <c:if test="${ not empty userobj}">
                     <button class="bg-green-700 text-white font-[Poppins] duration-500 px-2 py-2 mx-2 hover:bg-cyan-500 rounded">
-                        ${userobj.name}
+                        <a href="updateUserProfile.jsp" >${userobj.name}</a>
                     </button>
                     <button class="bg-red-700 text-white font-[Poppins] duration-500 px-1 py-2 mx-2 hover:bg-cyan-500 rounded">
                         <a href="logout"  > Log Out</a>
