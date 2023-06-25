@@ -46,13 +46,93 @@
             <%@include file="all_components/navbar.jsp"%>
         </div>
         <div class="container print">
-            <div class="py-3 text-center">
-                <h2>Checkout by ${userobj.name}</h2>
+            <div class="max-w-4x3 mx-auto p-8 bg-white ">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl font-bold mb-2">Bill Invoice</h1>
+                        <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="text-gray-600">Invoice No: <span id="invoiceNumber"></span></span>
+                        <br>
+                        <span class="text-gray-600">Date: <span id="invoiceDate"></span></span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mb-6">
+                    <div>
+                        <h2 class="text-xl font-bold">From:</h2>
+                        <address>
+                            Exhibitly<br>
+                            <!--                            123 Main Street<br>
+                                                        City, State, ZIP<br>-->
+                            Phone: (123) 456-7890<br>
+                            Email: info@exhibitly.com
+                        </address>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold">To:</h2>
+                        <address>
+                            ${userobj.name}<br>
+                            <!--                            456 Client Street<br>
+                                                        City, State, ZIP<br>-->
+                            Phone: ${userobj.phone_no}<br>
+                            Email: ${userobj.email}
+                        </address>
+                    </div>
+                </div>
+
+                <div class="container p-3">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold mb-2">Items Purchased</h3>
+                        <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+                    </div>
+                    <table class="table table-light">
+                        <thead>
+                            <!--<th>Photo</th>-->
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+
+                        </thead>
+                        <tbody>
+                            <!--total price calculation-->
+                            <c:set var="total_price" value="${0}" />
+
+                            <c:forEach var="cartItem" items="${cartItemList}">
+                                <c:set var="total_price" value="${total_price+cartItem.price}" />
+
+                                <tr>
+                                    <td>${cartItem.artName}</td>
+
+                                    <td>Rs.${cartItem.price}</td>
+                                    <td>${cartItem.quantity}
+
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+
+                    <div class="float-right w-full py-3" style="text-align:right;">
+                        <div class="text-right">
+
+                            <h3 style="margin-bottom: 10px;">Total Price: Rs.${total_price}</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-sm mt-5">
+                    <strong>Payment Terms:</strong> Please make the payment within 30 days of receiving this invoice.
+                </div>
+
             </div>
+
         </div>
 
 
-        <div class="container mt-5" >
+        <div class="container mt-5 no-print " >
             <div class="row g-5">
                 <!--total price calculation-->
                 <c:set  var="total_price" value="${0}"/>
@@ -188,49 +268,82 @@
 
         </div>
 
+    </div>
 
-        <script>
-            var config = {
-                // replace the publicKey with yours
-                "publicKey": "test_public_key_6438ab66f99f4d6f97c19e6931cb9078",
-                "productIdentity": "1234567890",
-                "productName": "Dragon",
-                "productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
-                "paymentPreference": [
-                    "KHALTI",
+
+
+    <script>
+    window.onload = function() {
+      var invoiceNumber = Math.floor(Math.random() * 1000000); // Generate a random number
+      document.getElementById("invoiceNumber").textContent = invoiceNumber; // Set the generated number in the element
+    }
+
+
+        // Generate unique invoice number
+        function generateInvoiceNumber() {
+            const timestamp = Date.now();
+            const randomNum = Math.floor(Math.random() * 10000);
+            return `${timestamp}-${randomNum}`;
+                }
+
+                // Get current date in desired format
+                function getCurrentDate() {
+                    const options = {year: 'numeric', month: 'long', day: 'numeric'};
+                    return new Date().toLocaleDateString(undefined, options);
+                }
+
+                // Set invoice number and date on page load
+                window.addEventListener('DOMContentLoaded', function () {
+                    const invoiceNumber = generateInvoiceNumber();
+                    const invoiceDate = getCurrentDate();
+
+                    document.getElementById('invoiceNumber').textContent = invoiceNumber;
+                    document.getElementById('invoiceDate').textContent = invoiceDate;
+                });
+
+
+//  Khalti integration
+                var config = {
+                    // replace the publicKey with yours
+                    "publicKey": "test_public_key_6438ab66f99f4d6f97c19e6931cb9078",
+                    "productIdentity": "1234567890",
+                    "productName": "Dragon",
+                    "productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
+                    "paymentPreference": [
+                        "KHALTI",
 //                    "EBANKING",
 //                    "MOBILE_BANKING",
 //                    "CONNECT_IPS",
 //                    "SCT",
-                ],
-                "eventHandler": {
-                    onSuccess(payload) {
-                        // hit merchant api for initiating verfication
-                        console.log(payload);
-                        alert('Success! Payments successful.');
-                    },
-                    onError(error) {
-                        console.log(error);
-                        alert('Failed! Payments is not successful.');
-                    },
-                    onClose() {
-                        console.log('widget is closing');
+                    ],
+                    "eventHandler": {
+                        onSuccess(payload) {
+                            // hit merchant api for initiating verfication
+                            console.log(payload);
+                            alert('Success! Payments successful.');
+                        },
+                        onError(error) {
+                            console.log(error);
+                            alert('Failed! Payments is not successful.');
+                        },
+                        onClose() {
+                            console.log('widget is closing');
+                        }
                     }
+                };
+
+                var checkout = new KhaltiCheckout(config);
+                var btn = document.getElementById("payment-button");
+                btn.onclick = function () {
+                    // minimum transaction amount must be 10, i.e 1000 in paisa.
+                    checkout.show({amount: ${total_price} * 100});
                 }
-            };
-
-            var checkout = new KhaltiCheckout(config);
-            var btn = document.getElementById("payment-button");
-            btn.onclick = function () {
-                // minimum transaction amount must be 10, i.e 1000 in paisa.
-                checkout.show({amount: ${total_price}*100});
-            }
-        </script>
+    </script>
 
 
 
-    </body>
-    <div style="margin-top:105px;" class="no-print">
-        <%@include file="all_components/footer.jsp"%>
-    </div>
+</body>
+<div style="margin-top:105px;" class="no-print">
+    <%@include file="all_components/footer.jsp"%>
+</div>
 </html>

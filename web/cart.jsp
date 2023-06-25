@@ -34,36 +34,30 @@
     <body style="background-color: #f0f1f2;">
         <%@include file="all_components/navbar.jsp"%>      
 
-        <div class="container p-3" >
-
-            <h2 class="text-primary">My Cart</h2>
-
-            <table class="table table-loght ">
+        <div class="container p-3">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold mb-2">My Cart</h1>
+                <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
+            </div>
+            <table class="table table-light">
                 <thead>
                     <!--<th>Photo</th>-->
                 <th>Art Name</th>
                 <th>Artist Name</th>
-
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Action</th>
                 </thead>
-
-
                 <tbody>
                     <!--total price calculation-->
-                    <c:set  var="total_price" value="${0}"/>
-
+                    <c:set var="total_price" value="${0}" />
 
                     <c:forEach var="cartItem" items="${cartItemList}">
-
-                        <c:set  var="total_price" value="${total_price+cartItem.price}"/>
+                        <c:set var="total_price" value="${total_price+cartItem.price}" />
 
                         <tr>
-
                             <td>${cartItem.artName}</td>
                             <td>${cartItem.artistName}</td>
-
                             <td>Rs.${cartItem.price}</td>
                             <td>${cartItem.quantity}
                                 <!--  <form action="" method="post" class="form-inline">
@@ -75,84 +69,26 @@
                                                  </div>
                                         </form>-->
                             </td>
-                            <td><a href="cart?action=remove&id=${cartItem.cartID}" class="btn btn-sm btn-danger" >Remove</td>
+                            <td><a href="cart?action=remove&id=${cartItem.cartID}" class="btn btn-sm btn-danger">Remove</a></td>
                         </tr>
                     </c:forEach>
                 </tbody>
             </table>
 
-
-            <div class="float-right w-full py-3 " style="text-align:right">
-                <div class="">
-                    <h3> Total Price: Rs.${total_price}</h3> <a class="mx-3 btn btn-primary w-25" href="checkout">Check Out </a>
+            <div class="float-right w-full py-3" style="text-align:right;">
+                <div class="text-right">
+                    <h3 style="margin-bottom: 10px;">Total Items: ${cartItemList.size()}</h3>
+                    <h3 style="margin-bottom: 10px;">Total Price: Rs.${total_price}</h3>
+                    <a class="btn btn-primary w-25" href="checkout" style="margin-bottom: 10px;">Check Out</a>
                 </div>
             </div>
 
 
 
-            <!--                <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h3 class="text-center text-success">Your Order Details</h3><br> 
-            
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">Full Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" name="name">
-                                                </div>
-            
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" >
-                                                </div>
-                                            </div>
-            
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="exampleInputPassword1" required="required" ">
-                                                </div>
-            
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-                                                    <input type="number" class="form-control" id="exampleInputPassword1" required="required" >
-                                                </div>
-                                            </div>
-            
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">Address</label>
-                                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" name="name">
-                                                </div>
-            
-                                                <div class="form-group col-md-6">
-                                                    <label for="exampleInputPassword1" class="form-label">City</label>
-                                                    <input type="text" class="form-control" id="exampleInputPassword1" required="required" name="name">
-                                                </div>
-                                            </div>
-            
-                                            <div class="form-group">
-                                                <label>Payment Mode</label>
-                                                <select class="form-control">
-                                                    <option>--Select--</option>
-                                                    <option>Cash On Delivery</option>
-                                                </select>
-                                            </div>
-            
-                                            <div class="text-center p-3">
-                                                <button class="btn btn-warning">Order Now </button>
-            
-                                                <a href="index.jsp"  class="btn btn-success"  >Shop More </a>                      
-                                            </div>
-            
-                                        </form>
-                                    </div>
-                                </div>
-                            </div
-                        </div>-->
 
         </div>
+
+
 
 
         <div style="margin-top:185px;">

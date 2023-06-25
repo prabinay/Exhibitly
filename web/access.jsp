@@ -79,7 +79,7 @@
                     <i class="fa fa-comment fa-lg text-orange-500 mr-2"></i>
                     Feedback Mechanism
                 </h3>
-                <p>We welcome your feedback on the accessibility of our website. If you have encountered any accessibility issues or have suggestions, please fill out our <a href="#" class="text-blue-500">Accessibility Feedback Form</a>.</p>
+                <p>We welcome your feedback on the accessibility of our website. If you have encountered any accessibility issues or have suggestions, please email us.</p>
             </section>
 
             <section>
