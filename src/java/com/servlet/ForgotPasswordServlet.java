@@ -4,15 +4,23 @@
  */
 package com.servlet;
 
-import com.mysql.cj.xdevapi.Session;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
 import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
-import java.net.PasswordAuthentication;
 import java.util.Properties;
 import java.util.Random;
 
@@ -20,6 +28,7 @@ import java.util.Random;
  *
  * @author Prab1n
  */
+@WebServlet("/forgotPassword")
 public class ForgotPasswordServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,7 +53,7 @@ public class ForgotPasswordServlet extends HttpServlet {
             props.put("mail.smtp.port", "465");
             Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("", "");// Put your email
+                    return new PasswordAuthentication("prabinay.garcia.23@gmail.com", "lcbaypucgedpxpad");// Put your email
                     // id and
                     // password here
                 }
@@ -62,7 +71,7 @@ public class ForgotPasswordServlet extends HttpServlet {
             } catch (MessagingException e) {
                 throw new RuntimeException(e);
             }
-            dispatcher = request.getRequestDispatcher("EnterOtp.jsp");
+            dispatcher = request.getRequestDispatcher("enterOTP.jsp");
             request.setAttribute("message", "OTP is sent to your email id");
             //request.setAttribute("connection", con);
             mySession.setAttribute("otp", otpvalue);
