@@ -21,12 +21,12 @@
         <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
         <%@include file="all_components/allCss.jsp"%>     
     </head>
-    <body class="bg-gray-100">
+    <body class="bg-gray-100 ">
         <%@include file="all_components/navbar.jsp"%>      
 
-        <div class="container mx-auto px-4 py-6">
+        <div class="container mx-auto px-4 py-6 ">
             <div class="text-center mb-8">
-                <h1 class="text-4xl font-bold mb-2">Search Results</h1>
+                <h1 class="text-4xl font-bold mb-2">Search Results </h1>
                 <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
             </div>
 
@@ -46,6 +46,8 @@
                         <img src="img/arts/<c:out value="<%=a.getPhotoName()%>"/>"   class="w-auto h-full object-center object-cover lg:w-auto lg:h-full rounded">
                     </div>
 
+                    
+
                     <div class="p-2">
                         <h3 class="text-xl font-semibold mb-2"><%=a.getArtName()%></h3>
                         <p class="text-gray-500 mb-1"><%=a.getArtistName()%></p>
@@ -63,7 +65,7 @@
                                 <a href="ViewArtDetails?id=<%=a.getArtID()%>"  >View Details </a>
                             </button>
                         </div>
-                      
+
 
                     </div>
                 </div>

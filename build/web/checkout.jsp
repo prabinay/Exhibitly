@@ -223,7 +223,7 @@
 
                             <div class="col-md-3">
                                 <label for="zip" class="form-label">Post code</label>
-                                <input type="text" class="form-control" name="postcode" placeholder="" required>
+                                <input id="RegiPhone" name="phone"type="text" class="form-control" name="postcode" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Post code required.
                                 </div>
@@ -231,7 +231,7 @@
 
                             <div class="col-12">
                                 <label for="contactNo" class="form-label">Contact No</label>
-                                <input type="text" class="form-control" name="contactno"  pattern="[0-9]{10}" required="required">
+                                <input id="RegiPhone"  name="phone" value="${userobj.phone_no}" type="text" class="form-control" name="contactno"  pattern="[0-9]{10}"   pattern="[0-9]{10}" required>
 
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
@@ -262,6 +262,9 @@
 
                         <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium" type="submit">Place Order</button>
 
+                        <div class="flex justify-center">
+                            <input onclick="return ValidateRegistrationForm();" class="Submit-Btn bg-blue-500 text-white px-4 py-2 rounded" type="submit" value="Register" id="RegistrationitBtn">
+                        </div>
                     </form>
                 </div>
             </div>    
@@ -273,10 +276,10 @@
 
 
     <script>
-    window.onload = function() {
-      var invoiceNumber = Math.floor(Math.random() * 1000000); // Generate a random number
-      document.getElementById("invoiceNumber").textContent = invoiceNumber; // Set the generated number in the element
-    }
+        window.onload = function () {
+            var invoiceNumber = Math.floor(Math.random() * 1000000); // Generate a random number
+            document.getElementById("invoiceNumber").textContent = invoiceNumber; // Set the generated number in the element
+        }
 
 
         // Generate unique invoice number
@@ -339,6 +342,8 @@
                     checkout.show({amount: ${total_price} * 100});
                 }
     </script>
+
+    <script src="all_components/js/validation.js" type="text/javascript"></script>
 
 
 

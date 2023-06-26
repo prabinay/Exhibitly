@@ -6,6 +6,8 @@
         <title>Login & Registration</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
         <script src="https://apis.google.com/js/platform.js"></script>
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
+
         <%@include file="all_components/allCss.jsp"%>
     </head>
     <body>
@@ -37,12 +39,13 @@
 
                         <div class="flex items-center mb-4">
                             <div class="w-1/2">
-                                <a id="ForgotPassword" href="JavaScript:void(0);" onclick="ShowForgotPasswordForm()" class="text-blue-500">Forgot Password?</a>
+                                <!--                                <a id="ForgotPassword" href="JavaScript:void(0);" onclick="ShowForgotPasswordForm()" class="text-blue-500">Forgot Password?</a>-->
+                                <a id="ForgotPassword" href="forgotPassword.jsp"  class="text-blue-500">Forgot Password?</a>
                             </div>
-                            <div class="w-1/2 text-right">
-                                <input id="rememberMe" type="checkbox" class="mr-2">
-                                <label for="rememberMe">Remember Me</label>
-                            </div>
+                            <!--                            <div class="w-1/2 text-right">
+                                                            <input id="rememberMe" type="checkbox" class="mr-2">
+                                                            <label for="rememberMe">Remember Me</label>
+                                                        </div>-->
                         </div>
 
                         <div class="flex justify-center">
@@ -89,7 +92,7 @@
                     </p>
                 </div>
                 <div id="ForgotPasswordForm">
-                    <form action="">
+                    <form action="forgotPassword" method="POST">
                         <div class="flex justify-center mb-4">
                             <input class="input-text border border-gray-400 px-4 py-2 rounded" type="email" id="forgotPassEmail" placeholder="Email Address">
                         </div>
@@ -97,6 +100,7 @@
                             <input onclick="return ValidateForgotPasswordForm();" class="Submit-Btn bg-blue-500 text-white px-4 py-2 rounded" type="submit" value="Reset Password" id="PasswordResetBtn">
                         </div>
                     </form>
+
                     <p class="text-center mt-4 text-sm">
                         Back to the 
                         <a href="JavaScript:void(0);" onclick="ShowLoginForm()" class="text-blue-500">Login page</a> | <a href="JavaScript:void(0);" onclick="ShowRegistrationForm()" class="text-blue-500">Registration page</a>
