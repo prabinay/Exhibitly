@@ -20,6 +20,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import secure.PasswordEncryption;
 
 @WebServlet("/newPassword")
 public class NewPassword extends HttpServlet {
@@ -39,7 +40,7 @@ public class NewPassword extends HttpServlet {
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/exhibitly", "root", "00000");
                 PreparedStatement pst = con.prepareStatement("update user set pwd = ? where email = ? ");
-                pst.setString(1, newPassword);
+                pst.setString(1, PasswordEncryption.encrypt(newPassword));
                 pst.setString(2, (String) session.getAttribute("email"));
 
                 int rowCount = pst.executeUpdate();

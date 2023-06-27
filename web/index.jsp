@@ -64,7 +64,7 @@
             initTE({Toast});
         </script>
     </head>
-    <body  class="bg-gray-100"  >
+    <body  class="bg-gray-100 "  >
         <%@include file="all_components/navbar.jsp"%>
 
 
@@ -79,7 +79,7 @@
          Other containerent 
     </div>-->
 
-            <div id="alert" class="fixed top-0 right-0    bg-red-500 text-white p-4 rounded shadow ">
+            <div id="alert" class="z-10 fixed top-0 right-0    bg-red-500 text-white p-4 rounded shadow ">
                 <span class="block">${errorMessage}</span>
                 <button id="closeBtn" class="absolute top-0 right-0 p-2">
                     <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -102,7 +102,7 @@
          Other content 
     </div>-->
 
-            <div id="alert" class="fixed top-0 right-0 bg-green-500 text-white p-4 rounded shadow">
+            <div id="alert" class="z-10 fixed top-0 right-0 bg-green-500 text-white p-4 rounded shadow">
                 <span class="block">${successMessage}</span>
                 <button id="closeBtn" class="absolute top-0 right-0 p-2">
                     <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -197,8 +197,13 @@
 
                 prevButton.addEventListener('click', previousSlide);
                 nextButton.addEventListener('click', nextSlide);
+  // Immediately display the first slide
+  showSlide(currentIndex);
 
-                setInterval(nextSlide, 3000); // Automatic slide change every 3 seconds
+  setTimeout(function() {
+    setInterval(nextSlide, 3000); // Automatic slide change every 3 seconds
+  }); 
+                 // Automatic slide change every 3 seconds
             </script>
         </div>
 
@@ -207,7 +212,7 @@
 
         <!--here starts propduct card--> 
 
-        <div class="container mx-8 px-4 py-6">
+        <div class="container  px-4 py-6">
 
             <div class="text-center mb-8">
                 <h1 class="text-4xl font-bold mb-2">Available Arts</h1>

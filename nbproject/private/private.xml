@@ -19,6 +19,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/loginRegister.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/HomeArtdao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/aboutUs.html</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/NewPassword.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/META-INF/context.xml</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/allArts.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/footer.jsp</file>
@@ -70,8 +71,10 @@
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/updateArt.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/returnPolicy.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/ArtDao.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/newPassword.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/footer.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/portrait.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/ValidateOtpServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/abstract.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/ArtCRUDServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/features.css</file>
@@ -81,6 +84,7 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/admin/servlet/AddArtServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/index.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/checkout.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/enterOTP.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/viewDetails.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/css/services.css</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/search.jsp</file>

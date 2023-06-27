@@ -16,6 +16,7 @@ import com.dao.UserDaoImpl;
 import com.DB.DBconnect;
 import com.model.User;
 import jakarta.servlet.http.HttpSession;
+import secure.PasswordEncryption;
 
 /**
  *
@@ -42,7 +43,7 @@ public class loginServlet extends HttpServlet {
                 session.setAttribute("userobj", us);
                 response.sendRedirect("admin/home.jsp");
             } else {
-                User us = dao.login(email, pwd);
+                User us = dao.login(email, PasswordEncryption.encrypt(pwd));
                 if (us != null) {
                     session.setAttribute("userobj", us);
                     response.sendRedirect("index");

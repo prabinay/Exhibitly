@@ -16,6 +16,7 @@ import com.model.User;
 import com.dao.UserDaoImpl;
 import com.DB.DBconnect;
 import jakarta.servlet.http.HttpSession;
+import secure.PasswordEncryption;
 
 /**
  *
@@ -39,7 +40,7 @@ public class registerServlet extends HttpServlet {
             us.setName(name);
             us.setEmail(email);
             us.setPhone_no(phone);
-            us.setPwd(pwd);
+            us.setPwd(PasswordEncryption.encrypt(pwd));
 
             HttpSession session = request.getSession();
             if (check != null) {

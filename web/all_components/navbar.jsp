@@ -197,7 +197,7 @@ Responsive navbar
                     style="position: absolute; left: 17px; top: 15px; width: 15px; height: 15px;"
                     />
                 <input
-                    class="input"
+                    class="input "
                     name="ch"
                     type="text"
                     placeholder="Search"
@@ -211,7 +211,7 @@ Responsive navbar
             </form>
 
 
-            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-blue-500 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500">
+            <ul class=" mt-3 z-10 md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-blue-500 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500">
                 <li class="mx-4 y-6 md:my-0">
                     <a href="index" class="text-white text-xl hover:text-blue-500 duration-500">HOME</a>
                 </li>
@@ -250,16 +250,16 @@ Responsive navbar
 
                 <c:if test="${ not empty userobj}">
                     <button class="bg-green-700 text-white font-[Poppins] duration-500 px-2 py-2 mx-2 hover:bg-cyan-500 rounded">
-                        <a href="updateUserProfile.jsp"  > ${userobj.name}</a>
+                        <a style="text-decoration: none" href="updateUserProfile.jsp"  > ${userobj.name}</a>
                     </button>
                     <button class="bg-red-700 text-white font-[Poppins] duration-500 px-1 py-2 mx-2 hover:bg-cyan-500 rounded">
-                        <a href="logout"  > Log Out</a>
+                        <a style="text-decoration: none"  href="logout"  > Log Out</a>
                     </button>
                 </c:if> 
 
                 <c:if test="${ empty userobj}">
                     <button class="bg-green-700 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">
-                        <a href="loginAndSignin.jsp"  > SIGNUP</a> 
+                        <a style="text-decoration: none"  href="loginAndSignin.jsp"  > SIGNUP</a> 
                     </button>
 
                 </c:if> 
