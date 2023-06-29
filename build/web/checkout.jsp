@@ -223,7 +223,7 @@
 
                             <div class="col-md-3">
                                 <label for="zip" class="form-label">Post code</label>
-                                <input id="RegiPhone" name="phone"type="text" class="form-control" name="postcode" placeholder="" required>
+                                <input id="RegiPhone" name="phone"type="text" class="form-control" name="postcode" placeholder="" pattern="^\d{5}(?:-\d{4})?$" required>
                                 <div class="invalid-feedback">
                                     Post code required.
                                 </div>

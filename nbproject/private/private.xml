@@ -56,7 +56,9 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/AbstractServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/OrderDetails.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/navbar.jsp</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/secure/PasswordEncryption.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/loginServlet.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/web/paymentOptions.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/ForgotPasswordServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/landscape.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/navbar.jsp</file>
@@ -92,8 +94,8 @@
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/servlet/IndexServlet.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/loginAndSignin.jsp</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/all_components/js/main.js</file>
-            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/model/User.java</file>
+            <file>file:/C:/Java/Projects/Exhibitly/src/java/com/DB/DBconnect.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/src/java/com/dao/CartDao.java</file>
             <file>file:/C:/Java/Projects/Exhibitly/web/admin/order_details.jsp</file>
         </group>

@@ -34,12 +34,12 @@
     <body style="background-color: #f0f1f2;">
         <%@include file="all_components/navbar.jsp"%>      
 
-        <div class="container p-3">
+        <div class="container p-3 mt-16">
             <div class="text-center mb-8">
                 <h1 class="text-4xl font-bold mb-2">My Cart</h1>
                 <div class="w-20 border-b-2 border-gray-400 mx-auto"></div>
             </div>
-            <table class="table table-light">
+            <table class="table table-light mt-5">
                 <thead>
                     <!--<th>Photo</th>-->
                 <th>Art Name</th>
@@ -75,8 +75,8 @@
                 </tbody>
             </table>
 
-            <div class="float-right w-full py-3" style="text-align:right;">
-                <div class="text-right">
+            <div class="float-right w-full py-3 mt-5" style="text-align:right;">
+                <div class="text-right mt-2">
                     <h3 style="margin-bottom: 10px;">Total Items: ${cartItemList.size()}</h3>
                     <h3 style="margin-bottom: 10px;">Total Price: Rs.${total_price}</h3>
                     <a class="btn btn-primary w-25" href="checkout" style="margin-bottom: 10px;">Check Out</a>
