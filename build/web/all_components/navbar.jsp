@@ -191,11 +191,11 @@ Responsive navbar
                         </div>-->
             <div class="flex justify-between items-center">
                 <a class="flex items-center text-2xl text-white font-[Poppins] cursor-pointer ml-4" href="index">
-                    <img class="h-14 mr-2" src="img/llll.png" alt="logo">
-                    <span class="text-3xl font-bold font-heading">
-                        <!--<img class="h-9" src="" alt="logo">--> 
-                        <!--Exhibitly-->
-                    </span>
+                    <img class="h-14 mr-2" src="img/log.png" alt="logo">
+                    <!--<span class="text-3xl font-bold font-heading">-->
+                    <!--<img class="h-9" src="" alt="logo">--> 
+                    <!--Exhibitly-->
+                    <!--</span>-->
                 </a>
 
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block">

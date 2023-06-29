@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Us</title>
         <link rel="icon" href="https://img.icons8.com/fluency/48/000000/van-gogh.png" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="all_components/css/aboutUs.css">
@@ -26,7 +26,12 @@
                 <img src="img/abou.jpg">
             </div>
             <div class="about-intro">
-                <h2 style="color:black">About Us<span style="color: #198754;"> |</h2>
+                <!--<h1 style="color:black">About Us-->
+                <div class="text-center mb-8 ">
+                    <h1 class="text-3xl font-bold mb-2 ">About Us</h1>
+
+                    <div class="w-20 border-b-2 border-gray-400 mx-auto"  style="color: #198754;"></div>
+                </div>
                 <p> Welcome to Exhibitly, an online art gallery platform where creativity meets technology! Our
                     platform serves as a virtual hub that showcases an extensive range of artistic styles and
                     making art accessible to everyone, anytime, and anywhere.
@@ -45,7 +50,7 @@
                     artist looking for a platform to showcase your talent or an art lover seeking to discover new 
                     works, we invite you to embark on a creative journey with us. Explore, engage, and be inspired 
                     as you immerse yourself in the world of art on our platform.
-                    </p>
+                </p>
             </div>
         </div>
 

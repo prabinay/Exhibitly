@@ -41,10 +41,10 @@
                     </div>
                 </div>
             </div>
-            <footer class="bg-blue-800 py-4">
-                <!-- Footer content here -->
-                <%@include file="all_components/footer.jsp"%> 
-            </footer>
+
+            <!-- Footer content here -->
+            <%@include file="all_components/footer.jsp"%> 
+
 
     </body>
 

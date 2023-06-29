@@ -262,9 +262,9 @@
 
                         <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium" type="submit">Place Order</button>
 
-                        <div class="flex justify-center">
+<!--                        <div class="flex justify-center">
                             <input onclick="return ValidateRegistrationForm();" class="Submit-Btn bg-blue-500 text-white px-4 py-2 rounded" type="submit" value="Register" id="RegistrationitBtn">
-                        </div>
+                        </div>-->
                     </form>
                 </div>
             </div>    
@@ -339,7 +339,7 @@
                 var btn = document.getElementById("payment-button");
                 btn.onclick = function () {
                     // minimum transaction amount must be 10, i.e 1000 in paisa.
-                    checkout.show({amount: ${total_price} * 100});
+                    checkout.show({amount: ${total_price} });
                 }
     </script>
 

@@ -141,7 +141,7 @@
                             <li><a href="faq.jsp">Buyer FAQ</a></li>
                             <li><a href="returnPolicy.jsp">Return Policy</a></li>
                             <!--<li><a href="#">Order Status</a></li>-->
-                            <li><a href="#">Payment Options</a></li>
+                            <li><a href="paymentOptions.jsp">Payment Options</a></li>
                         </ul>
                     </div>
                     <div class="col-span-1">
