@@ -175,20 +175,34 @@ Responsive navbar
 
     <body class="bg-gray-100">
         <nav class="w-full  p-2 bg-blue-500 shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center ">
-                <span class="text-2xl text-white font-[Poppins] cursor-pointer">
-                    <img class="h-10 inline"
-                         src="">
-                    <a class="text-3xl font-bold font-heading" href="index">
-                        <!-- <img class="h-9" src="logo.png" alt="logo"> -->
-                        Exhibitly
-                    </a>
-                </span>
+            <!--            <div class="flex justify-between items-center ">
+                            <span class="text-2xl text-white font-[Poppins] cursor-pointer">
+                                <img class="h-10 inline"
+                                     src="">
+                                <a class="text-3xl font-bold font-heading" href="index">
+                                     <img class="h-9" src="img/llll.png" alt="logo"> 
+                                    Exhibitly
+                                </a>
+                            </span>
+            
+                            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                            </span>
+                        </div>-->
+            <div class="flex justify-between items-center">
+                <a class="flex items-center text-2xl text-white font-[Poppins] cursor-pointer ml-4" href="index">
+                    <img class="h-14 mr-2" src="img/llll.png" alt="logo">
+                    <span class="text-3xl font-bold font-heading">
+                        <!--<img class="h-9" src="" alt="logo">--> 
+                        <!--Exhibitly-->
+                    </span>
+                </a>
 
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block">
                     <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
                 </span>
             </div>
+
 
             <form action="search.jsp"  method="post" style="position: relative">
                 <img

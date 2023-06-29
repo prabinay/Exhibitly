@@ -39,15 +39,18 @@ public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-                HttpSession session = request.getSession(false);
 
-                        User user = (User) session.getAttribute("userobj");
         List<ArtDetails> artlist = homearts.selectHomeArts();
-        List<Cart> cartItemList = cartDao.selectCartByUserId(user.getId());
-        request.setAttribute("cartItemList", cartItemList);
+
         System.out.println("artlist is" + artlist);
         RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
         request.setAttribute("artlist", artlist);
+
+//        HttpSession session = request.getSession(false);
+//
+//        User user = (User) session.getAttribute("userobj");
+//        List<Cart> cartItemList = cartDao.selectCartByUserId(user.getId());
+//        request.setAttribute("cartItemList", cartItemList);
         rd.forward(request, response);
     }
 
