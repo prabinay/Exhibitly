@@ -50,8 +50,9 @@ Use Case Diagram
 
 
 ## Contributors
-- [Prabin Thapa Magar](https://github.com/prabinay/)  
-<!--- [Umesh Niure Sharma](https://github.com/umeshniure)-->
+- [Prabin Thapa Magar](https://github.com/prabinay/)
+- [Hemant Basnet](https://github.com/hemantbas09)
+- [Umesh Niure Sharma](https://github.com/umeshniure)
 
 ## Feedback
 Any suggestion and feedback is welcome. You can email me.
